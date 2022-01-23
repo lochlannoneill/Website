@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto:wght@300;400&display=swap');
+
+:root {
+    --color-white: rgb(255, 255, 255);
+    --color-primary: rgb(10, 10, 10);
+    --color-primary-gradiant: rgb(10, 10, 10, 0.8);
+    --color-primary-bright: rgb(20, 20, 20);
+    --color-primary-brighter: rgb(30, 30, 30);
+    --color-primary-brightest: rgb(40, 40, 40);
+    --color-primary-dark: rgb(0, 0, 0);
+    --color-primary-darker: rgb(0, 0, 0);
+    --color-secondary: rgb(115, 45, 24);
+    --color-secondary-gradiant: rgb(115, 45, 24, 0.7);
+    --color-secondary-bright: rgb(117, 46, 25);
+    --color-secondary-dark: rgb(69, 25, 12);
+    --color-text-muted: rgba(255, 255, 255, 0.7);
+    --color-text-dark: rgb(80, 80, 80);
+    --image-background: url('../images/background.jpg');
+    --image-background1: url('../images/background1.jpg');
+    --image-background2: url('../images/background2.jpg');
+}
+
+/* ______________________________________________________________________________________________________________________ */
+/* _____________________________________________ overwrite bootstrap styling ____________________________________________ */
+/* ______________________________________________________________________________________________________________________ */
+.bg-primary {
+    background-color: var(--color-primary)!important;
+}
+
+.bg-dark{
+    background-color: var(--color-primary)!important;
+}
+
+.text-muted {
+    color: var(--color-text-muted)!important;
+}
+
+.text-dark {
+    color: var(--color-text-dark)!important;
+}
+
+.btn-secondary {
+    background-color: var(--color-secondary)!important;
+    color: var(--color-white)!important;
+}
+
+/* ______________________________________________________________________________________________________________________ */
+/* _______________________________________________________ general ______________________________________________________ */
+/* ______________________________________________________________________________________________________________________ */
+html {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+  }
+
+body {
+    background-image: 
+        linear-gradient(
+            to bottom, var(--color-primary-dark), var(--color-secondary-gradiant)
+        )
+        ,var(--image-background);
+    backdrop-filter: blur(3px);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: var(--color-primary);
+    font-family: Nunito, Arial, sans-serif;
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+h2 {
+    color: var(--color-secondary);
+}
+
+hr {
+    background-color: var(--color-text-muted);
+}
+
+/* ______________________________________________________________________________________________________________________ */
+/* _______________________________________________________ navbar _______________________________________________________ */
+/* ______________________________________________________________________________________________________________________ */
+.navbar {
+    font-size: 0.65em;
+    height: 10vh;
+}
+
+#navbar-logo {
+    height: 80px;
+    margin: 0 24px 0 0;
+    padding: 0;
+    opacity: 40%;
+}
+
+#navbarSupportedContent {
+    margin: 0;
+}
+
+#navbar-faceit-login {
+    margin: 0;
+}
+
+.nav-item {
+    font-size: 1.7em;
+    margin-right: 16px;
+}
+
+.nav-item::before {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: var(--color-secondary-bright);
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 0.2s;
+}
+
+.nav-item:active::before,
+.nav-item:focus::before,
+.nav-item:hover::before {
+    width: 100%;
+}
+
+.nav-item:active,
+.nav-item:focus,
+.nav-item:hover {
+    color: var(--color-primary);
+    transition: all ease-in-out 0.3s;
+}
+
+.dropdown:hover .dropdown-menu {
+    margin-top: 0;
+    display: block;
+    background-color: var(--color-primary);
+    box-shadow: 0 0 16px black;
+    border-radius: 10px; /* FIX - is this required */
+    -webkit-border-radius: 10px 10px 10px 10px ;
+    -moz-border-radius: 10px 10px 10px 10px ;
+}
+
+.dropdown-item {
+    color: var(--color-text-muted);
+    font-size: 1.2em;
+}
+
+.dropdown-item:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    transition: all ease-in-out 0.6s;
+}
+
+/* ______________________________________________________________________________________________________________________ */
+/* _____________________________________________________ jumbotron ______________________________________________________ */
+/* ______________________________________________________________________________________________________________________ */
+.jumbotron {
+    border-radius: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-top: 0;
+}
+
+.vertical-center {
+    min-height: 80%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 80vh; /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+  }
+
+.large-jumbotron {
+    height: 90vh;
+    /* padding-bottom: 240px; */
+    border-bottom: none;
+}
+
+.jumbotron-logo {
+    height: 128px;
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 24px 8px rgba(0,0,0,0.8);
+}
+
+.large-jumbotron .jumbotron-logo {
+    height: 240px;
+}
+
+.jumbotron h1 {
+    margin: 16px 0 0 0;
+}
+
+#lead-text {
+    color: var(--color-text-muted);
+    margin: 0;
+}
+
+/* #jumbotron-btn {
+    border-radius: 24px;
+    background-color: var(--color-secondary);
+    border: none;
+    color: white;
+    margin-top: 32px;
+    box-shadow: 0 0 24px 8px rgba(0,0,0,0.4);
+} */
+
+
+.lead a {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    border: 2px solid var(--color-primary);
+}
+
+.lead a:hover {
+    color: var(--color-text-muted);
+    background: var(--color-primary);
+    box-shadow: 0 0 10px var(--color-primary), 0 0 40px var(--color-primary), 0 0 80px var(--color-primary);
+    transition-delay: 0.5s;
+}
+
+.lead a span {
+    position: absolute;
+    display: block;
+}
+
+
+.lead a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--color-primary));
+}
+.lead a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+
+.lead a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, var(--color-primary));
+}
+.lead a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    /* transition-delay: 0.5s; */
+}
+
+
+.lead a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, var(--color-primary));
+}
+.lead a:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.2s;
+}
+
+
+.lead a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, var(--color-primary));
+}
+.lead a:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #jumbotron-btn:hover {
+    background-color: var(--color-secondary-dark);
+    transition: ease-in-out 0.3s;
+}
+
+#jumbotron-btn:hover {
+    border-color: var(--color-primary-dark);
+} */
+
+.contact-type-span {
+    color: var(--color-secondary);
+}
+
+.jumbotron h2 {
+    color: var(--color-white);
+}
+
+.jumbotron hr {
+    width: 160px;
+}
+
+/* .jumbotron a {
+    text-decoration: none;
+    color: var(--color-text-muted);
+    transition: ease-in-out 0.2s;
+}
+
+.jumbotron a:hover {
+    color: var(--color-secondary);
+} */
+
+.card {
+    margin-bottom: 24px;
+    border: none;
+    background-color: var(--color-primary-gradiant);
+    box-shadow: 0 0 24px 8px rgba(0,0,0,0.5);
+    transition: 0.3s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card img {
+    filter: brightness(80%);
+}
+
+.card img:hover {
+    filter: brightness(150%);
+    transition: 0.15s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.125);
+    transition: 0.3s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover:before {
+    opacity: 1;
+}
+  
+.card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+    transition: .15s all ease-out;
+    opacity: 0;
+    border-radius: 5px;
+}
+
+.card-body {
+    background-color: var(--color-primary-gradiant);
+    text-align: center;
+}
+
+#instructions img {
+    padding: 24px;
+    background-image: 
+        linear-gradient(
+            to bottom, var(--color-primary-dark), var(--color-secondary-gradiant)
+        )
+        ,var(--image-background1);
+    backdrop-filter: blur(3px);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: var(--color-primary);
+}
+
+#instructions a {
+    color: var(--color-secondary-bright);
+}
+
+#instructions a:hover {
+    color: var(--color-secondary);
+}
+
+
+/* ______________________________________________________________________________________________________________________ */
+/* _____________________________________________________ sections _______________________________________________________ */
+/* ______________________________________________________________________________________________________________________ */
+.main {
+    background-color: var(--color-primary);
+    margin: 0;
+    padding: 80px 80px 240px 80px;
+}
+
+#main-join {
+    background-image: 
+        linear-gradient(
+            to bottom, var(--color-primary-dark), var(--color-secondary-gradiant)
+        )
+        ,var(--image-background2);
+    backdrop-filter: blur(10px);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: var(--color-primary);
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact-link {
+    color: var(--color-secondary-dark);
+}
+
+.contact-link:hover {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+label {
+    color: var(--color-primary);
+}
+
+
+/* ______________________________________________________________________________________________________________________ */
+/* _______________________________________________________ tabs _________________________________________________________ */
+/* ______________________________________________________________________________________________________________________ */
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tab {
+    background-color: var(--color-primary-dark);
+    color: var(--color-white);
+    cursor: pointer;
+    padding: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.tab.active {
+    background-color: var(--color-secondary-dark); /* FIX - This is not working properly */
+    color: var(--color-white);
+    transition: all ease-in-out 0.4s;
+
+}
+
+.tab:hover {
+    background-color: var(--color-secondary);
+    transition: all ease-in-out 0.4s;
+}
+
+.tab-content h2 {
+    text-align: center;
+}
+
+
+/* ______________________________________________________________________________________________________________________ */
+/* ____________________________________________________ contact form ____________________________________________________ */
+/* ______________________________________________________________________________________________________________________ */
+form label {
+    color: var(--color-text-muted);
+}
+
+
+/* ______________________________________________________________________________________________________________________ */
+/* _______________________________________________________ footer _______________________________________________________ */
+/* ______________________________________________________________________________________________________________________ */
+#footer-home {
+    margin-top: 0px;
+}
+
+footer p {
+    font-size: 0.7em;
+}
+
+footer h5 {
+    font-size: 0.85em;
+}
+
+footer hr {
+    background-color: var(--color-primary-darker);
+}
+
+footer a {
+    color: var(--color-secondary-dark);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--color-secondary);
+    text-decoration: none;
+}
