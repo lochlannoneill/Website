@@ -177,7 +177,7 @@ hr {
     border-bottom: none;
 }
 
-.jumbotron-logo {
+.jumbotron-logo img {
     height: 128px;
     padding: 0;
     margin: 0;
@@ -185,12 +185,58 @@ hr {
     box-shadow: 0 0 24px 8px rgba(0,0,0,0.8);
 }
 
-.large-jumbotron .jumbotron-logo {
+.jumbotron-logo img:hover {
+	/* -webkit-filter: blur(1px);
+	filter: blur(1px);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out; */
+    box-shadow: 0 0 24px 8px var(--color-secondary);
+}
+
+.large-jumbotron .jumbotron-logo img {
     height: 240px;
 }
 
 .jumbotron h1 {
     margin: 16px 0 0 0;
+}
+
+.social-link {
+    margin: 8px;
+    text-decoration: none;
+    color: var(--color-primary-gradiant);
+    position: relative;
+    font-size: 32px;
+    /* border: 2px solid;
+    border-radius: 50%; */
+    padding: 16px;
+}
+
+/* .social-linkK::before {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+/* .social-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid;
+    z-index: 0;
+} */
+
+.social-link:hover {
+    text-decoration: none;
+    color: var(--color-primary-brightest);
+    /* animation: rotation 2s linear infinite; */
 }
 
 #lead-text {
@@ -225,8 +271,8 @@ hr {
 .lead a:hover {
     color: var(--color-text-muted);
     background: var(--color-primary);
-    box-shadow: 0 0 10px var(--color-primary), 0 0 40px var(--color-primary), 0 0 80px var(--color-primary);
-    transition-delay: 0.5s;
+    box-shadow: 0 0 10px var(--color-secondary), 0 0 40px var(--color-secondary), 0 0 80px var(--color-secondary);
+    transition-delay: 0.25s;
 }
 
 .lead a span {
@@ -244,7 +290,7 @@ hr {
 }
 .lead a:hover span:nth-child(1) {
     left: 100%;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 
@@ -257,7 +303,7 @@ hr {
 }
 .lead a:hover span:nth-child(3) {
     right: 100%;
-    transition: 1s;
+    transition: 0.5s;
     /* transition-delay: 0.5s; */
 }
 
@@ -271,8 +317,8 @@ hr {
 }
 .lead a:hover span:nth-child(2) {
     top: 100%;
-    transition: 1s;
-    transition-delay: 0.2s;
+    transition: 0.5s;
+    transition-delay: 0.1s;
 }
 
 
@@ -285,8 +331,8 @@ hr {
 }
 .lead a:hover span:nth-child(4) {
     bottom: 100%;
-    transition: 1s;
-    transition-delay: 0.2s;
+    transition: 0.5s;
+    transition-delay: 0.1s;
 }
 
 
