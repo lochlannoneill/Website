@@ -57,7 +57,7 @@ html {
     scroll-behavior: smooth;
     padding: 0;
     margin: 0;
-  }
+}
 
 body {
     background-image: 
@@ -190,6 +190,7 @@ hr {
     margin: 0;
     border-radius: 50%;
     box-shadow: 0 0 24px 8px rgba(0,0,0,0.8);
+	transition: .2s ease-in-out;
 }
 
 .jumbotron-logo img:hover {
@@ -198,6 +199,7 @@ hr {
 	-webkit-transition: .2s ease-in-out;
 	transition: .2s ease-in-out; */
     box-shadow: 0 0 24px 8px var(--color-secondary);
+	transform: scale(1.05);
 }
 
 .large-jumbotron .jumbotron-logo img {
@@ -284,6 +286,10 @@ hr {
     background: var(--color-primary);
     box-shadow: 0 0 10px var(--color-secondary), 0 0 40px var(--color-secondary), 0 0 80px var(--color-secondary);
     transition-delay: 0.25s;
+}
+
+.lead-btn a:hover {
+    text-decoration: none;
 }
 
 .lead-btn span {
