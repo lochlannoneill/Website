@@ -62,13 +62,17 @@
     --color-primary-darker: rgb(0, 0, 0);
     --color-secondary: rgb(115, 45, 24);
     --color-secondary-gradiant: rgb(115, 45, 24, 0.7);
-    --color-secondary-bright: rgb(117, 46, 25);
+    --color-secondary-bright: rgb(173, 57, 22);
     --color-secondary-brightest: rgb(255, 58, 0);
     --color-secondary-dark: rgb(69, 25, 12);
     --color-text-muted: rgba(255, 255, 255, 0.7);
     --color-text-dark: rgb(80, 80, 80);
     --image-background: url('../images/background.jpg');
 }
+
+::selection {
+    background: var(--color-secondary-bright); /* WebKit/Blink Browsers */
+  }
 
 /* ______________________________________________________________________________________________________________________ */
 /* _____________________________________________ overwrite bootstrap styling ____________________________________________ */
