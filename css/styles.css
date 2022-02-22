@@ -261,8 +261,8 @@ hr {
 	filter: blur(1px);
 	-webkit-transition: .2s ease-in-out;
 	transition: .2s ease-in-out; */
-    /* box-shadow: 0 0 24px 8px var(--color-secondary);
-	transform: scale(1.025); */
+    box-shadow: 0 0 16px 4px var(--color-secondary);
+	transform: scale(1.0125);
 }
 
 .large-jumbotron .jumbotron-logo img {
@@ -313,7 +313,7 @@ hr {
     overflow: hidden;
     transition: 0.2s;
     border: 2px solid var(--color-primary);
-    animation: 1.5s ease 0s normal forwards 1 fadeInRotate;
+    animation: 1.2s ease 0s normal forwards 1 fadeInSlow;
 }
 
 .jumbotron-btn:hover {
