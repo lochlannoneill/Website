@@ -81,6 +81,10 @@
     background-color: var(--color-primary)!important;
 }
 
+.text-primary {
+    color: var(--color-primary)!important;
+}
+
 .text-secondary {
     color: var(--color-secondary-brightest)!important;
 }
@@ -146,7 +150,7 @@ hr {
 .navbar {
     font-size: 0.65em;
     height: 10vh;
-    animation: 0.625s ease 0s normal forwards 1 fadeInFast;
+    animation: 0.5s ease 0s normal forwards 1 fadeInFast;
 }
 
 #navbar-logo {
@@ -240,7 +244,7 @@ hr {
 }
 
 .jumbotron-logo {
-    animation: 0.75s ease 0s normal forwards 1 fadeInSlow;
+    animation: 0.625s ease 0s normal forwards 1 fadeInSlow;
 }
 
 .jumbotron-logo img {
@@ -257,8 +261,8 @@ hr {
 	filter: blur(1px);
 	-webkit-transition: .2s ease-in-out;
 	transition: .2s ease-in-out; */
-    box-shadow: 0 0 24px 8px var(--color-secondary);
-	transform: scale(1.025);
+    /* box-shadow: 0 0 24px 8px var(--color-secondary);
+	transform: scale(1.025); */
 }
 
 .large-jumbotron .jumbotron-logo img {
@@ -270,7 +274,7 @@ hr {
 }
 
 .lead {
-    animation: 0.75s ease 0s normal forwards 1 fadeInSlow;
+    animation: 0.625s ease 0s normal forwards 1 fadeInSlow;
 }
 
 .lead-text {
@@ -281,6 +285,7 @@ hr {
 .lead-text a:hover {
     text-decoration: none;
     transition: ease-in-out 0.125s;
+    color: var(--color-secondary); /* FIX - NOT WORKING */
 }
 
 /* #jumbotron-btn {
@@ -392,7 +397,7 @@ hr {
     /* border: 2px solid;
     border-radius: 50%; */
     padding: 16px;
-    animation: 2s ease 0s normal forwards 1 fadeInRotate;
+    animation: 1.3s ease 0s normal forwards 1 fadeInRotate;
     /* animation-name: rotate;
     animation-duration: 0.5s;
     animation-delay: 4s; */
