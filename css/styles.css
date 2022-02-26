@@ -51,6 +51,19 @@
     }
 }
 
+@keyframes textLeftToRight {
+    0%,
+    25% {
+      transform: translateX(0%);
+      left: 0%;
+    }
+    75%,
+    100% {
+      transform: translateX(-100%);
+      left: 100%;
+    }
+  }
+
 :root {
     --color-white: rgb(255, 255, 255);
     --color-primary: rgb(10, 10, 10);
@@ -258,6 +271,7 @@ hr {
     border-radius: 50%;
     box-shadow: 0 0 24px 8px rgba(0,0,0,0.8);
 	transition: .2s ease-in-out;
+    background-color: var(--color-primary);
 }
 
 .jumbotron-logo img:hover {
@@ -266,7 +280,8 @@ hr {
 	-webkit-transition: .2s ease-in-out;
 	transition: .2s ease-in-out; */
     box-shadow: 0 0 16px 4px var(--color-secondary);
-	transform: scale(1.0125);
+	transform: scale(1.05);
+    border-radius: 100%;
 }
 
 .large-jumbotron .jumbotron-logo img {
