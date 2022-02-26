@@ -347,9 +347,6 @@ hr {
     background: var(--color-primary);
     box-shadow: 0 0 10px var(--color-secondary), 0 0 40px var(--color-secondary), 0 0 80px var(--color-secondary);
     transition-delay: 0.25s;
-}
-
-.jumbotron-btn a:hover {
     text-decoration: none;
 }
 
@@ -512,10 +509,11 @@ label {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    border-top: 3px solid var(--color-secondary);
 }
 
 .tab {
-    background-color: var(--color-primary-dark);
+    background-color: var(--color-primary);
     color: var(--color-white);
     cursor: pointer;
     padding: 8px;
@@ -524,20 +522,35 @@ label {
 }
 
 .tab.active {
-    background-color: var(--color-secondary-dark); /* FIX - This is not working properly */
+    background-color: var(--color-secondary); /* FIX - This is not working properly */
     color: var(--color-white);
     transition: all ease-in-out 0.4s;
 
 }
 
 .tab:hover {
-    background-color: var(--color-secondary);
+    background-color: var(--color-secondary-bright);
     transition: all ease-in-out 0.4s;
 }
 
 .tab-content h2 {
     text-align: center;
 }
+
+h5 {
+    display: inline-block;
+    padding: 10px;
+    background: #B9121B;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .full-screen {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
 
 /* ______________________________________________________________________________________________________________________ */
