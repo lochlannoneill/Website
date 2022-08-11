@@ -1,0 +1,63 @@
+@keyframes fadeInFast {
+    0% {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateX(-0deg);
+    }
+}
+@keyframes fadeInSlow {
+    0% {
+        opacity: 0;
+        transform: rotateX(-75deg);
+    }
+    66% {
+        opacity: 0;
+        transform: rotateX(-75deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes fadeInRotate {
+    0% {
+        opacity: 0;
+        transform: rotateX(-25deg);
+        transform: rotate(0);
+    }
+    66% {
+        opacity: 0;
+        transform: rotateX(-25deg);
+        transform: rotate(0);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes textLeftToRight {
+    0%,
+    25% {
+      transform: translateX(0%);
+      left: 0%;
+    }
+    75%,
+    100% {
+      transform: translateX(-100%);
+      left: 100%;
+    }
+}
