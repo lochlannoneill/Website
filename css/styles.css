@@ -208,6 +208,7 @@ hr {
     border-radius: 100%;
     background-color: var(--color-secondary-dark);
     transition: border-radius 0.25s, box-shadow 0.25s, 0.25s;
+    animation: wiggle 5s infinite
 }
 
 .large-jumbotron .jumbotron-logo img {
@@ -348,6 +349,8 @@ hr {
     text-decoration: none;
     color: var(--color-primary-brightest);
     top: -4px;
+    /* ! the spawning animation on page load is causing this to meess up */
+    animation: spinWait 2.5s infinite;
 }
 
 .fa-linkedin:hover {
