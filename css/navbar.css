@@ -1,0 +1,73 @@
+/* ______________________________________________________________________________________________________________________ */
+/* _______________________________________________________ navbar _______________________________________________________ */
+/* ______________________________________________________________________________________________________________________ */
+.navbar {
+    font-size: 0.65em;
+    height: 10vh;
+    animation: 0.5s ease 0s normal forwards 1 fadeInFast;
+  }
+  
+  #navbar-logo {
+    height: 80px;
+    margin: 0 24px 0 0;
+    padding: 0;
+    opacity: 40%;
+  }
+  
+  #navbarSupportedContent {
+    margin: 0;
+  }
+  
+  #navbar-faceit-login {
+    margin: 0;
+  }
+  
+  .nav-item {
+    font-size: 1.7em;
+    margin-right: 16px;
+  }
+  
+  .nav-item::before {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: var(--color-secondary-bright);
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 0.2s;
+  }
+  
+  .nav-item:active::before,
+  .nav-item:focus::before,
+  .nav-item:hover::before {
+    width: 100%;
+  }
+  
+  .nav-item:active,
+  .nav-item:focus,
+  .nav-item:hover {
+    color: var(--color-primary);
+    transition: all ease-in-out 0.3s;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    margin-top: 0;
+    display: block;
+    background-color: var(--color-primary);
+    box-shadow: 0 0 16px black;
+    border-radius: 10px; /* FIX - is this required */
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+  }
+  
+  .dropdown-item {
+    color: var(--color-text-muted);
+    font-size: 1.2em;
+  }
+  
+  .dropdown-item:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    transition: all ease-in-out 0.6s;
+  }
