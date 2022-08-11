@@ -1,236 +1,237 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto:wght@300;400&display=swap');
-@import 'colors.css';
-@import 'keyframes.css';
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto:wght@300;400&display=swap");
+@import "colors.css";
+@import "keyframes.css";
 
 ::selection {
-    background: var(--color-secondary-bright); /* WebKit/Blink Browsers */
-  }
+  background: var(--color-secondary-bright); /* WebKit/Blink Browsers */
+}
 
 /* ______________________________________________________________________________________________________________________ */
 /* _____________________________________________ overwrite bootstrap styling ____________________________________________ */
 /* ______________________________________________________________________________________________________________________ */
 .bg-primary {
-    background-color: var(--color-primary)!important;
+  background-color: var(--color-primary) !important;
 }
 
-.bg-dark{
-    background-color: var(--color-primary)!important;
+.bg-dark {
+  background-color: var(--color-primary) !important;
 }
 
 .text-primary {
-    color: var(--color-primary)!important;
+  color: var(--color-primary) !important;
 }
 
 .text-secondary {
-    color: var(--color-secondary-brightest)!important;
+  color: var(--color-secondary-brightest) !important;
 }
 
 .text-muted {
-    color: var(--color-text-muted)!important;
+  color: var(--color-text-muted) !important;
 }
 
 .text-dark {
-    color: var(--color-text-dark)!important;
+  color: var(--color-text-dark) !important;
 }
 
 .btn-primary {
-    background-color: var(--color-primary)!important;
-    color: var(--color-white)!important;
+  background-color: var(--color-primary) !important;
+  color: var(--color-white) !important;
 }
 
 .btn-secondary {
-    background-color: var(--color-secondary)!important;
-    color: var(--color-white)!important;
-    border: none !important;
+  background-color: var(--color-secondary) !important;
+  color: var(--color-white) !important;
+  border: none !important;
 }
 
 /* ______________________________________________________________________________________________________________________ */
 /* _______________________________________________________ general ______________________________________________________ */
 /* ______________________________________________________________________________________________________________________ */
 html {
-    scroll-behavior: smooth;
-    padding: 0;
-    margin: 0;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-image: 
-        linear-gradient(
-            to bottom, var(--color-primary-dark), var(--color-secondary-gradiant)
-        )
-        ,var(--image-background);
-    backdrop-filter: blur(3px);
-    background-size: cover;
-    background-attachment: fixed;
-    background-color: var(--color-primary);
-    font-family: Nunito, Arial, sans-serif;
-    font-size: 1.2em;
-    padding: 0;
-    margin: 0;
-    background-color: var(--color-primary);
-    text-decoration: none;
-    color: var(--color-white);
+  background-image: linear-gradient(
+      to bottom,
+      var(--color-primary-dark),
+      var(--color-secondary-gradiant)
+    ),
+    var(--image-background);
+  backdrop-filter: blur(3px);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: var(--color-primary);
+  font-family: Nunito, Arial, sans-serif;
+  font-size: 1.2em;
+  padding: 0;
+  margin: 0;
+  background-color: var(--color-primary);
+  text-decoration: none;
+  color: var(--color-white);
 }
 
 h2 {
-    color: var(--color-secondary);
+  color: var(--color-secondary);
 }
 
 hr {
-    background-color: var(--color-text-muted);
+  background-color: var(--color-text-muted);
 }
 
 /* ______________________________________________________________________________________________________________________ */
 /* _______________________________________________________ navbar _______________________________________________________ */
 /* ______________________________________________________________________________________________________________________ */
 .navbar {
-    font-size: 0.65em;
-    height: 10vh;
-    animation: 0.5s ease 0s normal forwards 1 fadeInFast;
+  font-size: 0.65em;
+  height: 10vh;
+  animation: 0.5s ease 0s normal forwards 1 fadeInFast;
 }
 
 #navbar-logo {
-    height: 80px;
-    margin: 0 24px 0 0;
-    padding: 0;
-    opacity: 40%;
+  height: 80px;
+  margin: 0 24px 0 0;
+  padding: 0;
+  opacity: 40%;
 }
 
 #navbarSupportedContent {
-    margin: 0;
+  margin: 0;
 }
 
 #navbar-faceit-login {
-    margin: 0;
+  margin: 0;
 }
 
 .nav-item {
-    font-size: 1.7em;
-    margin-right: 16px;
+  font-size: 1.7em;
+  margin-right: 16px;
 }
 
 .nav-item::before {
-    content: '';
-    display: block;
-    height: 2px;
-    background-color: var(--color-secondary-bright);
-    position: absolute;
-    top: 0;
-    width: 0%;
-    transition: all ease-in-out 0.2s;
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: var(--color-secondary-bright);
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 0.2s;
 }
 
 .nav-item:active::before,
 .nav-item:focus::before,
 .nav-item:hover::before {
-    width: 100%;
+  width: 100%;
 }
 
 .nav-item:active,
 .nav-item:focus,
 .nav-item:hover {
-    color: var(--color-primary);
-    transition: all ease-in-out 0.3s;
+  color: var(--color-primary);
+  transition: all ease-in-out 0.3s;
 }
 
 .dropdown:hover .dropdown-menu {
-    margin-top: 0;
-    display: block;
-    background-color: var(--color-primary);
-    box-shadow: 0 0 16px black;
-    border-radius: 10px; /* FIX - is this required */
-    -webkit-border-radius: 10px 10px 10px 10px ;
-    -moz-border-radius: 10px 10px 10px 10px ;
+  margin-top: 0;
+  display: block;
+  background-color: var(--color-primary);
+  box-shadow: 0 0 16px black;
+  border-radius: 10px; /* FIX - is this required */
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
 }
 
 .dropdown-item {
-    color: var(--color-text-muted);
-    font-size: 1.2em;
+  color: var(--color-text-muted);
+  font-size: 1.2em;
 }
 
 .dropdown-item:hover {
-    background-color: var(--color-secondary);
-    color: var(--color-white);
-    transition: all ease-in-out 0.6s;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  transition: all ease-in-out 0.6s;
 }
 
 /* ______________________________________________________________________________________________________________________ */
 /* _____________________________________________________ jumbotron ______________________________________________________ */
 /* ______________________________________________________________________________________________________________________ */
 .jumbotron {
-    border-radius: 0;
-    width: 100%;
-    color: white;
-    text-align: center;
-    margin: 0;
-    padding-top: 0;
+  border-radius: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-top: 0;
 }
 
 .vertical-center {
-    min-height: 80%;  /* Fallback for browsers do NOT support vh unit */
-    min-height: 80vh; /* These two lines are counted as one :-)       */
-    display: flex;
-    align-items: center;
-  }
+  min-height: 80%; /* Fallback for browsers do NOT support vh unit */
+  min-height: 80vh; /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center;
+}
 
 .large-jumbotron {
-    min-height: 90vh;
-    /* padding-bottom: 240px; */
-    border-bottom: none;
+  min-height: 90vh;
+  /* padding-bottom: 240px; */
+  border-bottom: none;
 }
 
 .jumbotron-logo {
-    animation: 0.625s ease 0s normal forwards 1 fadeInSlow;
+  animation: 0.625s ease 0s normal forwards 1 fadeInSlow;
 }
 
 .jumbotron-logo img {
-    height: 128px;
-    padding: 0;
-    margin: 0;
-    border-radius: 25%;
-    box-shadow: 0 0 24px 8px rgba(0,0,0,0.8);
-	transition: .2s ease-in-out;
-    background-color: var(--color-primary);
-    transition: height 0.25s;
-    transition: width 0.25s;
-    transition: border-radius 0.125s, box-shadow 0.125s, 0.125s;
-    /* line-height: 75px; */
-    /* display: inline-block; */
+  height: 128px;
+  padding: 0;
+  margin: 0;
+  border-radius: 25%;
+  box-shadow: 0 0 24px 8px rgba(0, 0, 0, 0.8);
+  transition: 0.2s ease-in-out;
+  background-color: var(--color-primary);
+  transition: height 0.25s;
+  transition: width 0.25s;
+  transition: border-radius 0.125s, box-shadow 0.125s, 0.125s;
+  /* line-height: 75px; */
+  /* display: inline-block; */
 }
 
 .jumbotron-logo img:hover {
-    /* -webkit-filter: blur(1px);
+  /* -webkit-filter: blur(1px);
 	filter: blur(1px);
 	-webkit-transition: .2s ease-in-out;
 	transition: .2s ease-in-out; */
-    box-shadow: 0 0 16px 4px var(--color-secondary);
-	/* transform: scale(1.1); */
-    border-radius: 100%;
-    background-color: var(--color-secondary-dark);
-    transition: border-radius 0.25s, box-shadow 0.25s, 0.25s;
-    animation: wiggle 5s infinite
+  box-shadow: 0 0 16px 4px var(--color-secondary);
+  /* transform: scale(1.1); */
+  border-radius: 100%;
+  background-color: var(--color-secondary-dark);
+  transition: border-radius 0.25s, box-shadow 0.25s, 0.25s;
+  animation: wiggle 5s infinite;
 }
 
 .large-jumbotron .jumbotron-logo img {
-    height: 240px;
+  height: 240px;
 }
 
 .jumbotron h1 {
-    margin: 16px 0 0 0;
+  margin: 16px 0 0 0;
 }
 
 .lead {
-    animation: 0.625s ease 0s normal forwards 1 fadeInSlow;
+  animation: 0.625s ease 0s normal forwards 1 fadeInSlow;
 }
 
 .lead-text {
-    color: var(--color-text-muted);
-    margin: 0;
+  color: var(--color-text-muted);
+  margin: 0;
 }
 
 .text-link {
-    text-decoration: none;
-    transition: ease-in-out 0.125s;
+  text-decoration: none;
+  transition: ease-in-out 0.125s;
 }
 
 /* ! this is not working
@@ -247,265 +248,256 @@ hr {
     box-shadow: 0 0 24px 8px rgba(0,0,0,0.4);
 } */
 
-
 .jumbotron-btn {
-    position: relative;
-    display: inline-block;
-    width: 200px;
-    height: 64px;
-    margin-bottom: 4px;
-    padding: 15px 30px;
-    color: var(--color-text-muted);
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    text-decoration: none;
-    font-size: 24px;
-    overflow: hidden;
-    transition: 0.2s;
-    border: 2px solid var(--color-primary);
-    animation: 1.2s ease 0s normal forwards 1 fadeInSlow;
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 64px;
+  margin-bottom: 4px;
+  padding: 15px 30px;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 0.2s;
+  border: 2px solid var(--color-primary);
+  animation: 1.2s ease 0s normal forwards 1 fadeInSlow;
 }
 
 .jumbotron-btn:hover {
-    color: var(--color-text-muted);
-    background: var(--color-primary);
-    box-shadow: 0 0 10px var(--color-secondary), 0 0 40px var(--color-secondary), 0 0 80px var(--color-secondary);
-    transition-delay: 0.25s;
-    text-decoration: none;
+  color: var(--color-text-muted);
+  background: var(--color-primary);
+  box-shadow: 0 0 10px var(--color-secondary), 0 0 40px var(--color-secondary),
+    0 0 80px var(--color-secondary);
+  transition-delay: 0.25s;
+  text-decoration: none;
 }
 
 .jumbotron-btn span {
-    position: absolute;
-    display: block;
+  position: absolute;
+  display: block;
 }
-
 
 .jumbotron-btn span:nth-child(1) {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, var(--color-primary));
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-primary));
 }
 .jumbotron-btn:hover span:nth-child(1) {
-    left: 100%;
-    transition: 0.5s;
+  left: 100%;
+  transition: 0.5s;
 }
 
-
 .jumbotron-btn span:nth-child(3) {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, var(--color-primary));
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, var(--color-primary));
 }
 
 .jumbotron-btn:hover span:nth-child(3) {
-    right: 100%;
-    transition: 0.5s;
-    /* transition-delay: 0.5s; */
+  right: 100%;
+  transition: 0.5s;
+  /* transition-delay: 0.5s; */
 }
-
 
 .jumbotron-btn span:nth-child(2) {
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, var(--color-primary));
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, var(--color-primary));
 }
 .jumbotron-btn:hover span:nth-child(2) {
-    top: 100%;
-    transition: 0.5s;
-    transition-delay: 0.1s;
+  top: 100%;
+  transition: 0.5s;
+  transition-delay: 0.1s;
 }
-
 
 .jumbotron-btn span:nth-child(4) {
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, var(--color-primary));
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, var(--color-primary));
 }
 .jumbotron-btn:hover span:nth-child(4) {
-    bottom: 100%;
-    transition: 0.5s;
-    transition-delay: 0.1s;
+  bottom: 100%;
+  transition: 0.5s;
+  transition-delay: 0.1s;
 }
 
 .social-link {
-    margin: 8px;
-    text-decoration: none;
-    color: var(--color-primary-dark);
-    position: relative;
-    font-size: 32px;
-    padding: 16px;
-    animation: 1.3s ease 0s normal forwards 1 fadeInRotate;
+  margin: 8px;
+  text-decoration: none;
+  color: var(--color-primary-dark);
+  position: relative;
+  font-size: 32px;
+  padding: 16px;
+  animation: 1.3s ease 0s normal forwards 1 fadeInRotate;
 }
 
 .social-link:hover {
-    text-decoration: none;
-    color: var(--color-primary-brightest);
-    top: -4px;
-    /* ! the spawning animation on page load is causing this to meess up */
-    animation: spinWait 2.5s infinite;
+  text-decoration: none;
+  color: var(--color-primary-brightest);
+  top: -4px;
+  /* ! the spawning animation on page load is causing this to meess up */
+  animation: spinWait 2.5s infinite;
 }
 
 .fa-linkedin:hover {
-    color: var(--color-linkedin);
+  color: var(--color-linkedin);
 }
 
 .fa-github:hover {
-    color: var(--color-github);
+  color: var(--color-github);
 }
 
 .fa-twitter:hover {
-    color: var(--color-twitter);
+  color: var(--color-twitter);
 }
 
 .fa-mail:hover {
-    color: var(--color-mail);
-} 
-
-
-
-
+  color: var(--color-mail);
+}
 
 /* ______________________________________________________________________________________________________________________ */
 /* _____________________________________________________ sections _______________________________________________________ */
 /* ______________________________________________________________________________________________________________________ */
 .main {
-    background-color: var(--color-primary);
-    margin: 0;
-    padding: 80px 80px 240px 80px;
+  background-color: var(--color-primary);
+  margin: 0;
+  padding: 80px 80px 240px 80px;
 }
 
 #main-join {
-    background-image: 
-        linear-gradient(
-            to bottom, var(--color-primary-dark), var(--color-secondary-gradiant)
-        )
-        ,var(--image-background2);
-    backdrop-filter: blur(10px);
-    background-size: cover;
-    background-attachment: fixed;
-    background-color: var(--color-primary);
+  background-image: linear-gradient(
+      to bottom,
+      var(--color-primary-dark),
+      var(--color-secondary-gradiant)
+    ),
+    var(--image-background2);
+  backdrop-filter: blur(10px);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: var(--color-primary);
 }
 
 .contact {
-    text-align: center;
+  text-align: center;
 }
 
 .contact-link {
-    color: var(--color-secondary-dark);
+  color: var(--color-secondary-dark);
 }
 
 .contact-link:hover {
-    text-decoration: none;
-    color: var(--color-primary);
+  text-decoration: none;
+  color: var(--color-primary);
 }
 
 label {
-    color: var(--color-primary);
+  color: var(--color-primary);
 }
-
 
 /* ______________________________________________________________________________________________________________________ */
 /* _______________________________________________________ tabs _________________________________________________________ */
 /* ______________________________________________________________________________________________________________________ */
 [data-tab-content] {
-    display: none;
+  display: none;
 }
 
 .active[data-tab-content] {
-    display: block;
+  display: block;
 }
 
 .tabs {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border-top: 3px solid var(--color-secondary);
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-top: 3px solid var(--color-secondary);
 }
 
 .tab {
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    cursor: pointer;
-    padding: 8px;
-    width: 100%;
-    text-align: center;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  cursor: pointer;
+  padding: 8px;
+  width: 100%;
+  text-align: center;
 }
 
 .tab.active {
-    background-color: var(--color-secondary); /* FIX - This is not working properly */
-    color: var(--color-white);
-    transition: all ease-in-out 0.4s;
-
+  background-color: var(
+    --color-secondary
+  ); /* FIX - This is not working properly */
+  color: var(--color-white);
+  transition: all ease-in-out 0.4s;
 }
 
 .tab:hover {
-    background-color: var(--color-secondary-bright);
-    transition: all ease-in-out 0.4s;
+  background-color: var(--color-secondary-bright);
+  transition: all ease-in-out 0.4s;
 }
 
 .tab-content h2 {
-    text-align: center;
+  text-align: center;
 }
 
 h5 {
-    display: inline-block;
-    padding: 10px;
-    background: #B9121B;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-  
-  .full-screen {
-    height: 90vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+  display: inline-block;
+  padding: 10px;
+  background: #b9121b;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
 
+.full-screen {
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 /* ______________________________________________________________________________________________________________________ */
 /* ____________________________________________________ contact form ____________________________________________________ */
 /* ______________________________________________________________________________________________________________________ */
 form label {
-    color: var(--color-text-muted);
+  color: var(--color-text-muted);
 }
-
 
 /* ______________________________________________________________________________________________________________________ */
 /* _______________________________________________________ footer _______________________________________________________ */
 /* ______________________________________________________________________________________________________________________ */
 #footer-home {
-    margin-top: 0px;
+  margin-top: 0px;
 }
 
 footer p {
-    font-size: 0.7em;
+  font-size: 0.7em;
 }
 
 footer h5 {
-    font-size: 0.85em;
+  font-size: 0.85em;
 }
 
 footer hr {
-    background-color: var(--color-primary-darker);
+  background-color: var(--color-primary-darker);
 }
 
 footer a {
-    color: var(--color-secondary-dark);
-    text-decoration: none;
+  color: var(--color-secondary-dark);
+  text-decoration: none;
 }
 
 footer a:hover {
-    color: var(--color-secondary);
-    text-decoration: none;
+  color: var(--color-secondary);
+  text-decoration: none;
 }
