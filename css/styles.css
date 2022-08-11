@@ -80,6 +80,10 @@
     --color-secondary-dark: rgb(69, 25, 12);
     --color-text-muted: rgba(255, 255, 255, 0.7);
     --color-text-dark: rgb(80, 80, 80);
+    --color-linkedin: rgb(0, 114, 177);
+    --color-github: rgb(121, 0, 121);
+    --color-twitter: rgb(29, 161, 242);
+    --color-mail: red;
     --image-background: url('../images/background.jpg');
 }
 
@@ -417,13 +421,8 @@ hr {
     color: var(--color-primary-dark);
     position: relative;
     font-size: 32px;
-    /* border: 2px solid;
-    border-radius: 50%; */
     padding: 16px;
     animation: 1.3s ease 0s normal forwards 1 fadeInRotate;
-    /* animation-name: rotate;
-    animation-duration: 0.5s;
-    animation-delay: 4s; */
 }
 
 /* .social-linkK::before {
@@ -450,7 +449,27 @@ hr {
 .social-link:hover {
     text-decoration: none;
     color: var(--color-primary-brightest);
+    top: -4px;
 }
+
+.fa-linkedin:hover {
+    color: var(--color-linkedin);
+}
+
+.fa-github:hover {
+    color: var(--color-github);
+}
+
+.fa-twitter:hover {
+    color: var(--color-twitter);
+}
+
+.fa-mail:hover {
+    color: var(--color-mail);
+} 
+
+
+
 
 
 /* ______________________________________________________________________________________________________________________ */
