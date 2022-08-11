@@ -1,4 +1,4 @@
-@keyframes fadeInFast {
+@keyframes openFast {
   0% {
     opacity: 0;
     transform: rotateX(-10deg);
@@ -8,7 +8,8 @@
     transform: rotateX(-0deg);
   }
 }
-@keyframes fadeInSlow {
+
+@keyframes openSlow {
   0% {
     opacity: 0;
     transform: rotateX(-75deg);
@@ -20,6 +21,27 @@
   100% {
     opacity: 1;
     transform: rotateX(0);
+  }
+}
+
+@keyframes fadeInFast {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInSlow {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 

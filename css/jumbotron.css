@@ -106,7 +106,7 @@
     overflow: hidden;
     transition: 0.2s;
     border: 2px solid var(--color-primary);
-    animation: 1s ease 0s normal forwards 1 fadeInSlow;
+    animation: 0.75s ease 0s normal forwards 1 openSlow;
   }
   
   .jumbotron-btn:hover {
@@ -116,6 +116,11 @@
       0 0 80px var(--color-secondary);
     transition-delay: 0.25s;
     text-decoration: none;
+  }
+
+  .jumbotron-btn:active {
+    background: var(--color-primary-dark);
+    border-radius: 12.5%;
   }
   
   .jumbotron-btn span {
@@ -182,13 +187,13 @@
     position: relative;
     font-size: 32px;
     padding: 16px;
-    animation: 1s ease 0s normal forwards 1 fadeInRotate;
+    animation: 0.375s ease 0s normal forwards 1 fadeInRotate;
   }
   
   .social-link:hover {
     text-decoration: none;
     color: var(--color-primary-brightest);
-    top: -4px;
+    top: -8px;
     /* ! the spawning animation on page load is causing this to meess up */
     animation: spinWait 2.5s infinite;
   }
