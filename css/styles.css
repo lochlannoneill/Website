@@ -136,5 +136,18 @@ hr {
 
 
 .container-section {
+  margin-bottom: 5vh;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: var(--color-primary-gradiant);
+  border-radius: 1%;
+  box-shadow: 0 0 32px var(--color-primary-dark);
+}
 
+.container-text {
+  padding: 2.5vh;
+}
+
+.container-text > h2 {
+  text-align: center;
 }

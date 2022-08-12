@@ -24,6 +24,10 @@
   .showcase:nth-child(1) {
     clip-path: polygon(0 0, 70% 0, 45% 100%, 0% 100%);
   }
+
+  /* .showcase:not(:first-child) {
+    filter: brightness(50%);
+  } */
   
   .showcase:nth-child(2) {
     filter: blur(2.5px);
@@ -38,5 +42,21 @@
   .showcase:not(:first-child):hover {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     filter: blur(0);
+    /* filter: brightness(100%); */
   }
   
+  /* .showcase-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    padding: 20px;
+    background: white;
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .clip:hover content {
+    bottom: 0;
+    opacity: 1;
+  } */
