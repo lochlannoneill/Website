@@ -68,6 +68,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-color: var(--color-primary);
+  min-height: 100vh;
   font-family: Nunito, Arial, sans-serif;
   font-size: 1.2em;
   padding: 0;
@@ -75,6 +76,10 @@ body {
   background-color: var(--color-primary);
   text-decoration: none;
   color: var(--color-white);
+
+  /* justify-content: center;
+  align-items: center; */
+
 }
 
 h2 {
@@ -122,4 +127,50 @@ hr {
 
 label {
   color: var(--color-primary);
+}
+
+
+
+
+
+/* https://www.youtube.com/watch?v=yKYmbsrZoag */
+/* https://bennettfeely.com/clippy/ */
+.clipbox {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background: var(--color-primary);
+}
+
+.clipbox:hover {
+  cursor: pointer;
+}
+
+.clip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  background-size: cover;
+}
+
+.clip:nth-child(1) {
+  clip-path: polygon(0 0, 70% 0, 45% 100%, 0% 100%);
+}
+
+.clip:nth-child(2) {
+  filter: blur(2.5px);
+  clip-path: polygon(70% 0, 100% 0, 60% 100%, 45% 100%);
+}
+
+.clip:nth-child(3) {
+  clip-path: polygon(100% 0%, 100% 0, 100% 100%, 60% 100%);
+  filter: blur(5px);
+}
+
+.clip:not(:first-child):hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  filter: blur(0);
 }
