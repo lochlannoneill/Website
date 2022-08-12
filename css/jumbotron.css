@@ -187,7 +187,7 @@
     position: relative;
     font-size: 32px;
     padding: 16px;
-    animation: 0.375s ease 0s normal forwards 1 fadeInRotate;
+    animation: 0.75s ease 0s normal forwards 1 fadeInRotate;
   }
   
   .social-link:hover {
