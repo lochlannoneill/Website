@@ -5,6 +5,7 @@
 @import 'footer.css';
 @import 'jumbotron.css';
 @import 'form.css';
+@import 'showcase.css';
 
 ::selection {
   background: var(--color-secondary-bright); /* WebKit/Blink Browsers */
@@ -125,7 +126,7 @@ hr {
   color: var(--color-primary);
 }
 
-label {
+.label {
   color: var(--color-primary);
 }
 
@@ -133,44 +134,7 @@ label {
 
 
 
-/* https://www.youtube.com/watch?v=yKYmbsrZoag */
-/* https://bennettfeely.com/clippy/ */
-.clipbox {
-  position: relative;
-  width: 100%;
-  height: 60vh;
-  background: var(--color-primary);
-}
 
-.clipbox:hover {
-  cursor: pointer;
-}
+.container-section {
 
-.clip {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: 0.5s;
-  background-size: cover;
-}
-
-.clip:nth-child(1) {
-  clip-path: polygon(0 0, 70% 0, 45% 100%, 0% 100%);
-}
-
-.clip:nth-child(2) {
-  filter: blur(2.5px);
-  clip-path: polygon(70% 0, 100% 0, 60% 100%, 45% 100%);
-}
-
-.clip:nth-child(3) {
-  clip-path: polygon(100% 0%, 100% 0, 100% 100%, 60% 100%);
-  filter: blur(5px);
-}
-
-.clip:not(:first-child):hover {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  filter: blur(0);
 }

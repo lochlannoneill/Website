@@ -1,0 +1,42 @@
+/* https://www.youtube.com/watch?v=yKYmbsrZoag */
+/* https://bennettfeely.com/clippy/ */
+.container-showcase {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background: var(--color-primary);
+  }
+  
+  .container-showcase:hover {
+    cursor: pointer;
+  }
+  
+  .showcase {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    background-size: cover;
+  }
+  
+  .showcase:nth-child(1) {
+    clip-path: polygon(0 0, 70% 0, 45% 100%, 0% 100%);
+  }
+  
+  .showcase:nth-child(2) {
+    filter: blur(2.5px);
+    clip-path: polygon(70% 0, 100% 0, 60% 100%, 45% 100%);
+  }
+  
+  .showcase:nth-child(3) {
+    clip-path: polygon(100% 0%, 100% 0, 100% 100%, 60% 100%);
+    filter: blur(5px);
+  }
+  
+  .showcase:not(:first-child):hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    filter: blur(0);
+  }
+  
