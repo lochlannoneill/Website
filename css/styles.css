@@ -95,10 +95,9 @@ a {
 }
 
 a:hover {
-  /* color: var(--color-secondary); */
-  /* transition: 0.5s; */
-  animation: wiggle 5s infinite;
-  /* text-decoration: none; */
+  color: var(--color-secondary);
+  animation: wiggle 3s infinite;
+  text-decoration: none;
 }
 
 a:active {

@@ -24,6 +24,11 @@
   margin: 0;
 }
 
+#link-name:hover {
+  transition: 0.375s;
+  color: var(--color-secondary);
+}
+
 #underscore {
   animation: blink 1s infinite;
 }
@@ -57,6 +62,10 @@
   color: var(--color-text-muted);
   margin: 0;
   animation: 3s ease 0s normal forwards 1 fadeInSlow;
+}
+
+.jumbotron-text p {
+  margin: 0;
 }
 
 .jumbotron-icons {
