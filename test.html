@@ -1,8 +1,7 @@
 <!--
-
     Author: Lochlann O Neill
+    Date:   23/01/2022
     Links:  https://linktr.ee/lochlannoneill
-     
 -->
 
 <!DOCTYPE html>
@@ -67,15 +66,15 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto">
           <!-- Home -->
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown active">
             <!-- 'dropdown' added because the hover effect doesn't work without it for some reason -->
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="index.html"
+              >Home<span class="sr-only">(current)</span></a
+            >
           </li>
           <!-- Projects -->
-          <li class="nav-item dropdown active">
-            <a class="nav-link" href="#"
-              >Projects<span class="sr-only">(current)</span></a
-            >
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="projects.html">Projects</a>
           </li>
         </ul>
       </div>
@@ -83,62 +82,14 @@
     </nav>
     <!-- navbar -->
 
-    <!-- ___________________________________________________ jumbotron _____________________________________________________ -->
-    <!-- <div class="jumbotron vertical-center bg-transparent color">
-    </div> -->
+    <!-- ___________________________________________________ maint content ______________________________________________________ -->
+    <div class="container">
 
-    <!-- ___________________________________________________ main content ______________________________________________________ -->
-    <div class="container-fluid">
+      <div class="content content-projects">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex nemo tempore at, sapiente facere ullam molestias nobis expedita sed, veritatis porro nihil impedit quis aperiam quas! Id temporibus esse et!</p>
+      </div>
 
-      <section class="container container-section">
-          <!-- <div class="container-text">
-            <h2 class="section-header">Staff Directory</h2>
-            <p> A JavaFX project, connected to an SQL database using JDBC</p>
-          </div> -->
-
-          <div class="container-showcase">
-            <div class="showcase showcase-java" style="background: url('images/javafx/home.png');">
-              <div class="showcase-content">
-                <h3>Java FX</h3>
-              </div>
-            </div>
-          <div class="showcase showcase-java" style="background: url('images/javafx/workspace.png');">
-            <div class="showcase-content">
-              <h3>VSCode</h3>
-              <p>No more terrible IDEs anymore :)</p>
-            </div>
-          </div>
-          <div class="showcase showcase-java" style="background: url('images/javafx/interns.png');">
-            <div class="showcase-content">
-              <h3>The Front-End</h3>
-              <p>The design of the app allows the user to easily add a new employee, of different types.</p>
-            </div>
-          </div>
-          <div class="showcase showcase-java" style="background: url('images/javafx/database.png');">
-            <div class="showcase-content">
-              <h3>The Back-End</h3>
-              <p>The details of the new employee are saved, enforcing certain requirements such as capitalisation. Each employee is issued with a unique ID, which is also used within the email usernames for the Admins. One of the Engineers must be assigned as a mentor for a new Intern.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </section>
-
-      <section class="container container-section">
-        <div class="container-text">
-          <h2>Irish Challenger League Website</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae accusamus quibusdam aut tempora, perspiciatis, harum veritatis nisi placeat atque natus itaque qui quis exercitationem? Laborum blanditiis amet impedit minima nostrum.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias debitis reiciendis minus cumque? Voluptas amet quisquam rerum, soluta eveniet non iure saepe natus quos at reiciendis, minus qui laudantium sint?</p>
-        </div>
-        <div class="container-showcase">
-          <div class="showcase showcase-java" style="background: url('images/icl/home.png');"></div>
-          <div class="showcase showcase-java" style="background: url('images/icl/join.png');"></div>
-          <div class="showcase showcase-java" style="background: url('images/icl/contact.png');"></div>
-        </div>
-      </section>
-
-    </div> 
+    </div>
 
     <!-- ______________________________________________________ footer ______________________________________________________-->
     <footer class="bg-dark text-white pt-5 pb-4" id="footer-home">
