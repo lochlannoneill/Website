@@ -12,6 +12,7 @@
   --color-secondary-bright: rgb(173, 57, 22);
   --color-secondary-bright-gradiant: rgb(173, 57, 22, 0.9);
   --color-secondary-brightest: rgb(255, 60, 0);
+  --color-secondary-brightest-gradiant: rgb(255, 60, 0.85);
   --color-secondary-dark: rgb(69, 25, 12);
   --color-text: rgba(255, 255, 255, 0.85);
   --color-text-muted: rgba(255, 255, 255, 0.7);
@@ -20,5 +21,5 @@
   --color-github: rgb(121, 0, 121);
   --color-twitter: rgb(29, 161, 242);
   --color-mail: red;
-  --image-background: url("../images/background4.jpg");
+  --image-background: url("../images/background2.jpg");
 }

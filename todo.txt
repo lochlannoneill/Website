@@ -1,0 +1,1 @@
+Terminal on the front page prints what the user enters
