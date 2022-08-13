@@ -25,11 +25,17 @@
   }
   
   .jumbotron-logo {
-    animation: 0.5s ease 0s normal forwards 1 fadeInSlow;
+    animation: 3s ease 0s normal forwards 1 fadeInSlow;
+    margin: 0;
+    padding: 0;
+    /* display: block; */
+    /* min-width: 0; */
+    /* max-width: 12vw; */
   }
   
   .jumbotron-logo img {
-    height: 128px;
+    /* height: 128px; */
+    /* height: 30vw; */
     padding: 0;
     margin: 0;
     border-radius: 25%;
@@ -64,29 +70,35 @@
     margin: 0;
   }
 
-  .title {
+  .container-jumbotron {
+    margin-left: 8vw;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap */
+  }
+
+  .jumbotron-info {
     margin: 0;
-    padding-left: 12vh;
+    display: block;
+    margin: auto 0;
+    /* padding-left: 12vh; */
   }
   
-  .title-text {
-    color: var(--color-text-muted);
-    margin: 0;
-  }
-
-  .title h1 {
+  
+  .jumbotron-info h1 {
     animation: 1s ease 0s normal forwards 1 fadeInSlow;
   }
-
+  
   #greeting {
-    animation: 4s ease 0s normal forwards 1 fadeInSlow;
+    animation: 3s ease 0s normal forwards 1 fadeInSlow;
   }
-
+  
   #text-name {
     color: var(--color-secondary-bright-gradiant);
     font-weight: bold;
   }
-
+  
   #text-name:hover {
     cursor: pointer;
     color: var(--color-secondary-brightest);
@@ -94,7 +106,7 @@
     transition: 0.5s;
     /* animation: wiggle 5s infinite; */
   }
-
+  
   #text-name:active {
     transition: 0.25s;
     color: var(--color-secondary);
@@ -104,23 +116,29 @@
     text-decoration: none;
     transition: ease-in-out 0.125s;
   }
-
+  
   /* .lead {
     animation: 5.5s ease 0s normal forwards 1 fadeLeftToRight;
   } */
-
-  .lead-location {
-    /* animation: 7s ease 0s normal forwards 1 fadeLeftToRight; */
-    animation: squint 8s infinite;
+  
+  .jumbotron-text {
+    color: var(--color-text-muted);
+    margin: 0;
+    animation: 6s ease 0s normal forwards 1 fadeInSlow;
   }
 
-  .lead-icons {
-    animation: 5.5s ease 0s normal forwards 1 fadeLeftToRight;
+  .jumbotron-text {
+    /* animation: 7s ease 0s normal forwards 1 fadeLeftToRight; */
+    /* animation: squint 8s infinite; */
+  }
+  
+  .jumbotron-icons {
+    animation: 6s ease 0s normal forwards 1 fadeLeftToRight;
   }
   
   /* ! this is not working
   .text-link:hover {
-      color: var(--color-secondary-bright)!important;
+    color: var(--color-secondary-bright)!important;
   } */
   
   /* #jumbotron-btn {

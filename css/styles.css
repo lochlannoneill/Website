@@ -65,7 +65,7 @@ body {
       var(--color-secondary-gradiant)
     ),
     var(--image-background);
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(2px);
   background-size: cover;
   background-attachment: fixed;
   background-color: var(--color-primary);
@@ -107,7 +107,7 @@ hr {
       var(--color-secondary-gradiant)
     ),
     var(--image-background2);
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
   background-size: cover;
   background-attachment: fixed;
   background-color: var(--color-primary);
