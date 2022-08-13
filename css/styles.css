@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito:wght@300&family=Roboto:wght@300;400&family=Source+Code+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito:wght@300&family=Roboto:wght@300;400&family=Source+Code+Pro&display=swap");
 @import "colors.css";
-@import 'keyframes.css';
-@import 'navbar.css';
-@import 'footer.css';
-@import 'jumbotron.css';
-@import 'form.css';
-@import 'showcase.css';
+@import "keyframes.css";
+@import "navbar.css";
+@import "footer.css";
+@import "jumbotron.css";
+@import "form.css";
+@import "showcase.css";
 
 ::selection {
   background: var(--color-secondary); /* WebKit/Blink Browsers */
@@ -80,7 +80,6 @@ body {
 
   /* justify-content: center;
   align-items: center; */
-
 }
 
 h2 {
@@ -96,17 +95,15 @@ a {
 }
 
 a:hover {
-  /* cursor: pointer; */
-  color: var(--color-secondary);
-  transition: 0.5s;
-  /* animation: wiggle 5s infinite; */
-  text-decoration: none;
+  /* color: var(--color-secondary); */
+  /* transition: 0.5s; */
+  animation: wiggle 5s infinite;
+  /* text-decoration: none; */
 }
 
 a:active {
   color: var(--color-secondary-dark);
 }
-
 
 /* ______________________________________________________________________________________________________________________ */
 /* _____________________________________________________ sections _______________________________________________________ */
@@ -146,11 +143,6 @@ a:active {
 .label {
   color: var(--color-primary);
 }
-
-
-
-
-
 
 .container-section {
   margin-top: 8vh;

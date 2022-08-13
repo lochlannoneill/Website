@@ -2,178 +2,95 @@
 /* _____________________________________________________ jumbotron ______________________________________________________ */
 /* ______________________________________________________________________________________________________________________ */
 .jumbotron {
-    border-radius: 0;
-    width: 100%;
-    color: var(--color-text);
-    /* text-align: center; */
-    margin: 0;
-    padding-top: 0;
-    margin: 0;
-  }
-  
-  .vertical-center {
-    min-height: 80%; /* Fallback for browsers do NOT support vh unit */
-    min-height: 80vh; /* These two lines are counted as one :-)       */
-    display: flex;
-    align-items: center;
-  }
-  
-  .large-jumbotron {
-    min-height: 90vh;
-    border-bottom: none;
-  }
-  
-  /* .jumbotron-logo {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .jumbotron-logo img {
-    padding: 0;
-    margin: 0;
-    border-radius: 25%;
-    box-shadow: 0 0 24px 8px rgba(0, 0, 0, 0.8);
-    transition: 0.2s ease-in-out;
-    background-color: var(--color-primary);
-    transition: height 0.25s;
-    transition: width 0.25s;
-    transition: border-radius 0.125s, box-shadow 0.125s, 0.125s;
-  }
-  
-  .jumbotron-logo img:hover {
-    box-shadow: 0 0 16px 4px var(--color-secondary);
-    border-radius: 100%;
-    background-color: var(--color-secondary-dark);
-    transition: border-radius 0.25s, box-shadow 0.25s, 0.25s;
-    animation: wiggle 5s infinite;
-  }
-  
-  .large-jumbotron .jumbotron-logo img {
-    height: 240px;
-  } */
-  
-  #terminal {
-    /* font-family: "Source Code Pro"; */
-    margin: 0;
-  }
+  color: var(--color-text);
+  margin: 0;
+  padding: 0 auto;
+  margin: 0;
+}
 
-  #underscore {
-    animation: blink 1s infinite;
-  }
-  
+.vertical-center {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
 
+.large-jumbotron {
+  min-height: 90vh;
+  border-bottom: none;
+}
 
+#terminal {
+  /* font-family: "Source Code Pro"; */
+  margin: 0;
+}
 
+#underscore {
+  animation: blink 1s infinite;
+}
 
+/* ! error - not centered - large jumbotron width not filling */
+#terminal-response {
+  text-align: center;
+  color: var(--color-text);
+}
 
+.container-jumbotron {
+  /* margin-left: 8vw; */
+  margin: 0 8vw;
+  padding: 0;
+}
 
+.jumbotron-info {
+  margin: auto 0;
+}
 
+.jumbotron-info h1 {
+  animation: 1.5s ease 0s normal forwards 1 fadeInSlow;
+}
 
+#link-name {
+  color: var(--color-secondary-bright-gradiant);
+  font-weight: bold;
+}
 
+.jumbotron-text {
+  color: var(--color-text-muted);
+  margin: 0;
+  animation: 3s ease 0s normal forwards 1 fadeInSlow;
+}
 
+.jumbotron-icons {
+  animation: 3.5s ease 0s normal forwards 1 fadeLeftToRight;
+}
 
+.icon-social {
+  margin: 0 2vh;
+  text-decoration: none;
+  color: var(--color-primary-dark-gradiant);
+  font-size: 2.25em;
+  padding: 16px;
+}
 
+.icon-social:hover {
+  text-decoration: none;
+  color: var(--color-primary-brightest);
+  top: -8px;
+  transition-duration: 1s;
+  animation: spinWait 2.5s infinite;
+}
 
+.fa-linkedin:hover {
+  color: var(--color-linkedin);
+}
 
+.fa-github:hover {
+  color: var(--color-github);
+}
 
+.fa-twitter:hover {
+  color: var(--color-twitter);
+}
 
-
-
-
-  #terminal-response {
-    text-align: center;
-  }
-
-  .container-jumbotron {
-    margin-left: 8vw;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    /* flex-wrap: wrap */
-  }
-
-  .jumbotron-info {
-    margin: 0;
-    display: block;
-    margin: auto 0;
-    /* padding-left: 12vh; */
-  }
-  
-  
-  .jumbotron-info h1 {
-    animation: 1.5s ease 0s normal forwards 1 fadeInSlow;
-  }
-  
-  /* #greeting {
-    animation: 3s ease 0s normal forwards 1 fadeInSlow;
-  } */
-  
-  #link-name {
-    color: var(--color-secondary-bright-gradiant);
-    font-weight: bold;
-  }
-  
-  /* #text-name:active {
-    transition: 0.25s;
-    color: var(--color-secondary);
-  } */
-  
-  .text-link {
-    text-decoration: none;
-    transition: ease-in-out 0.125s;
-  }
-  
-  /* .lead {
-    animation: 5.5s ease 0s normal forwards 1 fadeLeftToRight;
-  } */
-  
-  .jumbotron-text {
-    color: var(--color-text-muted);
-    margin: 0;
-    animation: 3s ease 0s normal forwards 1 fadeInSlow;
-  }
-
-  .jumbotron-text {
-    /* animation: 7s ease 0s normal forwards 1 fadeLeftToRight; */
-    /* animation: squint 8s infinite; */
-  }
-  
-  .jumbotron-icons {
-    animation: 3.5s ease 0s normal forwards 1 fadeLeftToRight;
-  }
-
-  .icon-social {
-    margin: 0 2vh;
-    text-decoration: none;
-    color: var(--color-primary-dark-gradiant);
-    position: relative;
-    font-size: 2.25em;
-    padding: 16px;
-  }
-  
-  .icon-social:hover {
-    text-decoration: none;
-    color: var(--color-primary-brightest);
-    top: -8px;
-    transition-duration: 1s;
-    /* ! the spawning animation on page load is causing this to meess up */
-    animation: spinWait 2.5s infinite;
-  }
-  
-  .fa-linkedin:hover {
-    color: var(--color-linkedin);
-  }
-  
-  .fa-github:hover {
-    color: var(--color-github);
-  }
-  
-  .fa-twitter:hover {
-    color: var(--color-twitter);
-  }
-  
-  .fa-mail:hover {
-    color: var(--color-mail);
-  }
-  
+.fa-mail:hover {
+  color: var(--color-mail);
+}
