@@ -8,7 +8,7 @@
 @import 'showcase.css';
 
 ::selection {
-  background: var(--color-secondary-bright); /* WebKit/Blink Browsers */
+  background: var(--color-secondary); /* WebKit/Blink Browsers */
 }
 
 /* ______________________________________________________________________________________________________________________ */

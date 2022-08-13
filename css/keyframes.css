@@ -71,16 +71,20 @@
   }
 }
 
-@keyframes textLeftToRight {
-  0%,
-  25% {
-    transform: translateX(0%);
-    left: 0%;
-  }
-  75%,
-  100% {
+@keyframes fadeLeftToRight {
+  0% {
     transform: translateX(-100%);
-    left: 100%;
+    opacity: 0;
+  }
+  75% {
+    transform: translateX(-100%);
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
   }
 }
 

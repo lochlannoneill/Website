@@ -4,10 +4,11 @@
 .jumbotron {
     border-radius: 0;
     width: 100%;
-    color: white;
+    color: var(--color-text);
     /* text-align: center; */
     margin: 0;
     padding-top: 0;
+    margin: 0;
   }
   
   .vertical-center {
@@ -60,21 +61,57 @@
   }
   
   .jumbotron h1 {
-    margin: 16px 0 0 0;
+    margin: 0;
+  }
+
+  .title {
+    width: 50%;
+    /* margin-left: 0; */
+    padding: 0;
   }
   
-  .lead {
-    animation: 0.5s ease 0s normal forwards 1 fadeInSlow;
-  }
-  
-  .lead-text {
+  .title-text {
     color: var(--color-text-muted);
     margin: 0;
+  }
+
+  .title h1 {
+    animation: 1s ease 0s normal forwards 1 fadeInSlow;
+  }
+
+  #greeting {
+    animation: 4s ease 0s normal forwards 1 fadeInSlow;
+  }
+
+  #text-name {
+    color: var(--color-secondary-bright-gradiant);
+    font-weight: bold;
+  }
+
+  #text-name:hover {
+    cursor: pointer;
+    color: var(--color-secondary-brightest);
+    /* font-size: 1.0875em; */
+    transition: 0.5s;
+    /* animation: wiggle 5s infinite; */
+  }
+
+  #text-name:active {
+    transition: 0.25s;
+    color: var(--color-secondary);
   }
   
   .text-link {
     text-decoration: none;
     transition: ease-in-out 0.125s;
+  }
+
+  .lead {
+    animation: 5.5s ease 0s normal forwards 1 fadeLeftToRight;
+  }
+
+  .lead-location {
+    margin-right: 2vh;
   }
   
   /* ! this is not working
@@ -90,6 +127,12 @@
       margin-top: 32px;
       box-shadow: 0 0 24px 8px rgba(0,0,0,0.4);
   } */
+
+  /* .links {
+    margin-top: 10vh;
+    animation: 11s ease 0s normal forwards 1 fadeInSlow;
+    margin: 0;
+  }
   
   .jumbotron-btn {
     position: relative;
@@ -106,7 +149,6 @@
     overflow: hidden;
     transition: 0.2s;
     border: 2px solid var(--color-primary);
-    animation: 0.75s ease 0s normal forwards 1 openSlow;
   }
   
   .jumbotron-btn:hover {
@@ -151,7 +193,6 @@
   .jumbotron-btn:hover span:nth-child(3) {
     right: 100%;
     transition: 0.5s;
-    /* transition-delay: 0.5s; */
   }
   
   .jumbotron-btn span:nth-child(2) {
@@ -178,22 +219,26 @@
     bottom: 100%;
     transition: 0.5s;
     transition-delay: 0.1s;
-  }
-  
-  .social-link {
-    margin: 8px;
+  } */
+
+  /* .social-link:first-child {
+    margin-left: 0;
+  } */
+
+  .icon-social {
+    margin: 2vh;
     text-decoration: none;
-    color: var(--color-primary-dark);
+    color: var(--color-primary-dark-gradiant);
     position: relative;
-    font-size: 32px;
+    font-size: 2.25em;
     padding: 16px;
-    animation: 0.75s ease 0s normal forwards 1 fadeInRotate;
   }
   
-  .social-link:hover {
+  .icon-social:hover {
     text-decoration: none;
     color: var(--color-primary-brightest);
     top: -8px;
+    transition-duration: 1s;
     /* ! the spawning animation on page load is causing this to meess up */
     animation: spinWait 2.5s infinite;
   }
