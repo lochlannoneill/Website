@@ -1,1 +1,2 @@
-Terminal on the front page prints what the user enters
+Jumbotron terminal prints user entry
+Jumbotron terminal can cd to different pages on the navbar
