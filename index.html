@@ -87,34 +87,15 @@
       class="jumbotron large-jumbotron vertical-center bg-transparent color"
       id="home-jumbotron"
     >
-      <!-- <div class="container"> -->
-        <!-- <div class="container jumbotron-logo">
-          <a href="https://linktr.ee/lochlannoneill">
-            <img
-              class="jumbotron-logo-image"
-              src="images/profile_picture_transparent.png"
-              alt="Profile picture for Lochlann O Neill"
-            />
-          </a>
-        </div> -->
 
         <div class="container title">
+          <div class="lead-location">
+            <i class="lead-text fa fa-map-marker"></i>
+            <i class="lead-text"> Cork, Ireland</i>
+          </div>
           <h1 class="display-4">Hello<span id="greeting"><span>, I'm <span id="text-name">Lochlann</span></span></h1>
-          <!-- <i class="lead-text"
-            >A soon to be graduate of Software Development at
-            <a
-              href="https://www.mtu.ie/"
-              class="text-primary text-link font-weight-bold"
-              >MTU</a
-            >
-          </i>
-          <br /> -->
           <div class="lead">
-            <!-- <span class="lead-location">
-              <i class="lead-text fa fa-map-marker"></i>
-              <i class="lead-text"> Cork, Ireland</i>
-            </span> -->
-            <span class="lead-icons">
+            <div class="lead-icons">
                 <a
                   href="https://www.linkedin.com/in/lochlannoneill/"
                   class="icon-social fa fa-linkedin"
@@ -127,175 +108,10 @@
                   href="https://twitter.com/lochlannoneill"
                   class="icon-social fa fa-twitter"
                 ></a>
-            </span>
+            </div>
           </div>
         </div>
 
-        <!-- <div class="container btn-group" role="group" aria-label="{Placeholder}">
-                <div class="jumbotron-btn">
-                    <a href="https://linktr.ee/lochlannoneill" class="text-white">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Socials
-                    </a>
-                    
-                </div>
-    
-                <div class="jumbotron-btn">
-                    <a href="#" class="text-white">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Projects
-                    </a>
-                </div>
-            </div> -->
-
-        <!-- <br /> -->
-
-        <!-- <div class="container container-links">
-          <a
-            class="jumbotron-btn text-white"
-            href="https://linktr.ee/lochlannoneill"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Linktree
-          </a>
-
-          <div class="container">
-            <div>
-              <a
-                href="https://www.linkedin.com/in/lochlannoneill/"
-                class="social-link fa fa-linkedin"
-              ></a>
-              <a
-                href="https://github.com/lochlannoneill"
-                class="social-link fa fa-github"
-              ></a>
-              <a
-                href="https://twitter.com/lochlannoneill"
-                class="social-link fa fa-twitter"
-              ></a>
-              <a href="mailto:lochlannjoneill@gmail.com?subject=Mail from Mail From Personal Website" class="social-link fa fa-envelope"></a>
-              <a
-                class="social-link fa fa-envelope"
-                data-toggle="collapse"
-                href="#collapseForm"
-                role="button"
-                aria-expanded="false"
-                aria-controls="collapseMessage"
-              ></a>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- Message Collapsed form -->
-        <!-- <div class="container collapse" id="collapseForm">
-          <div class="container">
-            <div class="container-lg">
-              <div class="row">
-                <div class="col-md-10 mx-auto">
-                  <div class="contact-form">
-                    <form
-                      id="form"
-                      action="/examples/actions/confirmation.php"
-                      method="post"
-                    >
-                      <div class="row">
-                        <div class="col-sm-4">
-                          <div class="form-group">
-                            <label for="inputName"><strong>Name</strong></label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="inputName"
-                              placeholder="Required"
-                              required
-                            />
-                          </div>
-                        </div>
-                        <div class="col-sm-4">
-                          <div class="form-group">
-                            <label for="inputEmail"
-                              ><strong>Email</strong></label
-                            >
-                            <input
-                              type="email"
-                              class="form-control"
-                              id="inputEmail"
-                              placeholder="Required"
-                              required
-                            />
-                          </div>
-                        </div>
-                        <div class="col-sm-4">
-                          <div class="form-group">
-                            <label for="inputPhone"
-                              ><strong>Phone</strong></label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="inputPhone"
-                              placeholder="Optional"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputSubject"
-                          ><strong>Subject</strong></label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="inputSubject"
-                          placeholder="Required"
-                          required
-                        />
-                      </div>
-                      <div class="form-group">
-                        <label for="inputMessage"
-                          ><strong>Message</strong></label
-                        >
-                        <textarea
-                          class="form-control"
-                          id="inputMessage"
-                          rows="5"
-                          placeholder="Required"
-                          required
-                        ></textarea>
-                      </div>
-                      <button type="submit" class="btn btn-primary">
-                        <i class="fa fa-paper-plane"></i><strong> Send</strong>
-                      </button>
-                    </form>
-                    <div
-                      id="success_message"
-                      style="width: 100%; height: 100%; display: none"
-                    >
-                      <h3>Posted your message successfully!</h3>
-                    </div>
-                    <div
-                      id="error_message"
-                      style="width: 100%; height: 100%; display: none"
-                    >
-                      <h3>Error</h3>
-                      Sorry there was an error sending your form.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-      <!-- </div> -->
     </div>
 
     <!-- ___________________________________________________ maint content ______________________________________________________ -->

@@ -65,9 +65,8 @@
   }
 
   .title {
-    width: 50%;
-    /* margin-left: 0; */
-    padding: 0;
+    margin: 0;
+    padding-left: 12vh;
   }
   
   .title-text {
@@ -106,12 +105,17 @@
     transition: ease-in-out 0.125s;
   }
 
-  .lead {
+  /* .lead {
     animation: 5.5s ease 0s normal forwards 1 fadeLeftToRight;
-  }
+  } */
 
   .lead-location {
-    margin-right: 2vh;
+    /* animation: 7s ease 0s normal forwards 1 fadeLeftToRight; */
+    animation: squint 8s infinite;
+  }
+
+  .lead-icons {
+    animation: 5.5s ease 0s normal forwards 1 fadeLeftToRight;
   }
   
   /* ! this is not working
@@ -226,7 +230,7 @@
   } */
 
   .icon-social {
-    margin: 2vh;
+    margin: 0 2vh;
     text-decoration: none;
     color: var(--color-primary-dark-gradiant);
     position: relative;
