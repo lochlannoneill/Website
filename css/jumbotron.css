@@ -33,6 +33,32 @@
   animation: blink 1s infinite;
 }
 
+.badge {
+  background-color: black;
+  border: none;
+  cursor: default;
+}
+#command:hover {
+  cursor: pointer;
+}
+
+#command[contenteditable] {
+  display: inline-block;
+  /* max-width: 30vw;
+  overflow: hidden; */
+}
+#command[contenteditable]:empty::before {
+  content: '_';
+  display: inline-block;
+  animation: blink 1s infinite;
+}
+#command[contenteditable]:empty:focus::before {
+  content: '';
+}
+
+
+
+
 /* ! error - not centered - large jumbotron width not filling */
 #terminal-response {
   text-align: center;

@@ -1,2 +1,3 @@
-Jumbotron terminal prints user entry
-Jumbotron terminal can cd to different pages on the navbar
+Terminal executes on <Enter> key press
+Terminal prints user entry
+Terminal can cd to different pages on the navbar
