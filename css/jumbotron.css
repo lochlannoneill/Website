@@ -24,6 +24,10 @@
   margin: 0;
 }
 
+#terminal-response i {
+  color: white;
+}
+
 #link-name:hover {
   transition: 0.375s;
   color: var(--color-secondary-brightest);

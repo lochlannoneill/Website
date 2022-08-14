@@ -23,7 +23,8 @@ function executeCommandLine() {
     console.log("success: " + success);
     document.getElementById("terminal-response").innerHTML = success;
   } else {
-    document.getElementById("terminal-response").innerHTML = ("Keyword '" + keyword + "' not found. Type 'help' if you're stuck.");
+    // document.getElementById("terminal-response").innerHTML = ("Keyword '" + keyword + "' not found. Type <i>'help'</i> if you're stuck.");
+    document.getElementById("terminal-response").innerHTML = ("Keyword '" + keyword + "' not found. If you are stuck, type <i>'help'</i>");
   }
 }
 
@@ -36,20 +37,22 @@ function executeKeyword(keyword, command) {
   if (keyword === 'lochlann') return "The greatest software developer in my house. Would be a complete shame if I wasn't hired asap."
   if (keyword === 'bruce') return "Cha dood"
   //actual commands
-  if (keyword === 'help') return "Try keywords such as 'bin' or try to find some hidden keywords. :)";
+  if (keyword === 'help') return "Try keywords such as <i>'bin'</i> or try to find some other hidden keywords.<br>Using <i>'man'</i> before a keyword tells you how to use it";
   if (keyword === 'print') return command;
   if (keyword === 'echo') return command;
   // ! need to fix this
-  // if (keyword === 'cd') window.location.href = "../" + command.toLowerCase() + ".html";
-  // if (keyword === 'cd') {
-  //   var location = "../" + command.toLowerCase() + ".html";
-  //   window.location.href = executeLs(location);
-  //   return command.toLowerCase() + ".html";
-  // }
+  // if (keyword === 'cd') window.location.href = command.toLowerCase() + ".html"; ""
+  // if (keyword === 'cd') window.location.href = "projects.html";
+  if (keyword === 'cd') {
+    var location = command.toLowerCase() + ".html";
+    console.log("location: " + location);
+    executeLs(command.toLowerCase() + ".html");
+    return command.toLowerCase() + ".html";
+  }
   if (keyword === 'ls') return "[" + FILES.join(', ') + "]";
   if (keyword === 'bin') return "[" + BIN_NOEASTEREGGS.join(', ') + "]";
   if (keyword === 'pwd') return 'Home'
-  return 'Unprecedented error';
+  // return 'Unprecedented Error';
 }
 
 function getKeywordPurpose(keyword) {
