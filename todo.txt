@@ -1,3 +1,3 @@
-Terminal executes on <Enter> key press
-Terminal prints user entry
 Terminal can cd to different pages on the navbar
+Maybe make an entire folder directory???????
+Make a dictionary for all BIN variables to store their keywords and respective returns

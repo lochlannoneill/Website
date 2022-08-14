@@ -1,5 +1,7 @@
-const BIN = ["help", "print", "echo", "cd", "ls", "bin"];
-const SINGLES = ["ls"];
+//variable to store all the acceptable commands along with those that dont need arguments
+const BIN_HIDDEN_EASTEREGGS = ["help", "print", "echo", "cd", "ls", "bin"];
+const BIN = ["lochlann", "help", "print", "echo", "cd", "ls", "bin", "mtu", "markson"];
+const SINGLES = ["lochlann", "help", "ls", "bin", "mtu", "markson"];
 
 function executeCommand() {
   var command = document.getElementById('command').innerHTML;
@@ -21,16 +23,18 @@ function executeCommand() {
   } else {
     document.getElementById("terminal-response").innerHTML = ("Command '" + commandType + "' not found. Type 'help' if you're stuck.");
   }
-  
 }
 
 function executeAppropriateCommand(commandType, commandWithoutType) {
-  if (commandType === 'help') return "Try some of these commands: [" + BIN.join(', ') + "]";
+  if (commandType === 'lochlann') return "The greatest software developer in my house. Would be a shame if I wasn't hired asap."
+  if (commandType === 'help') return "Try some commands such as [print, cd, ls, bin] ...among others. Try to find some of them. :)";
   if (commandType === 'print') return commandWithoutType;
   if (commandType === 'echo') return commandWithoutType;
   if (commandType === 'cd') return commandWithoutType.toLowerCase() + ".html";
-  if (commandType === 'ls') return "Why do you want to look at my files? They're private!"
-  if (commandType === 'bin') return "[" + BIN.join(', ') + "]";
+  if (commandType === 'ls') return "Why do you want to look at my files? They're private!";
+  if (commandType === 'bin') return "[" + BIN_HIDDEN_EASTEREGGS.join(', ') + "]";
+  if (commandType === 'mtu') return "I love this college, I'm glad I came here to study";
+  if (commandType === 'markson') return "Markson stop stalking me please";
 }
 
 //return boolean if command is valid

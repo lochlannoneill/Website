@@ -44,8 +44,9 @@
 
 #command[contenteditable] {
   display: inline-block;
-  /* max-width: 30vw;
-  overflow: hidden; */
+  max-width: 30vw;
+  /* ! the overflow messes up the styling for some reason */
+  /* overflow: hidden;  */
   caret-color: transparent;
 }
 #command[contenteditable]:empty::before {
@@ -56,16 +57,6 @@
 #command[contenteditable]:empty:focus::before {
   content: '_';
 }
-
-
-
-
-/* ! error - not centered - large jumbotron width not filling */
-/* #terminal-response {
-  text-align: center;
-  color: var(--color-text);
-  margin-top: 12vh;
-} */
 
 .container-jumbotron {
   /* margin-left: 8vw; */
@@ -81,10 +72,10 @@
   animation: 1.5s ease 0s normal forwards 1 fadeInSlow;
 }
 
-/* ! might need to remove this later */
-button {
+
+/* button {
   animation: 1.5s ease 0s normal forwards 1 fadeInSlow;
-  background-color: var(--color-primary); /* Green */
+  background-color: var(--color-primary);
   border: none;
   color: var(--color-text);
   padding: 15px 32px;
@@ -102,7 +93,7 @@ button:hover {
 
 button:active {
   outline: none;
-}
+} */
 
 #link-name {
   color: var(--color-secondary-bright-gradiant);
