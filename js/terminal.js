@@ -1,48 +1,61 @@
 //variable to store all the acceptable commands along with those that dont need arguments
-const BIN_HIDDEN_EASTEREGGS = ["help", "print", "echo", "cd", "ls", "bin"];
-const BIN = ["lochlann", "help", "print", "echo", "cd", "ls", "bin", "mtu", "markson"];
-const SINGLES = ["lochlann", "help", "ls", "bin", "mtu", "markson"];
+const BIN_EASTEREGGS = ["lochlann", "mtu", "markson", "bruce", "whoami"];
+const BIN_NOEASTEREGGS = ["help", "whoami", "echo", "ls", "cd", "pwd", "bin"];
+const BIN = BIN_EASTEREGGS + BIN_NOEASTEREGGS;
+const FILES = ["index.html", "projects.html", "contact.html"];
+// const SINGLES = ["lochlann", "help", "ls", "bin", "mtu", "markson", "pwd", "bruce"];
 
-function executeCommand() {
-  var command = document.getElementById('command').innerHTML;
-  console.log("command: " + command);
-  document.getElementById("command").innerHTML = "";
-  document.getElementById("command").focus();
+function executeCommandLine() {
+  var commandline = document.getElementById('commandline').innerHTML;
+  console.log("commandline: " + commandline);
+  document.getElementById("commandline").innerHTML = "";
+  document.getElementById("commandline").focus();
   
-  //get the command type from the first word
-  commandType = command.split(' ')[0];
-  console.log("commandType: " + commandType);
+  //get the keyword from the first word
+  keyword = commandline.split(' ')[0];
+  console.log("keyword: " + keyword);
   
-  //verify if the command is legit and execute
-  var verification = verifyCommand(commandType);
-  console.log("acceptable: " + verification);
-  if (verification) {
-    var success = (executeAppropriateCommand(commandType, removeFirstWord(command)))
+  //verify if the keyword is valid and execute
+  var validKeyword = isValidKeyword(keyword);
+  console.log("acceptable: " + validKeyword);
+  if (validKeyword) {
+    var success = (executeKeyword(keyword, removeFirstWord(commandline)))
     console.log("success: " + success);
     document.getElementById("terminal-response").innerHTML = success;
   } else {
-    document.getElementById("terminal-response").innerHTML = ("Command '" + commandType + "' not found. Type 'help' if you're stuck.");
+    document.getElementById("terminal-response").innerHTML = ("Keyword '" + keyword + "' not found. Type 'help' if you're stuck.");
   }
 }
 
-function executeAppropriateCommand(commandType, commandWithoutType) {
-  if (commandType === 'lochlann') return "The greatest software developer in my house. Would be a shame if I wasn't hired asap."
-  if (commandType === 'help') return "Try some commands such as [print, cd, ls, bin] ...among others. Try to find some of them. :)";
-  if (commandType === 'print') return commandWithoutType;
-  if (commandType === 'echo') return commandWithoutType;
-  if (commandType === 'cd') return commandWithoutType.toLowerCase() + ".html";
-  if (commandType === 'ls') return "Why do you want to look at my files? They're private!";
-  if (commandType === 'bin') return "[" + BIN_HIDDEN_EASTEREGGS.join(', ') + "]";
-  if (commandType === 'mtu') return "I love this college, I'm glad I came here to study";
-  if (commandType === 'markson') return "Markson stop stalking me please";
+// todo maybe something like if (keyword === 'echo') return executeEcho(command);
+function executeKeyword(keyword, command) {
+  //eastereggs
+  if (keyword === 'mtu') return "I love this college, I'm glad I came here to study";
+  if (keyword === 'markson') return "Markson stop stalking me please";
+  if (keyword === 'whoami') return "Hello, my name is Lochlann O Neill.<br>I'm currently studying software development at MTU."
+  if (keyword === 'lochlann') return "The greatest software developer in my house. Would be a complete shame if I wasn't hired asap."
+  if (keyword === 'bruce') return "Cha dood"
+  //actual commands
+  if (keyword === 'help') return "Try keywords such as 'bin' or try to find some hidden keywords. :)";
+  if (keyword === 'print') return command;
+  if (keyword === 'echo') return command;
+  if (keyword === 'cd') return command; //todo
+  if (keyword === 'ls') return "[" + FILES.join(', ') + "]";
+  if (keyword === 'bin') return "[" + BIN_NOEASTEREGGS.join(', ') + "]";
+  if (keyword === 'pwd') return 'index.html'
+}
+
+function getKeywordPurpose(keyword) {
+
 }
 
 //return boolean if command is valid
-function verifyCommand(commandType) {
-  if (BIN.includes(commandType)) return true;
+function isValidKeyword(keyword) {
+  if (BIN.includes(keyword)) return true;
   return false;
 }
 
+//todo - what if echo has no following command
 //return string without first word
 function removeFirstWord(str) {
   if (str.trim().indexOf(' ') != -1) return str.substr(str.indexOf(" ") + 1);
@@ -50,10 +63,10 @@ function removeFirstWord(str) {
 }
 
 //stops the user from applying <br> tags to the command when pressing enter. execute early
-$("#command[contenteditable]").keypress(function (evt) {
+$("#commandline[contenteditable]").keypress(function (evt) {
   var keycode = evt.charCode || evt.keyCode;
   if (keycode  == 13) { //Enter key's keycode
-    executeCommand()
+    executeCommandLine()
     return false;
   }
 });

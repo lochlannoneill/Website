@@ -26,7 +26,7 @@
 }
 
 .showcase:not(:first-child) {
-  filter: blur(0.925px);
+  filter: blur(1.5px);
 }
 
 .showcase:nth-child(2) {

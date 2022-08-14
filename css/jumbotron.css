@@ -26,7 +26,7 @@
 
 #link-name:hover {
   transition: 0.375s;
-  color: var(--color-secondary);
+  color: var(--color-secondary-brightest);
 }
 
 #underscore {
@@ -38,23 +38,24 @@
   border: none;
   cursor: default;
 }
-#command:hover {
+#commandline:hover {
   cursor: pointer;
+  background-color: var(--color-primary-bright);
 }
 
-#command[contenteditable] {
+#commandline[contenteditable] {
   display: inline-block;
-  max-width: 30vw;
   /* ! the overflow messes up the styling for some reason */
-  /* overflow: hidden;  */
+  /* max-width: 16ch;
+  overflow: hidden; */
   caret-color: transparent;
 }
-#command[contenteditable]:empty::before {
+#commandline[contenteditable]:empty::before {
   content: '_';
   display: inline-block;
   animation: blink 1s infinite;
 }
-#command[contenteditable]:empty:focus::before {
+#commandline[contenteditable]:empty:focus::before {
   content: '_';
 }
 
@@ -69,7 +70,7 @@
 }
 
 .jumbotron-info h1 {
-  animation: 1.5s ease 0s normal forwards 1 fadeInSlow;
+  animation: 1s ease 0s normal forwards 1 fadeInSlow;
 }
 
 
@@ -116,7 +117,7 @@ button:active {
 }
 
 .icon-social {
-  margin: 0 2vh;
+  margin: 0 0.5vh;
   text-decoration: none;
   color: var(--color-primary-dark-gradiant);
   font-size: 2.25em;
@@ -128,7 +129,7 @@ button:active {
   color: var(--color-primary-brightest);
   top: -8px;
   transition-duration: 1s;
-  animation: spinWait 2.5s infinite;
+  animation: spinWait 1.5s infinite;
 }
 
 .fa-linkedin:hover {
