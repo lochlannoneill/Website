@@ -53,7 +53,7 @@
   animation: blink 1s infinite;
 }
 #command[contenteditable]:empty:focus::before {
-  content: '';
+  content: 'help';
 }
 
 
@@ -76,6 +76,11 @@
 }
 
 .jumbotron-info h1 {
+  animation: 1.5s ease 0s normal forwards 1 fadeInSlow;
+}
+
+/* ! might need to remove this later */
+button {
   animation: 1.5s ease 0s normal forwards 1 fadeInSlow;
 }
 
