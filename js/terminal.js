@@ -1,4 +1,4 @@
-const BIN = ["help", "print", "echo", "cd", "ls"];
+const BIN = ["help", "print", "echo", "cd", "ls", "bin"];
 const SINGLES = ["ls"];
 
 function executeCommand() {
@@ -25,11 +25,12 @@ function executeCommand() {
 }
 
 function executeAppropriateCommand(commandType, commandWithoutType) {
-  if (commandType === 'help') return "Try some of these commands: [" + BASH.join(', ') + "]";
+  if (commandType === 'help') return "Try some of these commands: [" + BIN.join(', ') + "]";
   if (commandType === 'print') return commandWithoutType;
   if (commandType === 'echo') return commandWithoutType;
   if (commandType === 'cd') return commandWithoutType.toLowerCase() + ".html";
   if (commandType === 'ls') return "Why do you want to look at my files? They're private!"
+  if (commandType === 'bin') return "[" + BIN.join(', ') + "]";
 }
 
 //return boolean if command is valid
@@ -43,3 +44,12 @@ function removeFirstWord(str) {
   if (str.trim().indexOf(' ') != -1) return str.substr(str.indexOf(" ") + 1);
   return str;
 }
+
+//stops the user from applying <br> tags to the command when pressing enter. execute early
+$("#command[contenteditable]").keypress(function (evt) {
+  var keycode = evt.charCode || evt.keyCode;
+  if (keycode  == 13) { //Enter key's keycode
+    executeCommand()
+    return false;
+  }
+});

@@ -61,11 +61,11 @@
 
 
 /* ! error - not centered - large jumbotron width not filling */
-#terminal-response {
+/* #terminal-response {
   text-align: center;
   color: var(--color-text);
   margin-top: 12vh;
-}
+} */
 
 .container-jumbotron {
   /* margin-left: 8vw; */
@@ -117,6 +117,7 @@ button:active {
 
 .jumbotron-text p {
   margin: 0;
+  margin-top: 1vh;
 }
 
 .jumbotron-icons {
