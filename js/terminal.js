@@ -1,4 +1,4 @@
-const BASH = ["help", "print", "echo", "cd", "ls"];
+const BIN = ["help", "print", "echo", "cd", "ls"];
 const SINGLES = ["ls"];
 
 function executeCommand() {
@@ -19,7 +19,7 @@ function executeCommand() {
     console.log("success: " + success);
     document.getElementById("terminal-response").innerHTML = success;
   } else {
-    document.getElementById("terminal-response").innerHTML = ("'" + commandType + "' is not a valid command type");
+    document.getElementById("terminal-response").innerHTML = ("Command '" + commandType + "' not found. Type 'help' if you're stuck.");
   }
   
 }
@@ -34,7 +34,7 @@ function executeAppropriateCommand(commandType, commandWithoutType) {
 
 //return boolean if command is valid
 function verifyCommand(commandType) {
-  if (BASH.includes(commandType)) return true;
+  if (BIN.includes(commandType)) return true;
   return false;
 }
 

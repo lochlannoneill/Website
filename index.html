@@ -91,37 +91,50 @@
       class="jumbotron large-jumbotron vertical-center bg-transparent color"
       id="home-jumbotron"
     >
-
       <div class="container container-jumbotron">
         <div class="jumbotron-info">
           <!-- <h1 id="terminal" class="display-4">C:\Users\<a href="https://linktr.ee/lochlannoneill" id="link-name">Lochlann</a>><span id="underscore">_</span><span id="command"></span></h1> -->
-          <button type="button" onclick="executeCommand()">Execute Command</button>
-          <h1 id="terminal" class="display-4">C:\Users\<a href="https://linktr.ee/lochlannoneill" id="link-name">Lochlann</a>><span class="underscore"><span id="command" class="badge" contenteditable="true" autofocus></span></span></h1>
-          <div class="jumbotron-text">
+          <h1 id="terminal" class="display-4">
+            C:\Users\<a href="https://linktr.ee/lochlannoneill" id="link-name"
+              >Lochlann</a
+            >><span
+              id="command"
+              class="badge"
+              contenteditable="true"
+              autofocus
+            ></span>
+          </h1>
+          <!-- <div class="jumbotron-text">
             <p><i>Student of Software Development at MTU</i></p>
             <p>
-              <i class=" fa fa-map-marker"></i>
+              <i class="fa fa-map-marker"></i>
               <i> Cork, Ireland</i>
             </p>
           </div>
           <div class="jumbotron-icons">
-              <a
-                href="https://www.linkedin.com/in/lochlannoneill/"
-                class="icon-social fa fa-linkedin"
-              ></a>
-              <a
-                href="https://github.com/lochlannoneill"
-                class="icon-social fa fa-github"
-              ></a>
-              <a
-                href="https://twitter.com/lochlannoneill"
-                class="icon-social fa fa-twitter"
-              ></a>
-          </div>
-          <h2 id="terminal-response"></h2>
+            <a
+            href="https://www.linkedin.com/in/lochlannoneill/"
+            class="icon-social fa fa-linkedin"
+            ></a>
+            <a
+            href="https://github.com/lochlannoneill"
+            class="icon-social fa fa-github"
+            ></a>
+            <a
+            href="https://twitter.com/lochlannoneill"
+            class="icon-social fa fa-twitter"
+            ></a>
+          </div> -->
+          <button
+            id="terminal-executor"
+            type="button"
+            onclick="executeCommand()"
+          >
+            Execute Command
+          </button>
+          <span id="terminal-response"></span>
         </div>
       </div>
-
     </div>
 
     <!-- ___________________________________________________ projects ______________________________________________________ -->
@@ -131,10 +144,6 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus mollitia eaque dolor, accusantium officiis modi cum exercitationem illo quos temporibus tempore, hic aperiam eius minus corporis nostrum laudantium numquam eligendi?</p>
       </div>
     </section> -->
-
-
-
-
 
     <!-- ___________________________________________________ empty ______________________________________________________ -->
     <!-- <section>
@@ -146,30 +155,41 @@
 
     <!-- ______________________________________________________ footer ______________________________________________________-->
     <footer class="bg-dark text-white pt-5 pb-4" id="footer-home">
-        <div class="container text-center text-md-left">
-            <div class="row text-center text-left">
-
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-dark">Lochlann O Neill</h5>
-                    <p class="text-muted">Student of Software Development at MTU.</p>
-                </div>
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h5 class="text-uppercase mb-4 font-weight-bold text-dark">Socials</h5>
-                    <p class="text-muted">
-                        <i class="fa fa-linkedin"></i>
-                        <a href="https://www.linkedin.com/in/lochlannoneill/" class="text-muted">LinkedIn</a>
-                    </p>
-                    <p class="text-muted">
-                        <i class="fa fa-github"></i>
-                        <a href="https://github.com/lochlannoneill" class="text-muted">GitHub</a>
-                    </p>
-                    <p class="text-muted">
-                        <i class="fa fa-twitter"></i>
-                        <a href="https://twitter.com/LochlannONeill" class="text-muted">Twitter</a>
-                    </p>
-                </div>
-            </div>
-        </div>   
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-left">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-dark">
+              Lochlann O Neill
+            </h5>
+            <p class="text-muted">Student of Software Development at MTU.</p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-dark">
+              Socials
+            </h5>
+            <p class="text-muted">
+              <i class="fa fa-linkedin"></i>
+              <a
+                href="https://www.linkedin.com/in/lochlannoneill/"
+                class="text-muted"
+                >LinkedIn</a
+              >
+            </p>
+            <p class="text-muted">
+              <i class="fa fa-github"></i>
+              <a href="https://github.com/lochlannoneill" class="text-muted"
+                >GitHub</a
+              >
+            </p>
+            <p class="text-muted">
+              <i class="fa fa-twitter"></i>
+              <a href="https://twitter.com/LochlannONeill" class="text-muted"
+                >Twitter</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

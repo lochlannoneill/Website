@@ -34,7 +34,7 @@
 }
 
 .badge {
-  background-color: black;
+  background-color: var(--color-primary);
   border: none;
   cursor: default;
 }
@@ -46,6 +46,7 @@
   display: inline-block;
   /* max-width: 30vw;
   overflow: hidden; */
+  caret-color: transparent;
 }
 #command[contenteditable]:empty::before {
   content: '_';
@@ -53,7 +54,7 @@
   animation: blink 1s infinite;
 }
 #command[contenteditable]:empty:focus::before {
-  content: 'help';
+  content: '_';
 }
 
 
@@ -63,6 +64,7 @@
 #terminal-response {
   text-align: center;
   color: var(--color-text);
+  margin-top: 12vh;
 }
 
 .container-jumbotron {
@@ -82,6 +84,24 @@
 /* ! might need to remove this later */
 button {
   animation: 1.5s ease 0s normal forwards 1 fadeInSlow;
+  background-color: var(--color-primary); /* Green */
+  border: none;
+  color: var(--color-text);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 1vh;
+  margin-right: 1vh;
+}
+
+button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+button:active {
+  outline: none;
 }
 
 #link-name {
