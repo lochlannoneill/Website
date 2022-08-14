@@ -2,7 +2,7 @@
 const BIN_EASTEREGGS = ["lochlann", "mtu", "markson", "bruce", "whoami"];
 const BIN_NOEASTEREGGS = ["help", "whoami", "echo", "ls", "cd", "pwd", "bin"];
 const BIN = BIN_EASTEREGGS + BIN_NOEASTEREGGS;
-const FILES = ["index.html", "projects.html", "contact.html"];
+const FILES = ["Index", "Projects", "Contact"];
 // const SINGLES = ["lochlann", "help", "ls", "bin", "mtu", "markson", "pwd", "bruce"];
 
 function executeCommandLine() {
@@ -39,14 +39,25 @@ function executeKeyword(keyword, command) {
   if (keyword === 'help') return "Try keywords such as 'bin' or try to find some hidden keywords. :)";
   if (keyword === 'print') return command;
   if (keyword === 'echo') return command;
-  if (keyword === 'cd') return command; //todo
+  // ! need to fix this
+  // if (keyword === 'cd') window.location.href = "../" + command.toLowerCase() + ".html";
+  // if (keyword === 'cd') {
+  //   var location = "../" + command.toLowerCase() + ".html";
+  //   window.location.href = executeLs(location);
+  //   return command.toLowerCase() + ".html";
+  // }
   if (keyword === 'ls') return "[" + FILES.join(', ') + "]";
   if (keyword === 'bin') return "[" + BIN_NOEASTEREGGS.join(', ') + "]";
-  if (keyword === 'pwd') return 'index.html'
+  if (keyword === 'pwd') return 'Home'
+  return 'Unprecedented error';
 }
 
 function getKeywordPurpose(keyword) {
 
+}
+
+function executeLs(file) {
+  window.location.href = file;
 }
 
 //return boolean if command is valid
