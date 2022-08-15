@@ -40,9 +40,6 @@ function executeKeyword(keyword, command) {
   if (keyword === 'help') return "Try keywords such as <i>'bin'</i> or try to find some other hidden keywords.<br>Using <i>'man'</i> before a keyword tells you how to use it";
   if (keyword === 'print') return command;
   if (keyword === 'echo') return command;
-  // ! need to fix this
-  // if (keyword === 'cd') window.location.href = command.toLowerCase() + ".html"; ""
-  // if (keyword === 'cd') window.location.href = "projects.html";
   if (keyword === 'cd') {
     var location = command.toLowerCase() + ".html";
     console.log("location: " + location);

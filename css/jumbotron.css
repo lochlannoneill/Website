@@ -20,7 +20,7 @@
 }
 
 #terminal {
-  /* font-family: "Source Code Pro"; */
+  font-family: "Source Code Pro";
   margin: 0;
 }
 
@@ -64,7 +64,6 @@
 }
 
 .container-jumbotron {
-  /* margin-left: 8vw; */
   margin: 0 8vw;
   padding: 0;
 }
@@ -76,29 +75,6 @@
 .jumbotron-info h1 {
   animation: 1s ease 0s normal forwards 1 fadeInSlow;
 }
-
-
-/* button {
-  animation: 1.5s ease 0s normal forwards 1 fadeInSlow;
-  background-color: var(--color-primary);
-  border: none;
-  color: var(--color-text);
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-top: 1vh;
-  margin-right: 1vh;
-}
-
-button:hover {
-  background-color: var(--color-primary-dark);
-}
-
-button:active {
-  outline: none;
-} */
 
 #link-name {
   color: var(--color-secondary-bright-gradiant);
