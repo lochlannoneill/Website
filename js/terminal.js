@@ -37,7 +37,7 @@ function executeKeyword(keyword, command) {
   if (keyword === 'bruce') return "Cha dood"
   if (keyword === 'gordon') return "No gingers allowed"
   //actual commands
-  if (keyword === 'help') return "Type <i>'bin'</i> to find some keywords.<br>Some keywords need an argument after them, such as 'echo hello'.<br>There are also some secret commands, try to guess some of them :)";
+  if (keyword === 'help') return "Try keywords such as <i>'bin'</i> or try to find some other hidden keywords.<br>Using <i>'man'</i> before a keyword tells you how to use it";
   if (keyword === 'print') return command;
   if (keyword === 'echo') return command;
   // ! need to fix this
@@ -52,7 +52,6 @@ function executeKeyword(keyword, command) {
   if (keyword === 'ls') return "[" + FILES.join(', ') + "]";
   if (keyword === 'bin') return "[" + BIN_PUBLIC.join(', ') + "]";
   if (keyword === 'pwd') return 'Home'
-  if (keyword === 'man') return BIN.man(command);
   // return 'Unprecedented Error';
 }
 
