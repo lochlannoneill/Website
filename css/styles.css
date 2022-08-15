@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito:wght@300&family=Roboto:wght@300;400&family=Source+Code+Pro&display=swap");
-@import "root.css";
+@import "variables.css";
 @import "keyframes.css";
 @import "navbar.css";
 @import "footer.css";

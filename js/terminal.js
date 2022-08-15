@@ -2,7 +2,7 @@
 const BIN_PRIVATE = ["lochlann", "mtu", "markson", "bruce", "gordon", "whoami"];
 const BIN_PUBLIC = ["help", "bin", "echo", "whoami", "pwd", "ls", "cd"];
 const BIN = BIN_PRIVATE + BIN_PUBLIC;
-const FILES = ["Home", "Projects", "Contact"];
+const FILES = ["Index", "Projects", "Contact"];
 
 function executeCommandLine() {
   var commandline = document.getElementById('commandline').innerHTML;
@@ -37,7 +37,7 @@ function executeKeyword(keyword, command) {
   if (keyword === 'bruce') return "Cha dood"
   if (keyword === 'gordon') return "No gingers allowed"
   //actual commands
-  if (keyword === 'help') return "Try the keyword <i>'bin'</i> to get some acceptable keywords<br>Some keywords require a command, such as 'echo hello'<br>There are also some hidden keywords, try to guess some of them. :)";
+  if (keyword === 'help') return "Try the keyword <i>'bin'</i> to get some acceptable keywords<br>Some keywords require a command, such as 'cd Projects'<br>Try to guess some hidden commands. :)";
   if (keyword === 'print') return command;
   if (keyword === 'echo') return command;
   if (keyword === 'cd') {

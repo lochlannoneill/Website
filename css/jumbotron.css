@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0 auto;
   margin: 0;
+  /* width: 90vw; */
 }
 
 .vertical-center {
@@ -32,6 +33,7 @@
 
 .jumbotron-info h1 {
   animation: 1s ease 0s normal forwards 1 fadeInSlow;
+  /* font-size: 80%; */
   /* color: green; */
   text-shadow: 8px 8px 16px var(--color-primary-darkest);
 }
@@ -63,8 +65,9 @@
   text-decoration: none;
   color: var(--color-primary-brightest);
   top: -8px;
-  transition-duration: 1s;
   animation: spinWait 1.5s infinite;
+  text-shadow: 4px 4px 4px var(--color-primary-darkest);
+  transition-duration: 0.5s;
 }
 
 .fa-linkedin:hover {
