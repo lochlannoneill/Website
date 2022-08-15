@@ -1,9 +1,8 @@
 //variable to store all the acceptable commands along with those that dont need arguments
-const BIN_EASTEREGGS = ["lochlann", "mtu", "markson", "bruce", "whoami"];
-const BIN_NOEASTEREGGS = ["help", "whoami", "echo", "ls", "cd", "pwd", "bin"];
-const BIN = BIN_EASTEREGGS + BIN_NOEASTEREGGS;
-const FILES = ["Index", "Projects", "Contact"];
-// const SINGLES = ["lochlann", "help", "ls", "bin", "mtu", "markson", "pwd", "bruce"];
+const BIN_PRIVATE = ["lochlann", "mtu", "markson", "bruce", "gordon", "whoami"];
+const BIN_PUBLIC = ["help", "whoami", "echo", "ls", "cd", "pwd", "bin"];
+const BIN = BIN_PRIVATE + BIN_PUBLIC;
+const FILES = ["Home", "Projects", "Contact"];
 
 function executeCommandLine() {
   var commandline = document.getElementById('commandline').innerHTML;
@@ -23,7 +22,8 @@ function executeCommandLine() {
     console.log("success: " + success);
     document.getElementById("terminal-response").innerHTML = success;
   } else {
-    document.getElementById("terminal-response").innerHTML = ("Keyword '" + keyword + "' not found. Type 'help' if you're stuck.");
+    // document.getElementById("terminal-response").innerHTML = ("Keyword '" + keyword + "' not found. Type <i>'help'</i> if you're stuck.");
+    document.getElementById("terminal-response").innerHTML = ("Keyword '" + keyword + "' not found. If you are stuck, type <i>'help'</i>");
   }
 }
 
@@ -35,21 +35,25 @@ function executeKeyword(keyword, command) {
   if (keyword === 'whoami') return "Hello, my name is Lochlann O Neill.<br>I'm currently studying software development at MTU."
   if (keyword === 'lochlann') return "The greatest software developer in my house. Would be a complete shame if I wasn't hired asap."
   if (keyword === 'bruce') return "Cha dood"
+  if (keyword === 'gordon') return "No gingers allowed"
   //actual commands
-  if (keyword === 'help') return "Try keywords such as 'bin' or try to find some hidden keywords. :)";
+  if (keyword === 'help') return "Type <i>'bin'</i> to find some keywords.<br>Some keywords need an argument after them, such as 'echo hello'.<br>There are also some secret commands, try to guess some of them :)";
   if (keyword === 'print') return command;
   if (keyword === 'echo') return command;
   // ! need to fix this
-  // if (keyword === 'cd') window.location.href = "../" + command.toLowerCase() + ".html";
-  // if (keyword === 'cd') {
-  //   var location = "../" + command.toLowerCase() + ".html";
-  //   window.location.href = executeLs(location);
-  //   return command.toLowerCase() + ".html";
-  // }
+  // if (keyword === 'cd') window.location.href = command.toLowerCase() + ".html"; ""
+  // if (keyword === 'cd') window.location.href = "projects.html";
+  if (keyword === 'cd') {
+    var location = command.toLowerCase() + ".html";
+    console.log("location: " + location);
+    executeLs(command.toLowerCase() + ".html");
+    return command.toLowerCase() + ".html";
+  }
   if (keyword === 'ls') return "[" + FILES.join(', ') + "]";
-  if (keyword === 'bin') return "[" + BIN_NOEASTEREGGS.join(', ') + "]";
+  if (keyword === 'bin') return "[" + BIN_PUBLIC.join(', ') + "]";
   if (keyword === 'pwd') return 'Home'
-  return 'Unprecedented error';
+  if (keyword === 'man') return BIN.man(command);
+  // return 'Unprecedented Error';
 }
 
 function getKeywordPurpose(keyword) {

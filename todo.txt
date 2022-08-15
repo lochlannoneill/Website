@@ -1,3 +1,4 @@
-Terminal can cd to different pages on the navbar
 Maybe make an entire folder directory???????
 Make a dictionary for all BIN variables to store their keywords and respective returns
+Let the user create a new command with a man???
+create man for each keyword
