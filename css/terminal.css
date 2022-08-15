@@ -1,0 +1,51 @@
+/* ______________________________________________________________________________________________________________________ */
+/* _____________________________________________________ terminal ______________________________________________________ */
+/* ______________________________________________________________________________________________________________________ */
+#terminal {
+    font-family: "Source Code Pro";
+    margin: 0;
+  }
+  
+  #terminal-response i {
+    color: white;
+  }
+
+  #link-name {
+    color: var(--color-secondary-bright-gradiant);
+    font-weight: bold;
+  }
+  
+  #link-name:hover {
+    transition: 0.375s;
+    color: var(--color-secondary-brightest);
+  }
+  
+  #underscore {
+    animation: blink 1s infinite;
+  }
+  
+  .badge {
+    background-color: var(--color-primary);
+    border: none;
+    cursor: default;
+  }
+  #commandline:hover {
+    cursor: pointer;
+    background-color: var(--color-primary-bright);
+  }
+  
+  #commandline[contenteditable] {
+    display: inline-block;
+    /* ! the overflow messes up the styling for some reason */
+    /* max-width: 16ch;
+    overflow: hidden; */
+    caret-color: transparent;
+  }
+  #commandline[contenteditable]:empty::before {
+    content: '_';
+    display: inline-block;
+    animation: blink 1s infinite;
+  }
+  #commandline[contenteditable]:empty:focus::before {
+    content: '_';
+  }

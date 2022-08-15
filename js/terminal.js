@@ -1,6 +1,6 @@
 //variable to store all the acceptable commands along with those that dont need arguments
 const BIN_PRIVATE = ["lochlann", "mtu", "markson", "bruce", "gordon", "whoami"];
-const BIN_PUBLIC = ["help", "whoami", "echo", "ls", "cd", "pwd", "bin"];
+const BIN_PUBLIC = ["help", "bin", "echo", "whoami", "pwd", "ls", "cd"];
 const BIN = BIN_PRIVATE + BIN_PUBLIC;
 const FILES = ["Home", "Projects", "Contact"];
 
@@ -37,7 +37,7 @@ function executeKeyword(keyword, command) {
   if (keyword === 'bruce') return "Cha dood"
   if (keyword === 'gordon') return "No gingers allowed"
   //actual commands
-  if (keyword === 'help') return "Try keywords such as <i>'bin'</i> or try to find some other hidden keywords.<br>Using <i>'man'</i> before a keyword tells you how to use it";
+  if (keyword === 'help') return "Try the keyword <i>'bin'</i> to get some acceptable keywords<br>Some keywords require a command, such as 'echo hello'<br>There are also some hidden keywords, try to guess some of them. :)";
   if (keyword === 'print') return command;
   if (keyword === 'echo') return command;
   if (keyword === 'cd') {
