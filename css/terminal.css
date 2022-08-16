@@ -19,6 +19,11 @@
     transition: 0.375s;
     color: var(--color-secondary-brightest);
   }
+
+  #link-name:active {
+    transition: 0.2s;
+    filter: brightness(50%);
+  }
   
   #underscore {
     animation: blink 1s infinite;

@@ -2,9 +2,9 @@
 /* _______________________________________________________ navbar _______________________________________________________ */
 /* ______________________________________________________________________________________________________________________ */
 .navbar {
-  font-size: 0.6em;
+  font-size: 0.8em;
   height: 10vh;
-  animation: 0.5s ease 0s normal forwards 1 fadeInFast;
+  animation: 1s ease 0s normal forwards 1 fadeInFast;
 }
 
 #navbar-logo {

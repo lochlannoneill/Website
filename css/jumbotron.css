@@ -73,6 +73,11 @@
   transition-duration: 0.5s;
 }
 
+.icon-social:active {
+  transition-duration: 0.1s;
+  filter: brightness(65%);
+}
+
 .fa-linkedin:hover {
   color: var(--color-linkedin);
 }
