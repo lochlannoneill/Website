@@ -18,6 +18,7 @@
   #link-name:hover {
     transition: 0.375s;
     color: var(--color-secondary-brightest);
+    text-shadow: 8px 8px 8px var(--color-primary-darkest);
   }
 
   #link-name:active {
