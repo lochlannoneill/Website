@@ -4,3 +4,20 @@
 form label {
   color: var(--color-text-muted);
 }
+
+.contact-section {
+  margin: auto;
+}
+
+.contact-section .box{
+  /* position: relative; */
+  display: flex;
+}
+
+.contact-section .icon {
+  /* background: red; */
+}
+
+.contact-section .text {
+  /* background: green; */
+}

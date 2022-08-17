@@ -72,6 +72,7 @@
   animation: spinWait 1.5s infinite;
   text-shadow: 4px 4px 4px var(--color-primary-darkest);
   transition-duration: 0.5s;
+  color: var(--color-secondary-brightest-gradiant);
 }
 
 .icon-social:active {

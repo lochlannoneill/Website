@@ -1,8 +1,7 @@
 <!--
-
     Author: Lochlann O Neill
+    Date:   23/01/2022
     Links:  https://linktr.ee/lochlannoneill
-     
 -->
 
 <!DOCTYPE html>
@@ -11,6 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <link rel="icon" href="images/profile_picture_transparent.png" />
     <!-- <link rel="icon" type="image/x-icon" href="images/logos/logo-transparent.ico"> -->
     <link
       rel="stylesheet"
@@ -38,19 +38,19 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <script
+    <!-- <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
-    ></script>
-    <script src="js/script.js" defer></script>
+    ></script> -->
+    <script src="js/terminal.js" defer></script>
   </head>
 
   <body>
     <a id="top"></a>
 
     <!--______________________________________________________ navbar _____________________________________________________ -->
-    <nav class="navbar navbar-expand-lg navbar-dark top" id="navbar">
+    <nav class="navbar navbar-expand-sm navbar-dark top" id="navbar">
       <button
         class="navbar-toggler"
         type="button"
@@ -70,17 +70,13 @@
             <!-- 'dropdown' added because the hover effect doesn't work without it for some reason -->
             <a class="nav-link" href="index.html">Home</a>
           </li>
-          <!-- About Me -->
-          <li class="nav-item dropdown">
-            <a class="nav-link" href="#">About Me</a>
-          </li>
           <!-- Projects -->
           <li class="nav-item dropdown">
-            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="projects.html">Projects</a>
           </li>
-          <!-- Contact -->
+          <!-- Projects -->
           <li class="nav-item dropdown active">
-            <a class="nav-link" href="#"
+            <a class="nav-link" href="index.html"
               >Contact<span class="sr-only">(current)</span></a
             >
           </li>
@@ -95,56 +91,88 @@
       class="jumbotron large-jumbotron vertical-center bg-transparent color"
       id="home-jumbotron"
     >
-      <div class="container">
-        <div class="container">
-          <h1 class="display-4">Lochlann O Neill</h1>
-          <p class="lead" id="lead-text">
-            <i>Seeking employment opportunities</i>
-          </p>
-        </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="contact-section col-lg-auto">
+            <div class="contact-box">
+              <div class="icon">
+                <a
+                  href="https://www.linkedin.com/in/lochlannoneill/"
+                  class="icon-social fa fa-linkedin"
+                ></a>
+                <h3>LinkedIn</h3>
+              </div>
+              <div class="text">
+                <p>
+                  The best possible place to contact me on<br />https://www.linkedin.com/in/lochlannoneill/
+                </p>
+              </div>
+            </div>
+            <div class="contact-box">
+              <div class="icon">
+                <a class="icon-social fa fa-phone"></a>
+                <h3>Phone</h3>
+              </div>
+              <div class="text">
+                <p>N/A</p>
+              </div>
+            </div>
+            <div class="contact-box">
+              <div class="icon">
+                <a class="icon-social fa fa-envelope"></a>
+                <h3>Email</h3>
+              </div>
+              <div class="text">
+                <p>lochlannjoneill@gmail.com</p>
+              </div>
+            </div>
+          </div>
 
-        <br />
-
-        <div class="container">
-          <span>
-            <a href="https://twitter.com/lochlannoneill">
-              <i class="fa fa-twitter"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/lochlannoneill/">
-              <i class="fa fa-linkedin"></i>
-            </a>
-            <a
-              href="mailto:lochlannjoneill@gmail.com?subject=Mail from Mail From Personal Website"
-            >
-              <i class="fa fa-envelope"></i>
-            </a>
-          </span>
+          <div class="container contact-section form-contact col-lg-auto">
+            <form>
+              <h2>Send Me A Message</h2>
+              <div class="inputBox">
+                <input type="text" name="" required="required" />
+                <span>Full Name</span>
+              </div>
+              <div class="inputBox">
+                <input type="text" name="" required="required" />
+                <span>Email</span>
+              </div>
+              <div class="inputBox">
+                <input type="text" name="" required="required" />
+                <span>Your Message</span>
+              </div>
+              <div class="inputBox">
+                <input type="text" name="" required="required" />
+                <span>Full Name</span>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-
-    <!-- ___________________________________________________ sections ______________________________________________________ -->
 
     <!-- ______________________________________________________ footer ______________________________________________________-->
     <footer class="bg-dark text-white pt-5 pb-4" id="footer-home">
       <div class="container text-center text-md-left">
         <div class="row text-center text-left">
-          <!-- Lochlann O Neill -->
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
             <h5 class="text-uppercase mb-4 font-weight-bold text-dark">
               Lochlann O Neill
             </h5>
-            <p class="text-muted">Student of Software Development at MTU</p>
+            <p class="text-muted">Student of Software Development at MTU.</p>
           </div>
-          <!-- Socials -->
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
             <h5 class="text-uppercase mb-4 font-weight-bold text-dark">
               Socials
             </h5>
             <p class="text-muted">
-              <i class="fa fa-twitter"></i>
-              <a href="https://twitter.com/LochlannONeill" class="text-muted"
-                >Twitter</a
+              <i class="fa fa-linkedin"></i>
+              <a
+                href="https://www.linkedin.com/in/lochlannoneill/"
+                class="text-muted"
+                >LinkedIn</a
               >
             </p>
             <p class="text-muted">
@@ -154,19 +182,14 @@
               >
             </p>
             <p class="text-muted">
-              <i class="fa fa-linkedin"></i>
-              <a
-                href="https://www.linkedin.com/in/lochlannoneill/"
-                class="text-muted"
-                >LinkedIn</a
+              <i class="fa fa-twitter"></i>
+              <a href="https://twitter.com/LochlannONeill" class="text-muted"
+                >Twitter</a
               >
             </p>
           </div>
-          <!-- column -->
         </div>
-        <!-- row -->
       </div>
-      <!-- container -->
     </footer>
   </body>
 </html>
