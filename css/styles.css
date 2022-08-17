@@ -109,7 +109,7 @@ hr {
 }
 
 a {
-  color: var(--color-secondary-brightest-gradiant);
+  color: var(--color-text-muted);
 }
 
 a:hover {
@@ -122,6 +122,26 @@ a:active {
   color: var(--color-secondary-dark);
 }
 
+.linkedin:hover {
+  color: var(--color-linkedin);
+}
+
+.github:hover {
+  color: var(--color-github);
+}
+
+.stackoverflow:hover {
+  color: var(--color-stackoverflow);
+}
+
+.twitter:hover {
+  color: var(--color-twitter);
+}
+
+.youtube:hover {
+  color: var(--color-youtube);
+}
+
 /* ______________________________________________________________________________________________________________________ */
 /* _____________________________________________________ sections _______________________________________________________ */
 /* ______________________________________________________________________________________________________________________ */
@@ -132,7 +152,8 @@ a:active {
 }
 
 #main-join {
-  background-image: linear-gradient(
+  background-image: 
+    linear-gradient(
       to bottom,
       var(--color-primary-dark),
       var(--color-secondary-gradiant)

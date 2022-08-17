@@ -74,6 +74,11 @@ form label {
   color: var(--color-text);
 }
 
+.contact-form .inputBox input:hover,
+.contact-form .inputBox textarea:hover {
+  cursor: pointer;
+}
+
 .contact-form .inputBox span {
   position: absolute;
   padding: 2px 0;

@@ -63,12 +63,13 @@
   color: var(--color-primary-dark-gradiant);
   font-size: 2.25em;
   padding: 16px;
+  transition: 0.5s;
 }
 
 .icon:hover {
   color: var(--color-secondary-brightest-gradiant);
   text-shadow: 4px 4px 4px var(--color-primary-darkest);
-  transition-duration: 0.5s;
+  transition-duration: 0.125s;
   animation: 2.5s wiggleBig infinite;
 }
 
@@ -87,7 +88,7 @@
   filter: brightness(65%);
 }
 
-.fa-linkedin:hover {
+/* .fa-linkedin:hover {
   color: var(--color-linkedin);
 }
 
@@ -101,4 +102,4 @@
 
 .fa-stack-overflow:hover {
   color: var(--color-stackoverflow);
-}
+} */

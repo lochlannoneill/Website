@@ -21,6 +21,7 @@
   --color-github: rgb(121, 0, 121);
   --color-twitter: rgb(29, 161, 242);
   --color-stackoverflow: rgb(244, 129, 37);
-  --color-mail: red;
-  --image-background: url("../images/background2.jpg");
+  --color-youtube: rgb(254, 0, 0);
+  --color-mail: #fe0000;
+  --image-background: url("../images/background.jpg");
 }
