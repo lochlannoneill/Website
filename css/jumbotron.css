@@ -53,7 +53,7 @@
 }
 
 .jumbotron-icons {
-  animation: 1.75s ease 0s normal forwards 1 fadeLeftToRight;
+  animation: 2s ease 0s normal forwards 1 fadeLeftToRightWait;
   /* font-size: 1vw; */
 }
 
@@ -69,6 +69,7 @@
   color: var(--color-secondary-brightest-gradiant);
   text-shadow: 4px 4px 4px var(--color-primary-darkest);
   transition-duration: 0.5s;
+  animation: 2.5s wiggleBig infinite;
 }
 
 .icon-link {

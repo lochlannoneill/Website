@@ -1,4 +1,12 @@
-Maybe make an entire folder directory???????
-Make a dictionary for all BIN variables to store their keywords and respective returns
-Let the user create a new command with a man???
-create man for each keyword - will need a dictionary for a description of each keyword
+Critical:
+    Javascript for form submit
+
+High:
+
+Medium:
+    Make a dictionary for all BIN variables to store their keywords and respective returns
+        create man for each keyword - will need a dictionary for a description of each keyword
+
+Low:
+    Let the user create a new command with a man???
+    Maybe make an entire folder directory???????

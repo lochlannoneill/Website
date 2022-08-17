@@ -114,7 +114,7 @@ a {
 
 a:hover {
   /* color: var(--color-secondary); */
-  animation: wiggle 2.5s infinite;
+  animation: wiggleSmall 2.5s infinite;
   text-decoration: none;
 }
 

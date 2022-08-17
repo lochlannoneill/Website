@@ -17,14 +17,10 @@ form label {
 .contact-box{
   margin: 4vh 0;
   display: flex;
+  animation: 0.5s ease 0s normal forwards 1 fadeLeftToRight;
 }
 
-/* .contact-box a:hover {
-  animation: wiggle 2s infinite;
-} */
-
 .contact-box .icon {
-  /* margin: 1vh; */
   margin: 0;
   padding: 0;
   font-size: 3em;
@@ -35,30 +31,20 @@ form label {
 }
 
 .contact-title {
-  /* display: flex; */
   padding: 1vw;
 }
 
 .contact-text {
-  /* background: green; */
-  /* justify-content: center;
-  align-items: center; */
-  /* display: flex; */
-  width: 20vw;
   display: block;
   align-items: center;
   padding: 1vw;
 }
 
-
-
-/* .contact-section .contact-form {
-  align-items: center;
-} */
-
 .contact-form {
   background-color: var(--color-primary-gradiant);
   padding: 40px;
+  position: relative;
+  animation: 0.5s ease 0s normal forwards 1 fadeRightToLeft;
 }
 
 .contact-section form h2 {
@@ -99,10 +85,15 @@ form label {
   color: #666;
 }
 
+/* .contact-form .inputBox textarea {
+  display: block;
+  height: 200px;
+} */
+
 .contact-form .inputBox input:focus ~ span,
 .contact-form .inputBox input:valid ~ span,
 .contact-form .inputBox textarea:focus ~ span,
-.contact-form .inputBox textarea:focus ~ span {
+.contact-form .inputBox textarea:valid ~ span {
   color: var(--color-secondary-brightest-gradiant);
   font-size: 12px;
   transform: translateY(-24px);
@@ -124,4 +115,9 @@ form label {
   transition: 0.5s;
   background: var(--color-primary-dark);
   color: white;
+  animation: 3s wiggleSmall infinite;
+}
+
+.contact-form .inputBox input[type="submit"]:active {
+  background: var(--color-secondary-dark);
 }

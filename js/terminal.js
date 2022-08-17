@@ -32,7 +32,6 @@ function executeKeyword(keyword, command) {
   //eastereggs
   if (keyword === 'mtu') return "I love this college, I'm glad I came here to study";
   if (keyword === 'markson') return "Markson stop stalking me please";
-  if (keyword === 'whoami') return "Hello, my name is Lochlann O Neill.<br>I'm currently studying software development at MTU."
   if (keyword === 'lochlann') return "The greatest software developer in my house. Would be a complete shame if I wasn't hired asap."
   if (keyword === 'bruce') return "Cha dood"
   if (keyword === 'gordon') return "No gingers allowed"
@@ -40,6 +39,7 @@ function executeKeyword(keyword, command) {
   if (keyword === 'help') return "Try the keyword <i>'bin'</i> to get some acceptable keywords<br>Some keywords require a command, such as 'cd Projects'<br>Try to guess some hidden commands. :)";
   if (keyword === 'print') return command;
   if (keyword === 'echo') return command;
+  if (keyword === 'whoami') return "Hello, I'm <i>Lochlann O Neill</i> :)<br>As a student of Software Development, I'm currently undergoing my final year at MTU.<br>Once finished with my degree, I hope to continue my journey focusing on either Cybersecurity or Backend Development."
   if (keyword === 'cd') {
     var location = command.toLowerCase() + ".html";
     console.log("location: " + location);
