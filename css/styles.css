@@ -113,8 +113,8 @@ a {
 }
 
 a:hover {
-  color: var(--color-secondary);
-  animation: wiggle 3s infinite;
+  /* color: var(--color-secondary); */
+  animation: wiggle 2.5s infinite;
   text-decoration: none;
 }
 

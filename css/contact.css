@@ -9,15 +9,47 @@ form label {
   margin: auto;
 }
 
-.contact-section .box{
+.contact-section h3 {
+  color: white;
+}
+
+.contact-box{
   /* position: relative; */
+  margin: 4vh 0;
   display: flex;
 }
 
-.contact-section .icon {
-  /* background: red; */
+/* .contact-box a:hover {
+  animation: wiggle 2s infinite;
+} */
+
+.contact-box .icon {
+  /* margin: 1vh; */
+  margin: 0;
+  padding: 0;
+  font-size: 3em;
 }
 
-.contact-section .text {
+.contact-box .icon:hover {
+  transform: scale(2);
+}
+
+.contact-title {
+  /* display: flex; */
+  padding: 1vw;
+}
+
+.contact-text {
   /* background: green; */
+  /* justify-content: center;
+  align-items: center; */
+  /* display: flex; */
+  width: 20vw;
+  display: block;
+  align-items: center;
+  padding: 1vw;
+}
+
+.contact-section .contact-form {
+  align-items: center;
 }

@@ -105,10 +105,10 @@
     transform: rotate(0deg);
   }
   5% {
-    transform: rotate(5deg);
+    transform: rotate(15deg);
   }
   10% {
-    transform: rotate(-5deg);
+    transform: rotate(-15deg);
   }
   15% {
     transform: rotate(0deg);
