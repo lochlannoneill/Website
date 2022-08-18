@@ -1,3 +1,10 @@
 .section-container {
+    margin: 0;
+    /* margin-top: 20vh; */
+    padding: 2vw;
+    background-color: var(--color-primary-bright);
+}
 
+.section-container p {
+    color: var(--color-text);
 }

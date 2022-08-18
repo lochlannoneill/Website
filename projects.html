@@ -1,8 +1,7 @@
 <!--
-
     Author: Lochlann O Neill
+    Date:   23/01/2022
     Links:  https://linktr.ee/lochlannoneill
-     
 -->
 
 <!DOCTYPE html>
@@ -39,7 +38,8 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/script.js" defer></script>
+    <script src="js/terminal.js" defer></script>
+    <script src="js/carousel.js" defer></script>
   </head>
 
   <body>
@@ -64,14 +64,15 @@
           <!-- Home -->
           <li class="nav-item dropdown">
             <!-- 'dropdown' added because the hover effect doesn't work without it for some reason -->
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="index.html"
+              >Home</a
+            >
           </li>
           <!-- Projects -->
           <li class="nav-item dropdown active">
-            <a class="nav-link" href="#"
-              >Projects<span class="sr-only">(current)</span></a
-            >
+            <a class="nav-link" href="projects.html">Projects<span class="sr-only">(current)</a>
           </li>
+          <!-- Projects -->
           <li class="nav-item dropdown">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
@@ -81,62 +82,120 @@
     </nav>
     <!-- navbar -->
 
+
     <!-- ___________________________________________________ jumbotron _____________________________________________________ -->
     <!-- <div class="jumbotron vertical-center bg-transparent color">
+
     </div> -->
 
-    <!-- ___________________________________________________ main content ______________________________________________________ -->
-    <div class="container-fluid">
 
-      <section class="container container-section">
-          <!-- <div class="container-text">
-            <h2 class="section-header">Staff Directory</h2>
-            <p> A JavaFX project, connected to an SQL database using JDBC</p>
-          </div> -->
-
-          <div class="container-showcase">
-            <div class="showcase showcase-java" style="background: url('images/javafx/home.png');">
-              <div class="showcase-content">
-                <h3>Java FX</h3>
-              </div>
-            </div>
-          <div class="showcase showcase-java" style="background: url('images/javafx/workspace.png');">
-            <div class="showcase-content">
-              <h3>VSCode</h3>
-              <p>No more terrible IDEs anymore :)</p>
-            </div>
-          </div>
-          <div class="showcase showcase-java" style="background: url('images/javafx/interns.png');">
-            <div class="showcase-content">
-              <h3>The Front-End</h3>
-              <p>The design of the app allows the user to easily add a new employee, of different types.</p>
-            </div>
-          </div>
-          <div class="showcase showcase-java" style="background: url('images/javafx/database.png');">
-            <div class="showcase-content">
-              <h3>The Back-End</h3>
-              <p>The details of the new employee are saved, enforcing certain requirements such as capitalisation. Each employee is issued with a unique ID, which is also used within the email usernames for the Admins. One of the Engineers must be assigned as a mentor for a new Intern.</p>
-            </div>
-          </div>
-
+    <!-- ___________________________________________________ section _____________________________________________________ -->
+    <!-- <section class="section-container">
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, consectetur deleniti neque architecto, aut earum ad, veniam asperiores nulla nostrum nam repellat obcaecati nobis maiores debitis sapiente ea ratione sunt!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa deserunt praesentium, eos nisi asperiores quam, quae ex fugit laboriosam quas, nihil nam blanditiis ab obcaecati accusamus adipisci in quisquam. Nesciunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum porro iste placeat neque, cum libero perferendis consectetur cumque assumenda quaerat veritatis amet exercitationem ut vel aut ratione. Quia, molestiae similique.
+            </p>
         </div>
+    </section> -->
+    
+    <!-- ___________________________________________________ carousel _____________________________________________________ -->
+    <section class="section">
+        <div id="drag-container">
+            <div id="spin-container">
+              <!-- Example add video  -->
+              <!-- <video controls autoplay="autoplay" loop>
+                  <source src="https://player.vimeo.com/external/322244668.sd.mp4?s=338c48ac2dfcb1d4c0689968b5baf94eee6ca0c1&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
+              </video> -->
+              <!-- Add your images (or video) here -->
+              <!-- <a href="https://www.linkedin.com/in/lochlannoneill/"></a>"><img src="images/background6.jpg" alt=""></a> -->
+              <img src="images/icl/homecrop.png" alt="">
+              <img src="images/javafx/workspace.png" alt="">
+              <img src="images/javafx/interns.png" alt="">
+              <img src="images/background1.jpg" alt="">
+              <img src="images/background6.jpg" alt="">
+              
+              <!-- Example image with link -->
+              <!-- <a target="_blank" href="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg">
+                <img src="images/javafx/workspace.png" alt="">
+              </a> -->
+          
+              <!-- Text at center of ground -->
+              <!-- <p>Some of my most recent projects</p> -->
+            </div>
+            <div id="ground"></div>
+          </div>
 
-      </section>
+    </section>
 
-      <section class="container container-section">
-        <div class="container-text">
-          <h2>Irish Challenger League Website</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae accusamus quibusdam aut tempora, perspiciatis, harum veritatis nisi placeat atque natus itaque qui quis exercitationem? Laborum blanditiis amet impedit minima nostrum.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias debitis reiciendis minus cumque? Voluptas amet quisquam rerum, soluta eveniet non iure saepe natus quos at reiciendis, minus qui laudantium sint?</p>
-        </div>
-        <div class="container-showcase">
-          <div class="showcase showcase-java" style="background: url('images/icl/home.png');"></div>
-          <div class="showcase showcase-java" style="background: url('images/icl/join.png');"></div>
-          <div class="showcase showcase-java" style="background: url('images/icl/contact.png');"></div>
-        </div>
-      </section>
+          <!-- ___________________________________________________ section _____________________________________________________ -->
+          <section class="section-container">
+            <div class="container">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, consectetur deleniti neque architecto, aut earum ad, veniam asperiores nulla nostrum nam repellat obcaecati nobis maiores debitis sapiente ea ratione sunt!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa deserunt praesentium, eos nisi asperiores quam, quae ex fugit laboriosam quas, nihil nam blanditiis ab obcaecati accusamus adipisci in quisquam. Nesciunt.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum porro iste placeat neque, cum libero perferendis consectetur cumque assumenda quaerat veritatis amet exercitationem ut vel aut ratione. Quia, molestiae similique.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolores rerum facere quos sed ipsum saepe necessitatibus non mollitia, et unde fuga praesentium nostrum officia veniam? Facilis quis nemo quisquam.
+                </p>
+            </div>
+        </section>
+      
+      <!-- github corner (https://github.com/tholman/github-corners) -->
+      <!-- <a href="https://github.com/HoangTran0410/3DCarousel" target="_blank" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#000; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+          <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+          <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+          <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
+        </svg></a>
+      <style>
+        .github-corner:hover .octo-arm {
+          animation: octocat-wave 560ms ease-in-out
+        }
+      
+        @keyframes octocat-wave {
+      
+          0%,
+          100% {
+            transform: rotate(0)
+          }
+      
+          20%,
+          60% {
+            transform: rotate(-25deg)
+          }
+      
+          40%,
+          80% {
+            transform: rotate(10deg)
+          }
+        }
+      
+        @media (max-width:500px) {
+          .github-corner:hover .octo-arm {
+            animation: none
+          }
+      
+          .github-corner .octo-arm {
+            animation: octocat-wave 560ms ease-in-out
+          }
+        }
+      </style> -->
 
-    </div> 
+    <!-- ___________________________________________________ projects ______________________________________________________ -->
+    <!-- <section class="container section-container bg-dark text-white">
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, hic error? Adipisci recusandae provident corrupti quibusdam non amet natus magni? Repellendus delectus vero, modi totam saepe voluptates dolorum magnam qui.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus mollitia eaque dolor, accusantium officiis modi cum exercitationem illo quos temporibus tempore, hic aperiam eius minus corporis nostrum laudantium numquam eligendi?</p>
+      </div>
+    </section> -->
+
+    <!-- ___________________________________________________ empty ______________________________________________________ -->
+    <!-- <div class="container section-container bg-dark text-white">
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, hic error? Adipisci recusandae provident corrupti quibusdam non amet natus magni? Repellendus delectus vero, modi totam saepe voluptates dolorum magnam qui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit eos minima officia obcaecati vel distinctio atque ullam expedita. Voluptates quod sequi accusamus, eos cumque tempora nostrum ex sed aliquid consequuntur.</p>
+      </div>
+    </div> -->
 
     <!-- ______________________________________________________ footer ______________________________________________________-->
     <footer class="bg-dark text-white pt-5 pb-4" id="footer-home">
@@ -146,7 +205,7 @@
             <h5 class="text-uppercase mb-4 font-weight-bold text-dark">
               Lochlann O Neill
             </h5>
-            <p class="text-muted">Student of Software Development at MTU.</p>
+            <p class="text-muted">Student of Software Development at Munster Technological University.</p>
           </div>
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
             <h5 class="text-uppercase mb-4 font-weight-bold text-dark">
@@ -182,6 +241,18 @@
               <i class="fa fa-youtube"></i>
               <a href="https://www.youtube.com/channel/UCfh3sXBVlA8N5Da3ms8n1Sg" class="text-muted"
                 >Youtube</a
+              >
+            </p>
+            <p class="text-muted">
+              <i class="fa fa-codepen"></i>
+              <a href="https://codepen.io/lochlannoneill" class="text-muted"
+                >CodePen</a
+              >
+            </p>
+            <p class="text-muted">
+              <i class="fa fa-fiverr"></i>
+              <a href="https://www.fiverr.com/lochlannoneill" class="text-muted"
+                >fiverr</a
               >
             </p>
           </div>

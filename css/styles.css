@@ -6,6 +6,8 @@
 @import "jumbotron.css";
 @import "contact.css";
 @import "showcase.css";
+@import "carousel.css";
+@import "section.css";
 
 ::selection {
   background: var(--color-secondary); /* WebKit/Blink Browsers */
@@ -88,7 +90,7 @@ body {
   backdrop-filter: blur(2px);
   background-size: cover;
   background-attachment: fixed;
-  background-color: var(--color-primary-bright);
+  background-color: var(--color-primary-brighter);
   min-height: 100vh;
   font-family: Nunito, Arial, sans-serif;
   font-size: 1.2em;
@@ -129,12 +131,13 @@ a:active {
 .icon {
   margin: 0 0.5vh;
   text-decoration: none;
-  color: var(--color-text-dark);
-  text-shadow: 4px 4px 8px var(--color-primary-darkest);
+  color: var(--color-primary-gradiant);
+  /* text-shadow: 4px 4px 8px var(--color-primary-darkest); */
   font-size: 2.25em;
   padding: 16px;
   transition: 0.5s;
   /* animation: cycleColor 3s linear infinite; */
+
 }
 
 .icon:hover {

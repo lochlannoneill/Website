@@ -81,10 +81,10 @@ form label {
   transition: 0.3s;
 }
 
-.contact-form .inputBox input:active,
+/* .contact-form .inputBox input:active,
 .contact-form .inputBox textarea:active {
-  /* border-bottom: 0.2vh solid var(--color-secondary-brightest-gradiant); */
-}
+  border-bottom: 0.2vh solid var(--color-secondary-brightest-gradiant);
+} */
 
 .contact-form .inputBox input:hover,
 .contact-form .inputBox textarea:hover {

@@ -3,12 +3,15 @@
   --color-primary-gradiant: rgb(10, 10, 10, 0.7);
   --color-primary-bright: rgb(20, 20, 20);
   --color-primary-brighter: rgb(30, 30, 30);
+  --color-primary-brighter-gradiant: rgb(30, 30, 30, 0.7);
   --color-primary-brightest: rgb(40, 40, 40);
   --color-primary-dark: rgb(0, 0, 0);
   --color-primary-dark-gradiant: rgb(0, 0, 0, 0.7);
+  --color-primary-dark-gradiant-low: rgb(0, 0, 0, 0.5);
+  --color-primary-dark-gradiant-lower: rgb(0, 0, 0, 0.2);
   --color-primary-darkest: rgb(0, 0, 0);
   --color-secondary: rgb(115, 45, 24);
-  --color-secondary-gradiant: rgb(115, 45, 24, 0.4);
+  --color-secondary-gradiant: rgb(115, 45, 24, 0.3);
   --color-secondary-bright: rgb(173, 57, 22);
   --color-secondary-bright-gradiant: rgb(173, 57, 22, 0.9);
   --color-secondary-brightest: rgb(255, 60, 0);
@@ -25,5 +28,5 @@
   --color-codepen: rgb(30, 30, 38);
   --color-fiverr: rgb(29, 191, 114);
   --color-mail: #ff0000;
-  /* --image-background: url("../images/background2.jpg"); */
+  --image-background: url("../images/background2.jpg");
 }
