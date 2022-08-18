@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito:wght@300&family=Roboto:wght@300;400&family=Source+Code+Pro&display=swap");
-@import "variables.css";
+@import "colors.css";
 @import "keyframes.css";
 @import "navbar.css";
 @import "footer.css";
@@ -61,17 +61,21 @@ html {
 }
 
 body::-webkit-scrollbar {
-  width: 1em;
+  width: 0.6em;
   display: block;
   overflow: auto;
 }
 
 body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 16px rgba(0, 0, 0, 0.3);
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--color-primary-bright);
+  background-color: var(--color-secondary-gradiant);
+}
+
+body::-webkit-scrollbar-corner {
+  background-color: transparent;
 }
 
 body {
@@ -84,13 +88,12 @@ body {
   backdrop-filter: blur(2px);
   background-size: cover;
   background-attachment: fixed;
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-bright);
   min-height: 100vh;
   font-family: Nunito, Arial, sans-serif;
   font-size: 1.2em;
   padding: 0;
   margin: 0;
-  background-color: var(--color-primary);
   text-decoration: none;
   color: var(--color-white);
   padding: 0;
@@ -126,20 +129,21 @@ a:active {
 .icon {
   margin: 0 0.5vh;
   text-decoration: none;
-  color: var(--color-primary-gradiant);
+  color: var(--color-text-dark);
+  text-shadow: 4px 4px 8px var(--color-primary-darkest);
   font-size: 2.25em;
   padding: 16px;
   transition: 0.5s;
-  animation: cycleColor 3s linear infinite;
+  /* animation: cycleColor 3s linear infinite; */
 }
 
 .icon:hover {
   /* color: var(--color-secondary-brightest-gradiant); */
   color: var(--color-text);
-  text-shadow: 2px 2px 8px var(--color-primary-darkest);
+  /* text-shadow: 4px 4px 8px var(--color-primary-darkest); */
   transition-duration: 0.125s;
   animation: 2.5s wiggleBig infinite;
-  text-shadow: 0 0 50px var(--color-secondary-brightest), 0 0 100px var(--color-secondary-brightest), 0 0 150px var(--color-secondary-brightest), 0 0 200px var(--color-secondary-brightest);
+  text-shadow: 0 0 1000px var(--color-secondary-brightest), 0 0 100px var(--color-secondary-brightest), 0 0 150px var(--color-secondary-brightest), 0 0 200px var(--color-secondary-brightest);
 }
 
 .icon-link:hover {
@@ -154,28 +158,36 @@ a:active {
 }
 
 .linkedin:hover {
-  color: var(--color-linkedin);
+  /* color: var(--color-linkedin); */
   text-shadow: 0 0 50px var(--color-linkedin), 0 0 100px var(--color-linkedin), 0 0 150px var(--color-linkedin), 0 0 200px var(--color-linkedin);
 }
 
 .github:hover {
-  color: var(--color-github);
+  /* color: var(--color-github); */
   text-shadow: 0 0 50px var(--color-github), 0 0 100px var(--color-github), 0 0 150px var(--color-github), 0 0 200px var(--color-github);
 }
 
 .stackoverflow:hover {
-  color: var(--color-stackoverflow);
+  /* color: var(--color-stackoverflow); */
   text-shadow: 0 0 50px var(--color-stackoverflow), 0 0 100px var(--color-stackoverflow), 0 0 150px var(--color-stackoverflow), 0 0 200px var(--color-stackoverflow);
 }
 
 .twitter:hover {
-  color: var(--color-twitter);
+  /* color: var(--color-twitter); */
   text-shadow: 0 0 50px var(--color-twitter), 0 0 100px var(--color-twitter), 0 0 150px var(--color-twitter), 0 0 200px var(--color-twitter);
 }
 
 .youtube:hover {
-  color: var(--color-youtube);
+  /* color: var(--color-youtube); */
   text-shadow: 0 0 50px var(--color-youtube), 0 0 100px var(--color-youtube), 0 0 150px var(--color-youtube), 0 0 200px var(--color-youtube);
+}
+
+.codepen:hover {
+  text-shadow: 0 0 50px var(--color-codepen), 0 0 100px var(--color-codepen), 0 0 150px var(--color-codepen), 0 0 200px var(--color-codepen);
+}
+
+.fiverr:hover {
+  text-shadow: 0 0 50px var(--color-fiverr), 0 0 100px var(--color-fiverr), 0 0 150px var(--color-fiverr), 0 0 200px var(--color-fiverr);
 }
 
 /* ______________________________________________________________________________________________________________________ */

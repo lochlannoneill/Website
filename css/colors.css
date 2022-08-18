@@ -8,7 +8,7 @@
   --color-primary-dark-gradiant: rgb(0, 0, 0, 0.7);
   --color-primary-darkest: rgb(0, 0, 0);
   --color-secondary: rgb(115, 45, 24);
-  --color-secondary-gradiant: rgb(115, 45, 24, 0.5);
+  --color-secondary-gradiant: rgb(115, 45, 24, 0.4);
   --color-secondary-bright: rgb(173, 57, 22);
   --color-secondary-bright-gradiant: rgb(173, 57, 22, 0.9);
   --color-secondary-brightest: rgb(255, 60, 0);
@@ -22,6 +22,8 @@
   --color-twitter: rgb(29, 161, 242);
   --color-stackoverflow: rgb(244, 129, 37);
   --color-youtube: rgb(254, 0, 0);
-  --color-mail: #fe0000;
-  --image-background: url("../images/background.jpg");
+  --color-codepen: rgb(30, 30, 38);
+  --color-fiverr: rgb(29, 191, 114);
+  --color-mail: #ff0000;
+  /* --image-background: url("../images/background2.jpg"); */
 }

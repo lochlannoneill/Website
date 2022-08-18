@@ -25,3 +25,10 @@ Bugs:
 
     Low:
         
+
+var options = {
+  particleColor: "#888",
+  interactive: true,
+  speed: "medium",
+  density: "high"
+};
