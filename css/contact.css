@@ -15,7 +15,7 @@ form label {
 }
 
 .contact-box{
-  margin: 4vh 0;
+  margin: 4vh;
   display: flex;
   animation: 0.5s ease 0s normal forwards 1 fadeLeftToRight;
 }

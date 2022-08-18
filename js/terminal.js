@@ -1,8 +1,8 @@
 //variable to store all the acceptable commands along with those that dont need arguments
 const BIN_PRIVATE = ["lochlann", "mtu", "markson", "bruce", "gordon", "whoami"];
-const BIN_PUBLIC = ["help", "bin", "echo", "whoami", "pwd", "ls", "cd"];
+const BIN_PUBLIC = ["help", "bin", "print", "echo", "whoami", "pwd", "ls", "cd"];
 const BIN = BIN_PRIVATE + BIN_PUBLIC;
-const FILES = ["Index", "Projects", "Contact"];
+const FILES = ["index", "projects", "contact"];
 
 function executeCommandLine() {
   var commandline = document.getElementById('commandline').innerHTML;
@@ -36,28 +36,50 @@ function executeKeyword(keyword, command) {
   if (keyword === 'bruce') return "Cha dood"
   if (keyword === 'gordon') return "No gingers allowed"
   //actual commands
-  if (keyword === 'help') return "Try the keyword <i>'bin'</i> to get some acceptable keywords<br>Some keywords require a command, such as 'cd Projects'<br>Try to guess some hidden commands. :)";
-  if (keyword === 'print') return command;
-  if (keyword === 'echo') return command;
-  if (keyword === 'whoami') return "Hello, I'm <i>Lochlann O Neill</i> :)<br>As a student of Software Development, I'm currently undergoing my final year at MTU.<br>Once finished with my degree, I hope to continue my journey focusing on either Cybersecurity or Backend Development."
-  if (keyword === 'cd') {
-    var location = command.toLowerCase() + ".html";
-    console.log("location: " + location);
-    executeLs(command.toLowerCase() + ".html");
-    return command.toLowerCase() + ".html";
-  }
-  if (keyword === 'ls') return "[" + FILES.join(', ') + "]";
-  if (keyword === 'bin') return "[" + BIN_PUBLIC.join(', ') + "]";
-  if (keyword === 'pwd') return 'Home'
-  // return 'Unprecedented Error';
+  if (keyword === 'help') return executeHelp();
+  if (keyword === 'print') return executePrint(command);
+  if (keyword === 'echo') return executePrint(command);
+  if (keyword === 'whoami') return executeWhoAmI();
+  if (keyword === 'cd') return executeCd(command.toLowerCase());
+  if (keyword === 'ls') return executeLs();
+  if (keyword === 'bin') return executeBin();
+  if (keyword === 'pwd') return executePwd();
+  return 'Unprecedented Error';
 }
 
 function getKeywordPurpose(keyword) {
-
 }
 
-function executeLs(file) {
-  window.location.href = file;
+function executeHelp() {
+  return "Try the keyword <i>'bin'</i> to get some acceptable keywords<br>Some keywords require a command, such as 'cd Projects'<br>Try to guess some hidden commands. :)";
+}
+
+function executePrint(command) {
+  return command
+}
+
+function executeWhoAmI() {
+  return "Hello, I'm <i>Lochlann O Neill</i> :)<br>As a student of Software Development, I'm currently undergoing my final year at MTU.<br>Once finished with my degree, I hope to continue my journey focusing on either Cybersecurity or Web Development."
+}
+
+function executeCd(location) {
+  if (FILES.includes(location)) {
+    window.location.href = location + ".html";
+    return "200 - File Relocation: " + location + ".html";
+  }
+    return "404 - File not found: " + location;
+}
+
+function executeLs() {
+  return "[" + FILES.join(', ') + "]"
+}
+
+function executeBin() {
+  return "[" + BIN_PUBLIC.join(', ') + "]"
+}
+
+function executePwd() {
+  return "Home";
 }
 
 //return boolean if command is valid
