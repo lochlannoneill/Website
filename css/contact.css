@@ -72,11 +72,18 @@ form label {
   font-size: 20px;
   margin-bottom: 16px;
   border: none;
+  /* border-bottom: 0.2vh solid var(--color-primary-brightest); */
   border-bottom: 0.2vh solid var(--color-secondary-brightest-gradiant);
   outline: none;
   resize: none;
   background-color: transparent;
   color: var(--color-text);
+  transition: 0.3s;
+}
+
+.contact-form .inputBox input:active,
+.contact-form .inputBox textarea:active {
+  /* border-bottom: 0.2vh solid var(--color-secondary-brightest-gradiant); */
 }
 
 .contact-form .inputBox input:hover,

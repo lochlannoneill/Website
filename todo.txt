@@ -10,6 +10,7 @@ New Additions:
         
     Low:
         Maybe make an entire folder directory?
+        remove sideways scrollbar (loads for 1 sec when open contact.html)
 
 
 
