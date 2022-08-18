@@ -51,7 +51,7 @@ function getKeywordPurpose(keyword) {
 }
 
 function executeHelp() {
-  return "Try the keyword <i>'bin'</i> to get some acceptable keywords<br>Some keywords require a command, such as 'cd Projects'<br>Try to guess some hidden commands. :)";
+  return "Try the keyword <i>bin</i> to get some acceptable keywords<br>Some keywords require a command, such as <i>cd Projects</i><br>Try to guess some hidden commands. :)";
 }
 
 function executePrint(command) {
@@ -64,10 +64,11 @@ function executeWhoAmI() {
 
 function executeCd(location) {
   if (FILES.includes(location)) {
+    if (location == 'home') location = 'index';
     window.location.href = location + ".html";
     return "200 - File Relocation: " + location + ".html";
   }
-    return "404 - File not found: " + location;
+    return "404 - File not found: " + location + ".html<br>Type <i>ls</i> to get acceptable files";
 }
 
 function executeLs() {

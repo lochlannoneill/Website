@@ -1,15 +1,27 @@
-Critical:
-    Javascript for form submit
+New Additions:
+    Critical:
+        Javascript for contact form submit
 
-High:
+    High:
+        Creat a CV page with downloadable pdf - https://youtu.be/Eb6yFhkzpmI?t=612
+
+    Medium:
+        Create a section for most recent social media posts
+        
+    Low:
+        Maybe make an entire folder directory?
 
 
-Medium:
-    Create a 'twitter class' instead of hardcoding the color everywhere
-    Why do contact.html left boxes not center properly???
 
-Low:
-    Make a dictionary for all BIN variables to store their keywords and respective returns
-        create man for each keyword - will need a dictionary for a description of each keyword
-    Let the user create a new command with a man???
-    Maybe make an entire folder directory???????
+Bugs:
+    Critical:
+        
+
+    High:
+        
+
+    Medium:
+        Why do contact.html left boxes not center properly???
+
+    Low:
+        

@@ -18,7 +18,9 @@
   #link-name:hover {
     transition: 0.375s;
     color: var(--color-secondary-brightest);
-    text-shadow: 8px 8px 8px var(--color-primary-darkest);
+    /* text-shadow: 8px 8px 8px var(--color-primary-darkest); */
+    text-shadow: 0 0 50px var(--color-secondary), 0 0 100px var(--color-secondary), 0 0 150px var(--color-secondary), 0 0 200px var(--color-secondary);
+    animation: 3s cycleColor linear infinite;
   }
 
   #link-name:active {

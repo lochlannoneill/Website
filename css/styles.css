@@ -116,30 +116,66 @@ a:hover {
   /* color: var(--color-secondary); */
   animation: wiggleSmall 2.5s infinite;
   text-decoration: none;
+  /* text-shadow: 0 0 50px var(--color-stackoverflow), 0 0 100px var(--color-stackoverflow), 0 0 150px var(--color-stackoverflow), 0 0 200px var(--color-stackoverflow); */
 }
 
 a:active {
   color: var(--color-secondary-dark);
 }
 
+.icon {
+  margin: 0 0.5vh;
+  text-decoration: none;
+  color: var(--color-primary-gradiant);
+  font-size: 2.25em;
+  padding: 16px;
+  transition: 0.5s;
+  animation: cycleColor 3s linear infinite;
+}
+
+.icon:hover {
+  /* color: var(--color-secondary-brightest-gradiant); */
+  color: var(--color-text);
+  text-shadow: 2px 2px 8px var(--color-primary-darkest);
+  transition-duration: 0.125s;
+  animation: 2.5s wiggleBig infinite;
+  text-shadow: 0 0 50px var(--color-secondary-brightest), 0 0 100px var(--color-secondary-brightest), 0 0 150px var(--color-secondary-brightest), 0 0 200px var(--color-secondary-brightest);
+}
+
+.icon-link:hover {
+  text-decoration: none;
+  top: -8px;
+  animation: spinIcon 1.5s infinite;
+}
+
+.icon-link:active {
+  transition-duration: 0.1s;
+  filter: brightness(65%);
+}
+
 .linkedin:hover {
   color: var(--color-linkedin);
+  text-shadow: 0 0 50px var(--color-linkedin), 0 0 100px var(--color-linkedin), 0 0 150px var(--color-linkedin), 0 0 200px var(--color-linkedin);
 }
 
 .github:hover {
   color: var(--color-github);
+  text-shadow: 0 0 50px var(--color-github), 0 0 100px var(--color-github), 0 0 150px var(--color-github), 0 0 200px var(--color-github);
 }
 
 .stackoverflow:hover {
   color: var(--color-stackoverflow);
+  text-shadow: 0 0 50px var(--color-stackoverflow), 0 0 100px var(--color-stackoverflow), 0 0 150px var(--color-stackoverflow), 0 0 200px var(--color-stackoverflow);
 }
 
 .twitter:hover {
   color: var(--color-twitter);
+  text-shadow: 0 0 50px var(--color-twitter), 0 0 100px var(--color-twitter), 0 0 150px var(--color-twitter), 0 0 200px var(--color-twitter);
 }
 
 .youtube:hover {
   color: var(--color-youtube);
+  text-shadow: 0 0 50px var(--color-youtube), 0 0 100px var(--color-youtube), 0 0 150px var(--color-youtube), 0 0 200px var(--color-youtube);
 }
 
 /* ______________________________________________________________________________________________________________________ */

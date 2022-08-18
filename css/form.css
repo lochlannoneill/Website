@@ -1,0 +1,96 @@
+
+/* ______________________________________________________________________________________________________________________ */
+/* _______________________________________________ footer - parent=contact.css_______________________________________________ */
+/* ______________________________________________________________________________________________________________________ */
+.contact-form {
+    background-color: var(--color-primary-gradiant);
+    padding: 40px;
+    position: relative;
+    animation: 0.5s ease 0s normal forwards 1 fadeRightToLeft;
+  }
+  
+  .contact-form .contact-section form h2 {
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: 5vh;
+    text-shadow: 2px 2px 8px var(--color-primary-darkest);
+  }
+  
+  .contact-form .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 2vh;
+  }
+  
+  .contact-form .inputBox input,
+  .contact-form .inputBox textarea {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 20px;
+    margin-bottom: 16px;
+    border: none;
+    border-bottom: 0.2vh solid var(--color-secondary-brightest-gradiant);
+    outline: none;
+    resize: none;
+    background-color: transparent;
+    color: var(--color-text);
+  }
+  
+  .contact-form .inputBox input:hover,
+  .contact-form .inputBox textarea:hover {
+    cursor: pointer;
+  }
+  
+  .contact-form .inputBox span {
+    position: absolute;
+    padding: 2px 0;
+    left: 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.3s;
+    color: #666;
+  }
+  
+  /* .contact-form .inputBox textarea {
+    display: block;
+    height: 200px;
+  } */
+  
+  .contact-form .inputBox input:focus ~ span,
+  .contact-form .inputBox input:valid ~ span,
+  .contact-form .inputBox textarea:focus ~ span,
+  .contact-form .inputBox textarea:valid ~ span {
+    color: var(--color-secondary-brightest-gradiant);
+    font-size: 12px;
+    transform: translateY(-24px);
+  }
+  
+  .contact-form .inputBox input[type="submit"] {
+    width: 40%;
+    background: var(--color-primary-dark-gradiant);
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 1.25em;
+    margin: 0 auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .contact-form .inputBox input[type="submit"]:hover {
+    transition: 0.5s;
+    background: var(--color-primary-dark);
+    color: white;
+    animation: 3s wiggleSmall infinite;
+  }
+  
+  .contact-form .inputBox input[type="submit"]:active {
+    background: var(--color-secondary-dark);
+  }
+
+  /* .contact-form:hover:before,
+  .contact-form:hover:after {
+    animation: none;
+    opacity: 0;
+  } */
