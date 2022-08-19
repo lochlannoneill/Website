@@ -37,7 +37,9 @@ body {
 
 #drag-container img,
 #drag-container video {
-    filter: brightness(80%);
+  animation: 1.25s ease 0s normal forwards 1 fadeInSlow;
+    filter: brightness(100%);
+    /* transition: 1s; */
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   position: absolute;
@@ -57,7 +59,8 @@ body {
 
 #drag-container img:hover,
 #drag-container video:hover {
-    filter: brightness(110%);
+    filter: brightness(120%);
+    cursor: pointer;
     -webkit-box-shadow: 0 0 15px var(--color-primary-dark-gradiant);
     box-shadow: 0 0 15px var(--color-primary-dark-gradiant);
     -webkit-box-reflect: below 10px

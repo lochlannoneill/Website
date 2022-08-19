@@ -8,6 +8,7 @@
 @import "showcase.css";
 @import "carousel.css";
 @import "section.css";
+@import "cornerlink.css";
 
 ::selection {
   background: var(--color-secondary); /* WebKit/Blink Browsers */
@@ -84,10 +85,10 @@ body {
   background-image: linear-gradient(
       to bottom,
       var(--color-primary-dark),
-      var(--color-secondary-gradiant)
+      var(--color-secondary-gradiant-low)
     ),
     var(--image-background);
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(4px);
   background-size: cover;
   background-attachment: fixed;
   background-color: var(--color-primary-brighter);
@@ -129,7 +130,7 @@ a:active {
 }
 
 .icon {
-  margin: 0 0.5vh;
+  margin: 0;
   text-decoration: none;
   color: var(--color-primary-gradiant);
   /* text-shadow: 4px 4px 8px var(--color-primary-darkest); */

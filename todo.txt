@@ -16,7 +16,7 @@ New Additions:
 
 Bugs:
     Critical:
-        
+        Contact.html stying completely fucked since adding the carousel (i think because i changed the jumbotron)
 
     High:
         
