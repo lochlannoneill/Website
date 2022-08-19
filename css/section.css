@@ -5,6 +5,10 @@
     background-color: var(--color-primary-bright);
 }
 
+.section-container:nth-child(odd) {
+    background-color: var(--color-primary-brighter);
+}
+
 .section-container p {
     color: var(--color-text);
 }
