@@ -74,7 +74,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--color-secondary-gradiant);
+  background-color: var(--color-secondary-dark-gradiant);
 }
 
 body::-webkit-scrollbar-corner {

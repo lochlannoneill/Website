@@ -27,7 +27,7 @@ var bgMusicControls = true; // Show UI music control
 setTimeout(init, 0);
 // setTimeout(init, 1000);
 
-var odrag = document.getElementById('drag-container');
+// var odrag = document.getElementById('drag-container');
 var ospin = document.getElementById('spin-container');
 var aImg = ospin.getElementsByTagName('img');
 var aVid = ospin.getElementsByTagName('video');
