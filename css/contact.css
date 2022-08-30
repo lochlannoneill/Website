@@ -15,7 +15,7 @@ form label {
   color: white;
 }
 
-.contact-box{
+.contact-box {
   margin: 4vh;
   display: flex;
   animation: 0.5s ease 0s normal forwards 1 fadeLeftToRight;
@@ -29,6 +29,14 @@ form label {
 
 .contact-box .icon:hover {
   transform: scale(2);
+
+}
+
+.contact-link {
+  font-size: 2em;
+  color: var(--color-text) !important;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .contact-title {

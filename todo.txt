@@ -27,5 +27,5 @@ Bugs:
         Why do contact.html left boxes not center properly???
 
     Low:
-        Vignette at side of background idk
+        Vignette at side of video because of filter() css property
 
