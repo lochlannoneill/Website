@@ -38,7 +38,9 @@
     background-color: var(--color-primary);
     border: none;
     cursor: default;
+    /* height: inherit; */
   }
+
   #commandline:hover {
     cursor: pointer;
     background-color: var(--color-primary-brightest);

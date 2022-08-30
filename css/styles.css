@@ -82,12 +82,12 @@ body::-webkit-scrollbar-corner {
 }
 
 body {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
       to bottom,
       var(--color-primary-dark),
       var(--color-secondary-gradiant-low)
     ),
-    var(--image-background);
+    var(--image-background); */
   backdrop-filter: blur(4px);
   background-size: cover;
   background-attachment: fixed;
@@ -111,7 +111,7 @@ body {
   right: 0;
   /* bottom: 0; */
   z-index: -1;
-  filter: blur(10px);
+  filter: blur(12px);
 }
 
 @media (min-aspect-ratio: 16/9) {
@@ -154,7 +154,7 @@ a:active {
 .icon {
   margin: 0;
   text-decoration: none;
-  color: var(--color-primary-gradiant);
+  color: var(--color-text-dark-gradiant);
   /* text-shadow: 4px 4px 8px var(--color-primary-darkest); */
   font-size: 2.25em;
   padding: 16px;

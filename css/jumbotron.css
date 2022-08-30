@@ -39,6 +39,10 @@
   align-items: center;
 }
 
+/* .horizontal-center {
+  margin: 0 auto !important;
+} */
+
 .large-jumbotron {
   min-height: 90vh;
   border-bottom: none;
