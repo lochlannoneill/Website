@@ -82,12 +82,12 @@ body::-webkit-scrollbar-corner {
 }
 
 body {
-  /* background-image: linear-gradient(
+  background-image: linear-gradient(
       to bottom,
       var(--color-primary-dark),
       var(--color-secondary-gradiant-low)
     ),
-    var(--image-background); */
+    var(--image-background);
   backdrop-filter: blur(4px);
   background-size: cover;
   background-attachment: fixed;
