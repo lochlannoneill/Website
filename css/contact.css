@@ -99,13 +99,18 @@ form label {
   margin: 10px 0;
   pointer-events: none;
   transition: 0.3s;
-  color: #666;
+  color: var(--color-text-muted);
 }
 
 /* .contact-form .inputBox textarea {
   display: block;
   height: 200px;
 } */
+
+.contact-form .inputBox input:hover ~ span,
+.contact-form .inputBox textarea:hover ~ span {
+  color: var(--color-secondary-bright-gradiant);
+}
 
 .contact-form .inputBox input:focus ~ span,
 .contact-form .inputBox input:valid ~ span,
@@ -118,7 +123,7 @@ form label {
 
 .contact-form .inputBox input[type="submit"] {
   width: 40%;
-  background: var(--color-primary-dark-gradiant);
+  background: var(--color-primary-gradiant);
   border: none;
   cursor: pointer;
   padding: 8px;
@@ -130,7 +135,7 @@ form label {
 
 .contact-form .inputBox input[type="submit"]:hover {
   transition: 0.5s;
-  background: var(--color-primary-dark);
+  background: var(--color-primary-dark-gradiant);
   color: white;
   animation: 3s wiggleSmall infinite;
 }

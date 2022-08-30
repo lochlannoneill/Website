@@ -32,7 +32,7 @@ function executeKeyword(keyword, command) {
   //eastereggs
   if (keyword === 'mtu') return "I love this college, I'm glad I came here to study";
   if (keyword === 'markson') return "Markson stop stalking me please";
-  if (keyword === 'lochlann') return "The greatest software developer in my house. Would be a complete shame if I wasn't hired asap."
+  if (keyword === 'lochlann') return "The greatest software developer in my house.<br>It would be a complete shame if I wasn't hired asap."
   if (keyword === 'bruce') return "Cha dood"
   if (keyword === 'gordon') return "No gingers allowed"
   //actual commands
@@ -51,7 +51,7 @@ function getKeywordPurpose(keyword) {
 }
 
 function executeHelp() {
-  return "Try the keyword <i>bin</i> to get some acceptable keywords<br>Some keywords require a command, such as <i>cd Projects</i><br>Try to guess some hidden commands. :)";
+  return "Try the keyword '<i>bin</i>' to get some acceptable keywords<br>Some keywords require a command, such as '<i>cd Contact</i>'<br>Try to guess some hidden commands. :)";
 }
 
 function executePrint(command) {

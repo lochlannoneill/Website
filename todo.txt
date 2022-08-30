@@ -7,7 +7,7 @@ New Additions:
 
     Medium:
         Create a section for most recent social media posts
-        Projects.html will be a tabbed page where each tab is change with the slider buttons
+        Projects.html will be a tabbed page where each tab is change with the slider buttons https://codepen.io/dev_loop/pen/MWKbJmO
         
     Low:
         Maybe make an entire folder directory?

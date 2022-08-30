@@ -7,6 +7,14 @@
   animation: 1s ease 0s normal forwards 1 fadeInFast;
 }
 
+/* .navbar a {
+  color: var(--color-primary) !important;
+}
+
+.nacbar a:hover {
+  color: var(--color-primary-dark) !important;
+} */
+
 #navbar-logo {
   height: 80px;
   margin: 0 24px 0 0;
