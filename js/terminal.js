@@ -2,7 +2,7 @@
 const BIN_PRIVATE = ["lochlann", "mtu", "markson", "bruce", "gordon", "whoami"];
 const BIN_PUBLIC = ["help", "bin", "print", "echo", "whoami", "pwd", "ls", "cd"];
 const BIN = BIN_PRIVATE + BIN_PUBLIC;
-const FILES = ["index", "projects", "contact"];
+const FILES = ["index", "projects", "contact", "secret"];
 
 function executeCommandLine() {
   var commandline = document.getElementById('commandline').innerHTML;
