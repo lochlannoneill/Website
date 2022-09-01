@@ -9,6 +9,7 @@ New Additions:
         Create a section for most recent social media posts
         Projects.html will be a tabbed page where each tab is change with the slider buttons https://codepen.io/dev_loop/pen/MWKbJmO
         Add a quote list that iterates on index.html
+        "Who am I" section has see through text with a video behind it
         
     Low:
         animation for first-time terminal output
@@ -22,11 +23,12 @@ Bugs:
 
     High:
         Contact.html mobile styling
-        
+        Background video resizing
 
     Medium:
         Why do contact.html left boxes not center properly???
 
     Low:
+        Commandline badge squints if empty
         Vignette at side of video because of filter() css property
 

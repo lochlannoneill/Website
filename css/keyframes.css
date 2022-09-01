@@ -175,12 +175,12 @@
     transform: translateX(0%);
     opacity: 1;
   }
-  80% {
+  90% {
     transform: translateX(0%);
     opacity: 1;
   }
-  90% {
-    transform: translateX(1.5%);
+  95% {
+    transform: translateY(-15%);
     opacity: 0.5;
   }
   /* 60% {
