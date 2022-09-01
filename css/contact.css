@@ -6,6 +6,14 @@ form label {
   color: var(--color-text-muted);
 }
 
+/* .contact {
+  text-align: center;
+} */
+
+/* .label {
+  color: var(--color-primary);
+} */
+
 .contact-section {
   margin: auto;
   padding: 0;
@@ -34,9 +42,16 @@ form label {
 
 .contact-link {
   font-size: 2em;
-  color: var(--color-text) !important;
+  color: var(--color-text-muted) !important;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.contact-link:hover {
+  text-decoration: none;
+  color: var(--color-text) !important;
+  text-shadow: 0 0 50px var(--color-secondary-brightest-gradiant), 0 0 100px var(--color-secondary-brightest-gradiant), 0 0 150px var(--color-secondary-brightest-gradiant), 0 0 200px var(--color-secondary-brightest-gradiant);
+  /* color: var(--color-primary) !important; */
 }
 
 .contact-title {
@@ -81,7 +96,7 @@ form label {
   margin-bottom: 16px;
   border: none;
   /* border-bottom: 0.2vh solid var(--color-primary-brightest); */
-  border-bottom: 0.2vh solid var(--color-secondary-brightest-gradiant);
+  border-bottom: 0.2vh solid var(--color-text-muted);
   outline: none;
   resize: none;
   background-color: transparent;

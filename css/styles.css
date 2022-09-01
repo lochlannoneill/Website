@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito:wght@300&family=Roboto:wght@300;400&family=Source+Code+Pro&display=swap");
-@import "colors.css";
+@import "variables.css";
 @import "keyframes.css";
 @import "navbar.css";
 @import "footer.css";
@@ -74,7 +74,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--color-secondary-dark-gradiant);
+  background-color: var(--color-primary-dark-gradiant);
 }
 
 body::-webkit-scrollbar-corner {
@@ -112,6 +112,8 @@ body {
   /* bottom: 0; */
   z-index: -1;
   filter: blur(12px);
+  /* position: relative; */
+  /* background-attachment: fixed; */
 }
 
 @media (min-aspect-ratio: 16/9) {
@@ -241,23 +243,6 @@ a:active {
   background-size: cover;
   background-attachment: fixed;
   background-color: var(--color-primary);
-}
-
-.contact {
-  text-align: center;
-}
-
-.contact-link {
-  color: var(--color-secondary-dark);
-}
-
-.contact-link:hover {
-  text-decoration: none;
-  color: var(--color-primary);
-}
-
-.label {
-  color: var(--color-primary);
 }
 
 .container-section {
