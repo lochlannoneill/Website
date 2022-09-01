@@ -1,5 +1,5 @@
 //variable to store all the acceptable commands along with those that dont need arguments
-const BIN_PRIVATE = ["lochlann", "mtu", "markson", "bruce", "gordon", "whoami"];
+const BIN_PRIVATE = ["lochlann", "mtu", "markson", "bruce", "gordon", "whoami", "daniels"];
 const BIN_PUBLIC = ["help", "bin", "print", "echo", "whoami", "pwd", "ls", "cd"];
 const BIN = BIN_PRIVATE + BIN_PUBLIC;
 const FILES = ["index", "projects", "contact", "secret"];
@@ -23,18 +23,19 @@ function executeCommandLine() {
     document.getElementById("terminal-response").innerHTML = success;
   } else {
     // document.getElementById("terminal-response").innerHTML = ("Keyword '" + keyword + "' not found. Type <i>'help'</i> if you're stuck.");
-    document.getElementById("terminal-response").innerHTML = ("Keyword '" + keyword + "' not found. If you are stuck, type <i>'help'</i>");
+    document.getElementById("terminal-response").innerHTML = ("Keyword '" + keyword + "' not found. If you are stuck, type <b><i>'help'</i></b>");
   }
 }
 
 // todo maybe something like if (keyword === 'echo') return executeEcho(command);
 function executeKeyword(keyword, command) {
-  //eastereggs
+  //secrets
   if (keyword === 'mtu') return "I love this college, I'm glad I came here to study";
   if (keyword === 'markson') return "Markson stop stalking me please";
   if (keyword === 'lochlann') return "The greatest software developer in my house.<br>It would be a complete shame if I wasn't hired asap."
   if (keyword === 'bruce') return "Cha dood"
   if (keyword === 'gordon') return "No gingers allowed"
+  if (keyword === 'daniels') return "You should get his music downloader"
   //actual commands
   if (keyword === 'help') return executeHelp();
   if (keyword === 'print') return executePrint(command);
@@ -51,7 +52,7 @@ function getKeywordPurpose(keyword) {
 }
 
 function executeHelp() {
-  return "Try the keyword '<i>bin</i>' to get some acceptable keywords<br>Some keywords require a command, such as '<i>cd Contact</i>'<br>Try to guess some hidden commands. :)";
+  return "Try the keyword '<b><i>bin</i></b>' to get some acceptable keywords<br>Some keywords require a command, such as '<b><i>cd Contact</i></b>'<br>Try to guess some hidden commands. :)";
 }
 
 function executePrint(command) {
@@ -59,7 +60,7 @@ function executePrint(command) {
 }
 
 function executeWhoAmI() {
-  return "Hello, I'm <i>Lochlann O Neill</i> :)<br>As a student of Software Development, I'm currently undergoing my final year at MTU.<br>Once finished with my degree, I hope to continue my journey focusing on either Cybersecurity or Web Development."
+  return "Hello, I'm <b><i>Lochlann O Neill</i></b> :)<br>As a student of Software Development, I'm currently undergoing my final year at MTU.<br>Once finished with my degree, I hope to continue my journey focusing on either Cybersecurity or Web Development."
 }
 
 function executeCd(location) {
@@ -68,7 +69,7 @@ function executeCd(location) {
     window.location.href = location + ".html";
     return "200 - File Relocation: " + location + ".html";
   }
-    return "404 - File not found: " + location + ".html<br>Type <i>ls</i> to get acceptable files";
+    return "404 - File not found: " + location + ".html<br>Type <b><i>ls</i></b> to get acceptable files";
 }
 
 function executeLs() {

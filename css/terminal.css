@@ -39,7 +39,12 @@
     border: none;
     cursor: default;
     /* height: inherit; */
+    animation: squint 3.5s infinite;
   }
+
+  /* #commandline[contenteditable]:empty::before ~ .badge {
+    animation: squint 4s infinite;
+  }  */
 
   #commandline:hover {
     cursor: pointer;
@@ -53,11 +58,13 @@
     overflow: hidden; */
     caret-color: transparent;
   }
+
   #commandline[contenteditable]:empty::before {
     content: '_';
     display: inline-block;
     animation: blink 1s infinite;
   }
-  #commandline[contenteditable]:empty:focus::before {
+  
+  /* #commandline[contenteditable]:empty:focus::before {
     content: '_';
-  }
+  } */
