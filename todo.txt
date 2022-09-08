@@ -3,6 +3,7 @@ New Additions:
         Javascript for contact form submit
 
     High:
+        Create a CTF game within the terminal
         Creat a CV page with downloadable pdf - https://youtu.be/Eb6yFhkzpmI?t=612
 
     Medium:

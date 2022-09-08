@@ -112,7 +112,7 @@ function executeBin() {
 }
 
 function executePwd() {
-  return "Home";
+  return "index";
 }
 
 //return boolean if command is valid
