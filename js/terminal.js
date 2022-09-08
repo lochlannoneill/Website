@@ -1,8 +1,30 @@
+
 //variable to store all the acceptable commands along with those that dont need arguments
-const BIN_PRIVATE = ["lochlann", "mtu", "markson", "bruce", "gordon", "whoami", "daniels"];
-const BIN_PUBLIC = ["help", "bin", "print", "echo", "whoami", "pwd", "ls", "cd"];
+const BIN_PRIVATE = ["lochlann", "mtu", "markson", "bruce", "gordon", "daniels"];
+const BIN_PUBLIC = ["help", "bin", "man", "print", "echo", "whoami", "pwd", "ls", "cd"];
 const BIN = BIN_PRIVATE + BIN_PUBLIC;
 const FILES = ["index", "projects", "contact", "secret"];
+
+var MAN_PRIVATE = {
+  lochlann: "command&emsp;-&emsp;lochlann<br>function&emsp;-&emsp;Returns a description for the best Software Developer to have ever lived<br>argument&emsp;-&emsp;NOT REQUIRED",
+  mtu: "command&emsp;-&emsp;mtu<br>function&emsp;-&emsp;Returns a description on Munster Technological University<br>argument&emsp;-&emsp;NOT REQUIRED",
+  markson: "command&emsp;-&emsp;markson<br>function&emsp;-&emsp;Returns a description for Markson<br>argument&emsp;-&emsp;NOT REQUIRED",
+  bruce: "command&emsp;-&emsp;bruce<br>function&emsp;-&emsp;Returns a description for Bruce<br>argument&emsp;-&emsp;NOT REQUIRED",
+  gordon: "command&emsp;-&emsp;gordon<br>function&emsp;-&emsp;Returns a description for Gordon<br>argument&emsp;-&emsp;NOT REQUIRED",
+  daniels: "command&emsp;-&emsp;daniels<br>function&emsp;-&emsp;Returns a description for Daniels<br>argument&emsp;-&emsp;NOT REQUIRED"
+}
+var MAN_PUBLIC = {
+  help: "command&emsp;-&emsp;help<br>function&emsp;-&emsp;provides the user with information on how to use the terminal<br>argument&emsp;-&emsp;NOT REQUIRED",
+  bin: "command&emsp;-&emsp;bin<br>function&emsp;-&emsp;returns a list of all acceptable commands.<br>argument&emsp;-&emsp;NOT REQUIRED",
+  man: "command&emsp;-&emsp;man<br>function&emsp;-&emsp;provides a description of a given command<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;Type String (must be an existing command, type <i>bin</i> to get acceptable commands<br>There are also some secret commands and webpages",
+  print: "command&emsp;-&emsp;print<br>function&emsp;-&emsp;allows the user to print their input to the terminal output.<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;String",
+  echo: "command&emsp;-&emsp;echo<br>function&emsp;-&emsp;allows the user to echo their input to the terminal output.<br>ARGUMENT REQUIRED&emsp;-&emsp;The user is expected to supply an argument of type String",
+  whoami: "command&emsp;-&emsp;whoami<br>function&emsp;-&emsp;Returns a description of the creator of the website, the awesome <b><i>Lochlann O Neill</i></b><br>argument&emsp;-&emsp;NOT REQUIRED",
+  pwd: "command&emsp;-&emsp;pwd<br>function&emsp;-&emsp;print name of current/working directory<br>argument&emsp;-&emsp;NOT REQUIRED",
+  ls:"command&emsp;-&emsp;ls<br>function&emsp;-&emsp;list website contents<br>argument&emsp;-&emsp;NOT REQUIRED",
+  cd:"command&emsp;-&emsp;cd<br>function&emsp;-&emsp;change directory to supplied location<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;String (must be an existing webpage location)<br>secret&emsp;-&emsp;try the command '<b><i>cd secret</i></b>'",
+}
+MAN = Object.assign({}, MAN_PRIVATE, MAN_PUBLIC);
 
 function executeCommandLine() {
   var commandline = document.getElementById('commandline').innerHTML;
@@ -38,12 +60,13 @@ function executeKeyword(keyword, command) {
   if (keyword === 'daniels') return "You should get his music downloader"
   //actual commands
   if (keyword === 'help') return executeHelp();
+  if (keyword === 'bin') return executeBin();
+  if (keyword === 'man') return executeMan(command);
   if (keyword === 'print') return executePrint(command);
   if (keyword === 'echo') return executePrint(command);
   if (keyword === 'whoami') return executeWhoAmI();
   if (keyword === 'cd') return executeCd(command.toLowerCase());
   if (keyword === 'ls') return executeLs();
-  if (keyword === 'bin') return executeBin();
   if (keyword === 'pwd') return executePwd();
   return 'Unprecedented Error';
 }
@@ -52,8 +75,16 @@ function getKeywordPurpose(keyword) {
 }
 
 function executeHelp() {
-  return "Try the keyword '<b><i>bin</i></b>' to get some acceptable keywords<br>Some keywords require a command, such as '<b><i>cd Contact</i></b>'<br>Try to guess some hidden commands. :)";
+  return "Try the keyword '<b><i>bin</i></b>' to get some acceptable keywords<br>Some keywords require a command, such as '<b><i>cd contact</i></b>'<br>Every command has a manual. To learn how to use a command, you may check its manual. Try the command '<b><i>man cd</i></b>'<br>Try to guess some <b>hidden commands</b> or complete the <b>Capture The Flag (CTF)</b> game within my terminal. :)";
 }
+
+function executeMan(command) {
+  if (command in MAN) {
+    return MAN[command]
+  }
+  return "No manual entry for '<b><i>" + command + "</i></b>'";
+}
+
 
 function executePrint(command) {
   return command
@@ -67,7 +98,7 @@ function executeCd(location) {
   if (FILES.includes(location)) {
     if (location == 'home') location = 'index';
     window.location.href = location + ".html";
-    return "200 - File Relocation: " + location + ".html";
+    return "200 - OK ... File Relocation: " + location + ".html";
   }
     return "404 - File not found: " + location + ".html<br>Type <b><i>ls</i></b> to get acceptable files";
 }
