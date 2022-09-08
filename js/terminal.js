@@ -52,12 +52,12 @@ function executeCommandLine() {
 // todo maybe something like if (keyword === 'echo') return executeEcho(command);
 function executeKeyword(keyword, command) {
   //secrets
-  if (keyword === 'mtu') return "I love this college, I'm glad I came here to study";
-  if (keyword === 'markson') return "Markson stop stalking me please";
+  if (keyword === 'mtu') return "I love this college, I'm glad I came here to study.";
+  if (keyword === 'markson') return "Markson stop stalking me please.";
   if (keyword === 'lochlann') return "The greatest software developer in my house.<br>It would be a complete shame if I wasn't hired asap."
-  if (keyword === 'bruce') return "Cha dood"
-  if (keyword === 'gordon') return "No gingers allowed"
-  if (keyword === 'daniels') return "You should get his music downloader"
+  if (keyword === 'bruce') return "Cha dood."
+  if (keyword === 'gordon') return "No gingers allowed."
+  if (keyword === 'daniels') return "You should get his music downloader."
   //actual commands
   if (keyword === 'help') return executeHelp();
   if (keyword === 'bin') return executeBin();
@@ -75,14 +75,14 @@ function getKeywordPurpose(keyword) {
 }
 
 function executeHelp() {
-  return "Try the keyword '<b><i>bin</i></b>' to get some acceptable keywords<br>Some keywords require a command, such as '<b><i>cd contact</i></b>'<br>Every command has a manual. To learn how to use a command, you may check its manual. Try the command '<b><i>man cd</i></b>'<br>Try to guess some <b>hidden commands</b> or complete the <b>Capture The Flag (CTF)</b> game within my terminal. :)";
+  return "Try the keyword '<b><i>bin</i></b>' to get some acceptable keywords.<br>Some keywords require a command, such as '<b><i>cd contact</i></b>'.<br>Every command has a manual. To learn how to use a command, you may check its manual. Try the command '<b><i>man cd</i></b>'.<br>Try to guess some <b>hidden commands</b> or complete the <b>Capture The Flag (CTF)</b> game within my terminal. :)";
 }
 
 function executeMan(command) {
   if (command in MAN) {
     return MAN[command]
   }
-  return "No manual entry for '<b><i>" + command + "</i></b>'";
+  return "No manual entry for '<b><i>" + command + "</i></b>'.";
 }
 
 
