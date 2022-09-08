@@ -1,28 +1,39 @@
+// to add a new command
+// add to either BIN_PRIVATE or BIN_PUBLIC
+// add to either MAN_PRIVATE or MAN_PUBLIC
+// add executeKeyword()
+// create a new execute() function for the new command
+
+FLAG = "hireme";
+FLAG_FULL = "flag[" + FLAG + "]";
 
 //variable to store all the acceptable commands along with those that dont need arguments
-const BIN_PRIVATE = ["lochlann", "mtu", "markson", "bruce", "gordon", "daniels"];
-const BIN_PUBLIC = ["help", "bin", "man", "print", "echo", "whoami", "pwd", "ls", "cd"];
+const BIN_PRIVATE = ["lochlann", "mtu", "ctf", "markson", "bruce", "gordon", "daniels"];
+const BIN_PUBLIC = ["help", "bin", "man", "print", "echo", "flag", "whoami", "pwd", "ls", "cd"];
 const BIN = BIN_PRIVATE + BIN_PUBLIC;
-const FILES = ["index", "projects", "contact", "secret"];
+const FILES = ["index", "contact", "secret"];
 
 var MAN_PRIVATE = {
-  lochlann: "command&emsp;-&emsp;lochlann<br>function&emsp;-&emsp;Returns a description for the best Software Developer to have ever lived<br>argument&emsp;-&emsp;NOT REQUIRED",
-  mtu: "command&emsp;-&emsp;mtu<br>function&emsp;-&emsp;Returns a description on Munster Technological University<br>argument&emsp;-&emsp;NOT REQUIRED",
-  markson: "command&emsp;-&emsp;markson<br>function&emsp;-&emsp;Returns a description for Markson<br>argument&emsp;-&emsp;NOT REQUIRED",
-  bruce: "command&emsp;-&emsp;bruce<br>function&emsp;-&emsp;Returns a description for Bruce<br>argument&emsp;-&emsp;NOT REQUIRED",
-  gordon: "command&emsp;-&emsp;gordon<br>function&emsp;-&emsp;Returns a description for Gordon<br>argument&emsp;-&emsp;NOT REQUIRED",
-  daniels: "command&emsp;-&emsp;daniels<br>function&emsp;-&emsp;Returns a description for Daniels<br>argument&emsp;-&emsp;NOT REQUIRED"
+  lochlann: "command&emsp;-&emsp;lochlann<br>function&emsp;-&emsp;Returns a description for the best Software Developer to have ever lived<br>argument&emsp;-&emsp;NOT REQUIRED<br>return&emsp;-&emsp;String",
+  mtu: "command&emsp;-&emsp;mtu<br>function&emsp;-&emsp;Returns a description on Munster Technological University<br>argument&emsp;-&emsp;NOT REQUIRED<br>return&emsp;-&emsp;String",
+  flag: "command&emsp;-&emsp;flag&emsp;-&emsp;String (you cannot paste the flag into the terminal)<br>function&emsp;-&emsp;The user completes the CTF challenge if they enter the correct flag<br>argument&emsp;-&emsp;NOT REQUIRED<br>Be sure to use all the commands in '<b><i>bin</i></b>' to find the flag. You can do it!<br>return&emsp;-&emsp;String",
+  ctf: "command&emsp;-&emsp;ctf&emsp;-&emsp;String (you cannot paste the flag into the terminal)<br>function&emsp;-&emsp;The user completes the CTF challenge if they enter the correct flag<br>argument&emsp;-&emsp;NOT REQUIRED<br>Be sure to use all the commands in '<b><i>bin</i></b>' to find the flag. You can do it!<br>return&emsp;-&emsp;String",
+  markson: "command&emsp;-&emsp;markson<br>function&emsp;-&emsp;Returns a description for Markson<br>argument&emsp;-&emsp;NOT REQUIRED<br>return&emsp;-&emsp;String",
+  bruce: "command&emsp;-&emsp;bruce<br>function&emsp;-&emsp;Returns a description for Bruce<br>argument&emsp;-&emsp;NOT REQUIRED<br>return&emsp;-&emsp;String",
+  gordon: "command&emsp;-&emsp;gordon<br>function&emsp;-&emsp;Returns a description for Gordon<br>argument&emsp;-&emsp;NOT REQUIRED<br>return&emsp;-&emsp;String",
+  daniels: "command&emsp;-&emsp;daniels<br>function&emsp;-&emsp;Returns a description for Daniels<br>argument&emsp;-&emsp;NOT REQUIRED<br>return&emsp;-&emsp;String"
 }
 var MAN_PUBLIC = {
-  help: "command&emsp;-&emsp;help<br>function&emsp;-&emsp;provides the user with information on how to use the terminal<br>argument&emsp;-&emsp;NOT REQUIRED",
-  bin: "command&emsp;-&emsp;bin<br>function&emsp;-&emsp;returns a list of all acceptable commands.<br>argument&emsp;-&emsp;NOT REQUIRED",
-  man: "command&emsp;-&emsp;man<br>function&emsp;-&emsp;provides a description of a given command<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;Type String (must be an existing command, type <i>bin</i> to get acceptable commands)",
-  print: "command&emsp;-&emsp;print<br>function&emsp;-&emsp;allows the user to print their input to the terminal output.<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;String",
-  echo: "command&emsp;-&emsp;echo<br>function&emsp;-&emsp;allows the user to echo their input to the terminal output.<br>ARGUMENT REQUIRED&emsp;-&emsp;The user is expected to supply an argument of type String",
-  whoami: "command&emsp;-&emsp;whoami<br>function&emsp;-&emsp;Returns a description of the creator of the website, the awesome <b><i>Lochlann O Neill</i></b><br>argument&emsp;-&emsp;NOT REQUIRED",
-  pwd: "command&emsp;-&emsp;pwd<br>function&emsp;-&emsp;print name of current/working directory<br>argument&emsp;-&emsp;NOT REQUIRED",
-  ls:"command&emsp;-&emsp;ls<br>function&emsp;-&emsp;list website contents<br>argument&emsp;-&emsp;NOT REQUIRED",
-  cd:"command&emsp;-&emsp;cd<br>function&emsp;-&emsp;change directory to supplied location<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;String (must be an existing webpage location)<br>secret&emsp;-&emsp;try the command '<b><i>cd secret</i></b>'",
+  help: "command&emsp;-&emsp;help<br>function&emsp;-&emsp;provides the user with information on how to use the terminal<br>argument&emsp;-&emsp;NOT REQUIRED<br>return&emsp;-&emsp;String",
+  bin: "command&emsp;-&emsp;bin<br>function&emsp;-&emsp;returns a list of all acceptable commands.<br>argument&emsp;-&emsp;NOT REQUIRED<br>return&emsp;-&emsp;String",
+  man: "command&emsp;-&emsp;man<br>function&emsp;-&emsp;provides a description of a given command<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;Type String (must be an existing command, type <i>bin</i> to get acceptable commands)<br>return&emsp;-&emsp;String",
+  print: "command&emsp;-&emsp;print<br>function&emsp;-&emsp;allows the user to print their input to the terminal output.<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;String<br>return&emsp;-&emsp;String",
+  echo: "command&emsp;-&emsp;echo<br>function&emsp;-&emsp;allows the user to echo their input to the terminal output.<br>ARGUMENT REQUIRED&emsp;-&emsp;The user is expected to supply an argument of type String<br>return&emsp;-&emsp;String",
+  whoami: "command&emsp;-&emsp;whoami<br>function&emsp;-&emsp;Returns a description of the creator of the website, the awesome <b><i>Lochlann O Neill</i></b><br>argument&emsp;-&emsp;NOT REQUIRED<br>return&emsp;-&emsp;String",
+  pwd: "command&emsp;-&emsp;pwd<br>function&emsp;-&emsp;print name of current/working directory<br>argument&emsp;-&emsp;NOT REQUIRED<br>return&emsp;-&emsp;String",
+  ls:"command&emsp;-&emsp;ls<br>function&emsp;-&emsp;list website contents<br>argument&emsp;-&emsp;NOT REQUIRED<br>return&emsp;-&emsp;String",
+  // cd:"command&emsp;-&emsp;cd<br>function&emsp;-&emsp;change directory to supplied location<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;String (must be an existing webpage location)<br>return&emsp;-&emsp;null<br>secret&emsp;-&emsp;try the command '<b><i>cd secret</i></b>'",
+  cd:"command&emsp;-&emsp;cd<br>function&emsp;-&emsp;change directory to supplied location<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;String (must be an existing webpage location)<br>return&emsp;-&emsp;null",
 }
 MAN = Object.assign({}, MAN_PRIVATE, MAN_PUBLIC);
 
@@ -52,6 +63,7 @@ function executeCommandLine() {
 // todo maybe something like if (keyword === 'echo') return executeEcho(command);
 function executeKeyword(keyword, command) {
   //secrets
+  if (keyword === FLAG || keyword === FLAG_FULL) return executeFlagFound(FLAG_FULL)
   if (keyword === 'mtu') return "I love this college, I'm glad I came here to study.";
   if (keyword === 'markson') return "Markson stop stalking me please.";
   if (keyword === 'lochlann') return "The greatest software developer in my house.<br>It would be a complete shame if I wasn't hired asap."
@@ -64,6 +76,7 @@ function executeKeyword(keyword, command) {
   if (keyword === 'man') return executeMan(command);
   if (keyword === 'print') return executePrint(command);
   if (keyword === 'echo') return executePrint(command);
+  if (keyword === 'flag' || keyword === 'ctf') return executeFlag();
   if (keyword === 'whoami') return executeWhoAmI();
   if (keyword === 'cd') return executeCd(command.toLowerCase());
   if (keyword === 'ls') return executeLs();
@@ -72,6 +85,10 @@ function executeKeyword(keyword, command) {
 }
 
 function getKeywordPurpose(keyword) {
+}
+
+function executeFlagFound(flag) {
+  return "<b><i>" + flag + "</i></b><br>You found the flag!<br>Good job!!!<br>P.S If you havn't descided yet...<b><i>please hire me</b></i> :)"
 }
 
 function executeHelp() {
@@ -88,6 +105,10 @@ function executeMan(command) {
 
 function executePrint(command) {
   return command
+}
+
+function executeFlag() {
+  return "Explore the terminal to find the flag.<br>Once you find the flag, type it into the terminal to complete the CTF game.<br><b>WARNING</b> - Pasting the flag into the terminal results in an error"
 }
 
 function executeWhoAmI() {
@@ -118,6 +139,7 @@ function executePwd() {
 //return boolean if command is valid
 function isValidKeyword(keyword) {
   if (BIN.includes(keyword)) return true;
+  if (keyword === FLAG || keyword === FLAG_FULL) return true
   return false;
 }
 
