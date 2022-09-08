@@ -16,7 +16,7 @@ var MAN_PRIVATE = {
 var MAN_PUBLIC = {
   help: "command&emsp;-&emsp;help<br>function&emsp;-&emsp;provides the user with information on how to use the terminal<br>argument&emsp;-&emsp;NOT REQUIRED",
   bin: "command&emsp;-&emsp;bin<br>function&emsp;-&emsp;returns a list of all acceptable commands.<br>argument&emsp;-&emsp;NOT REQUIRED",
-  man: "command&emsp;-&emsp;man<br>function&emsp;-&emsp;provides a description of a given command<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;Type String (must be an existing command, type <i>bin</i> to get acceptable commands<br>There are also some secret commands and webpages",
+  man: "command&emsp;-&emsp;man<br>function&emsp;-&emsp;provides a description of a given command<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;Type String (must be an existing command, type <i>bin</i> to get acceptable commands)",
   print: "command&emsp;-&emsp;print<br>function&emsp;-&emsp;allows the user to print their input to the terminal output.<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;String",
   echo: "command&emsp;-&emsp;echo<br>function&emsp;-&emsp;allows the user to echo their input to the terminal output.<br>ARGUMENT REQUIRED&emsp;-&emsp;The user is expected to supply an argument of type String",
   whoami: "command&emsp;-&emsp;whoami<br>function&emsp;-&emsp;Returns a description of the creator of the website, the awesome <b><i>Lochlann O Neill</i></b><br>argument&emsp;-&emsp;NOT REQUIRED",
@@ -100,7 +100,7 @@ function executeCd(location) {
     window.location.href = location + ".html";
     return "200 - OK ... File Relocation: " + location + ".html";
   }
-    return "404 - File not found: " + location + ".html<br>Type <b><i>ls</i></b> to get acceptable files";
+    return "404 - File not found: '<b><i>" + location + ".html</i></b>'<br>Type <b><i>ls</i></b> to get acceptable files";
 }
 
 function executeLs() {
