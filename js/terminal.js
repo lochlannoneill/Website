@@ -1,11 +1,11 @@
 // to add a new command
 // add to either BIN_PRIVATE or BIN_PUBLIC
 // add to either MAN_PRIVATE or MAN_PUBLIC
-// add executeKeyword()
+// add executeCommand()
 // create a new execute() function for the new command
 
-FLAG = "hireme";
-FLAG_FULL = "flag[" + FLAG + "]";
+FLAG_PARTIAL = "hireme";
+FLAG = "flag[" + FLAG_PARTIAL + "]";
 
 //variable to store all the acceptable commands along with those that dont need arguments
 const BIN_PRIVATE = ["lochlann", "mtu", "ctf", "markson", "bruce", "gordon", "daniels"];
@@ -22,7 +22,7 @@ var MAN_PRIVATE = {
   bruce: "command&emsp;-&emsp;bruce<br>function&emsp;-&emsp;Returns a description for Bruce<br>argument&emsp;-&emsp;NOT REQUIRED<br>return&emsp;-&emsp;String",
   gordon: "command&emsp;-&emsp;gordon<br>function&emsp;-&emsp;Returns a description for Gordon<br>argument&emsp;-&emsp;NOT REQUIRED<br>return&emsp;-&emsp;String",
   daniels: "command&emsp;-&emsp;daniels<br>function&emsp;-&emsp;Returns a description for Daniels<br>argument&emsp;-&emsp;NOT REQUIRED<br>return&emsp;-&emsp;String"
-}
+};
 var MAN_PUBLIC = {
   help: "command&emsp;-&emsp;help<br>function&emsp;-&emsp;provides the user with information on how to use the terminal<br>argument&emsp;-&emsp;NOT REQUIRED<br>return&emsp;-&emsp;String",
   bin: "command&emsp;-&emsp;bin<br>function&emsp;-&emsp;returns a list of all acceptable commands.<br>argument&emsp;-&emsp;NOT REQUIRED<br>return&emsp;-&emsp;String",
@@ -34,7 +34,7 @@ var MAN_PUBLIC = {
   ls:"command&emsp;-&emsp;ls<br>function&emsp;-&emsp;list website contents<br>argument&emsp;-&emsp;NOT REQUIRED<br>return&emsp;-&emsp;String",
   // cd:"command&emsp;-&emsp;cd<br>function&emsp;-&emsp;change directory to supplied location<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;String (must be an existing webpage location)<br>return&emsp;-&emsp;null<br>secret&emsp;-&emsp;try the command '<b><i>cd secret</i></b>'",
   cd:"command&emsp;-&emsp;cd<br>function&emsp;-&emsp;change directory to supplied location<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;String (must be an existing webpage location)<br>return&emsp;-&emsp;null",
-}
+};
 MAN = Object.assign({}, MAN_PRIVATE, MAN_PUBLIC);
 
 function executeCommandLine() {
@@ -43,107 +43,107 @@ function executeCommandLine() {
   document.getElementById("commandline").innerHTML = "";
   document.getElementById("commandline").focus();
   
-  //get the keyword from the first word
-  keyword = commandline.split(' ')[0];
-  console.log("keyword: " + keyword);
+  //get the command from the first word
+  command = commandline.split(' ')[0];
+  console.log("command: " + command);
   
-  //verify if the keyword is valid and execute
-  var validKeyword = isValidKeyword(keyword);
-  console.log("acceptable: " + validKeyword);
-  if (validKeyword) {
-    var success = (executeKeyword(keyword, removeFirstWord(commandline)))
+  //verify if the command is valid and execute using supplied argument
+  var validCommand = isValidCommand(command);
+  console.log("acceptable: " + validCommand);
+  if (validCommand) {
+    var success = (executeCommand(command, removeFirstWord(commandline)))
     console.log("success: " + success);
     document.getElementById("terminal-response").innerHTML = success;
   } else {
-    // document.getElementById("terminal-response").innerHTML = ("Keyword '" + keyword + "' not found. Type <i>'help'</i> if you're stuck.");
-    document.getElementById("terminal-response").innerHTML = ("Keyword '" + keyword + "' not found. If you are stuck, type <b><i>'help'</i></b>");
-  }
-}
+    // document.getElementById("terminal-response").innerHTML = ("Command '" + command + "' not found. Type <i>'help'</i> if you're stuck.");
+    document.getElementById("terminal-response").innerHTML = ("Command '" + command + "' not found. If you are stuck, type <b><i>'help'</i></b>");
+  };
+};
 
-// todo maybe something like if (keyword === 'echo') return executeEcho(command);
-function executeKeyword(keyword, command) {
+// todo maybe something like if (command === 'echo') return executeEcho(argument);
+function executeCommand(command, argument) {
   //secrets
-  if (keyword === FLAG || keyword === FLAG_FULL) return executeFlagFound(FLAG_FULL)
-  if (keyword === 'mtu') return "I love this college, I'm glad I came here to study.";
-  if (keyword === 'markson') return "Markson stop stalking me please.";
-  if (keyword === 'lochlann') return "The greatest software developer in my house.<br>It would be a complete shame if I wasn't hired asap."
-  if (keyword === 'bruce') return "Cha dood."
-  if (keyword === 'gordon') return "No gingers allowed."
-  if (keyword === 'daniels') return "You should get his music downloader."
+  if (command === FLAG || command === FLAG_PARTIAL) return executeFlagFound(FLAG);
+  if (command === 'mtu') return "I love this college, I'm glad I came here to study.";
+  if (command === 'markson') return "Markson stop stalking me please.";
+  if (command === 'lochlann') return "The greatest software developer in my house.<br>It would be a complete shame if I wasn't hired asap.";
+  if (command === 'bruce') return "Cha dood.";
+  if (command === 'gordon') return "No gingers allowed.";
+  if (command === 'daniels') return "You should get his music downloader.";
   //actual commands
-  if (keyword === 'help') return executeHelp();
-  if (keyword === 'bin') return executeBin();
-  if (keyword === 'man') return executeMan(command);
-  if (keyword === 'print') return executePrint(command);
-  if (keyword === 'echo') return executePrint(command);
-  if (keyword === 'flag' || keyword === 'ctf') return executeFlag();
-  if (keyword === 'whoami') return executeWhoAmI();
-  if (keyword === 'cd') return executeCd(command.toLowerCase());
-  if (keyword === 'ls') return executeLs();
-  if (keyword === 'pwd') return executePwd();
+  if (command === 'help') return executeHelp();
+  if (command === 'bin') return executeBin();
+  if (command === 'man') return executeMan(argument);
+  if (command === 'print') return executePrint(argument);
+  if (command === 'echo') return executePrint(argument);
+  if (command === 'flag' || command === 'ctf') return executeFlag();
+  if (command === 'whoami') return executeWhoAmI();
+  if (command === 'cd') return executeCd(argument.toLowerCase());
+  if (command === 'ls') return executeLs();
+  if (command === 'pwd') return executePwd();
   return 'Unprecedented Error';
-}
+};
 
-function getKeywordPurpose(keyword) {
-}
+// function getCommandPurpose(command) {
+// }
 
 function executeFlagFound(flag) {
-  return "<b><i>" + flag + "</i></b><br>You found the flag!<br>Good job!!!<br>P.S If you havn't descided yet...<b><i>please hire me</b></i> :)"
-}
+  return "<b><i>" + flag + "</i></b><br>You found the flag!<br>Good job!!!<br>P.S If you havn't descided yet...<b><i>please hire me</b></i> :)";
+};
 
 function executeHelp() {
-  return "Try the keyword '<b><i>bin</i></b>' to get some acceptable keywords.<br>Some keywords require a command, such as '<b><i>cd contact</i></b>'.<br>Every command has a manual. To learn how to use a command, you may check its manual. Try the command '<b><i>man cd</i></b>'.<br>Try to guess some <b>hidden commands</b> or complete the <b>Capture The Flag (CTF)</b> game within my terminal. :)";
-}
+  return "Try the command '<b><i>bin</i></b>' to get some acceptable commands.<br>Some commands require an argument, such as '<b><i>cd contact</i></b>'.<br>Every argument has a manual. To learn how to use a command, you may check its manual. Try the command '<b><i>man cd</i></b>'.<br>Try to guess some <b>hidden commands</b> or complete the <b>Capture The Flag (CTF)</b> game within my terminal. :)";
+};
 
 function executeMan(command) {
   if (command in MAN) {
-    return MAN[command]
+    return MAN[command];
   }
   return "No manual entry for '<b><i>" + command + "</i></b>'.";
-}
+};
 
 
-function executePrint(command) {
-  return command
-}
+function executePrint(argument) {
+  return argument;
+};
 
 function executeFlag() {
-  return "Explore the terminal to find the flag.<br>Once you find the flag, type it into the terminal to complete the CTF game.<br><b>WARNING</b> - Pasting the flag into the terminal results in an error"
-}
+  return "Explore the terminal to find the flag.<br>Once you find the flag, type it into the terminal to complete the CTF game.<br><b>WARNING</b> - Pasting the flag into the terminal results in an error";
+};
 
 function executeWhoAmI() {
-  return "Hello, I'm <b><i>Lochlann O Neill</i></b> :)<br>As a student of Software Development, I'm currently undergoing my final year at MTU.<br>Once finished with my degree, I hope to continue my journey focusing on either Cybersecurity or Web Development."
-}
+  return "Hello, I'm <b><i>Lochlann O Neill</i></b> :)<br>As a student of Software Development, I'm currently undergoing my final year at MTU.<br>Once finished with my degree, I hope to continue my journey focusing on either Cybersecurity or Web Development.";
+};
 
 function executeCd(location) {
   if (FILES.includes(location)) {
     if (location == 'home') location = 'index';
     window.location.href = location + ".html";
     return "200 - OK ... File Relocation: " + location + ".html";
-  }
+  };
     return "404 - File not found: '<b><i>" + location + ".html</i></b>'<br>Type <b><i>ls</i></b> to get acceptable files";
-}
+};
 
 function executeLs() {
-  return "[" + FILES.join(', ') + "]"
-}
+  return "[" + FILES.join(', ') + "]";
+};
 
 function executeBin() {
-  return "[" + BIN_PUBLIC.join(', ') + "]"
-}
+  return "[" + BIN_PUBLIC.join(', ') + "]";
+};
 
 function executePwd() {
   return "index";
-}
+};
 
 //return boolean if command is valid
-function isValidKeyword(keyword) {
-  if (BIN.includes(keyword)) return true;
-  if (keyword === FLAG || keyword === FLAG_FULL) return true
+function isValidCommand(command) {
+  if (BIN.includes(command)) return true;
+  if (command === FLAG || command === FLAG_PARTIAL) return true;
   return false;
 }
 
-//todo - what if echo has no following command
+//todo - what if echo has no following argument???
 //return string without first word
 function removeFirstWord(str) {
   if (str.trim().indexOf(' ') != -1) return str.substr(str.indexOf(" ") + 1);
@@ -156,5 +156,5 @@ $("#commandline[contenteditable]").keypress(function (evt) {
   if (keycode  == 13) { //Enter key's keycode
     executeCommandLine()
     return false;
-  }
+  };
 });
