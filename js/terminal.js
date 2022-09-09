@@ -14,26 +14,26 @@ const BIN = BIN_PRIVATE + BIN_PUBLIC;
 const FILES = ["index", "contact", "secret"];
 
 var MAN_PRIVATE = {
-  lochlann: "command&emsp;-&emsp;lochlann<br>function&emsp;-&emsp;Returns a description for the best Software Developer to have ever lived<br>argument&emsp;-&emsp;NOT REQUIRED<br>return&emsp;-&emsp;String",
-  mtu: "command&emsp;-&emsp;mtu<br>function&emsp;-&emsp;Returns a description on Munster Technological University<br>argument&emsp;-&emsp;NOT REQUIRED<br>return&emsp;-&emsp;String",
-  flag: "command&emsp;-&emsp;flag&emsp;-&emsp;String (you cannot paste the flag into the terminal)<br>function&emsp;-&emsp;The user completes the CTF challenge if they enter the correct flag<br>argument&emsp;-&emsp;NOT REQUIRED<br>Be sure to use all the commands in '<b><i>bin</i></b>' to find the flag. You can do it!<br>return&emsp;-&emsp;String",
-  ctf: "command&emsp;-&emsp;ctf&emsp;-&emsp;String (you cannot paste the flag into the terminal)<br>function&emsp;-&emsp;The user completes the CTF challenge if they enter the correct flag<br>argument&emsp;-&emsp;NOT REQUIRED<br>Be sure to use all the commands in '<b><i>bin</i></b>' to find the flag. You can do it!<br>return&emsp;-&emsp;String",
-  markson: "command&emsp;-&emsp;markson<br>function&emsp;-&emsp;Returns a description for Markson<br>argument&emsp;-&emsp;NOT REQUIRED<br>return&emsp;-&emsp;String",
-  bruce: "command&emsp;-&emsp;bruce<br>function&emsp;-&emsp;Returns a description for Bruce<br>argument&emsp;-&emsp;NOT REQUIRED<br>return&emsp;-&emsp;String",
-  gordon: "command&emsp;-&emsp;gordon<br>function&emsp;-&emsp;Returns a description for Gordon<br>argument&emsp;-&emsp;NOT REQUIRED<br>return&emsp;-&emsp;String",
-  daniels: "command&emsp;-&emsp;daniels<br>function&emsp;-&emsp;Returns a description for Daniels<br>argument&emsp;-&emsp;NOT REQUIRED<br>return&emsp;-&emsp;String"
+  lochlann: "command&emsp;-&emsp;lochlann<br>function&emsp;-&emsp;returns a description for the best Software Developer to have ever lived<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
+  mtu: "command&emsp;-&emsp;mtu<br>function&emsp;-&emsp;returns a description on Munster Technological University<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
+  flag: "command&emsp;-&emsp;flag&emsp;-&emsp;String (you cannot paste the flag into the terminal)<br>function&emsp;-&emsp;The user completes the CTF challenge if they enter the correct flag<br>argument&emsp;-&emsp;NOT REQUIRED<br>Be sure to use all the commands in <b><i>'bin'</i></b> to find the flag. You can do it!<br>return type&emsp;-&emsp;String",
+  ctf: "command&emsp;-&emsp;ctf&emsp;-&emsp;String (you cannot paste the flag into the terminal)<br>function&emsp;-&emsp;The user completes the CTF challenge if they enter the correct flag<br>argument&emsp;-&emsp;NOT REQUIRED<br>Be sure to use all the commands in <b><i>'bin'</i></b> to find the flag. You can do it!<br>return type&emsp;-&emsp;String",
+  markson: "command&emsp;-&emsp;markson<br>function&emsp;-&emsp;returns a description for Markson<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
+  bruce: "command&emsp;-&emsp;bruce<br>function&emsp;-&emsp;returns a description for Bruce<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
+  gordon: "command&emsp;-&emsp;gordon<br>function&emsp;-&emsp;returns a description for Gordon<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
+  daniels: "command&emsp;-&emsp;daniels<br>function&emsp;-&emsp;returns a description for Daniels<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String"
 };
 var MAN_PUBLIC = {
-  help: "command&emsp;-&emsp;help<br>function&emsp;-&emsp;provides the user with information on how to use the terminal<br>argument&emsp;-&emsp;NOT REQUIRED<br>return&emsp;-&emsp;String",
-  bin: "command&emsp;-&emsp;bin<br>function&emsp;-&emsp;returns a list of all acceptable commands.<br>argument&emsp;-&emsp;NOT REQUIRED<br>return&emsp;-&emsp;String",
-  man: "command&emsp;-&emsp;man<br>function&emsp;-&emsp;provides a description of a given command<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;Type String (must be an existing command, type <i>bin</i> to get acceptable commands)<br>return&emsp;-&emsp;String",
-  print: "command&emsp;-&emsp;print<br>function&emsp;-&emsp;allows the user to print their input to the terminal output.<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;String<br>return&emsp;-&emsp;String",
-  echo: "command&emsp;-&emsp;echo<br>function&emsp;-&emsp;allows the user to echo their input to the terminal output.<br>ARGUMENT REQUIRED&emsp;-&emsp;The user is expected to supply an argument of type String<br>return&emsp;-&emsp;String",
-  whoami: "command&emsp;-&emsp;whoami<br>function&emsp;-&emsp;Returns a description of the creator of the website, the awesome <b><i>Lochlann O Neill</i></b><br>argument&emsp;-&emsp;NOT REQUIRED<br>return&emsp;-&emsp;String",
-  pwd: "command&emsp;-&emsp;pwd<br>function&emsp;-&emsp;print name of current/working directory<br>argument&emsp;-&emsp;NOT REQUIRED<br>return&emsp;-&emsp;String",
-  ls:"command&emsp;-&emsp;ls<br>function&emsp;-&emsp;list website contents<br>argument&emsp;-&emsp;NOT REQUIRED<br>return&emsp;-&emsp;String",
-  // cd:"command&emsp;-&emsp;cd<br>function&emsp;-&emsp;change directory to supplied location<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;String (must be an existing webpage location)<br>return&emsp;-&emsp;null<br>secret&emsp;-&emsp;try the command '<b><i>cd secret</i></b>'",
-  cd:"command&emsp;-&emsp;cd<br>function&emsp;-&emsp;change directory to supplied location<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;String (must be an existing webpage location)<br>return&emsp;-&emsp;null",
+  help: "command&emsp;-&emsp;help<br>function&emsp;-&emsp;provides the user with information on how to use the terminal<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
+  bin: "command&emsp;-&emsp;bin<br>function&emsp;-&emsp;returns a list of all acceptable commands.<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
+  man: "command&emsp;-&emsp;man<br>function&emsp;-&emsp;provides a description of a given command<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;Type String (must be an existing command, type <i>bin</i> to get acceptable commands)<br>return type&emsp;-&emsp;String",
+  print: "command&emsp;-&emsp;print<br>function&emsp;-&emsp;allows the user to print their input to the terminal output.<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;String<br>return type&emsp;-&emsp;String",
+  echo: "command&emsp;-&emsp;echo<br>function&emsp;-&emsp;allows the user to echo their input to the terminal output.<br>ARGUMENT REQUIRED&emsp;-&emsp;The user is expected to supply an argument of type String<br>return type&emsp;-&emsp;String",
+  whoami: "command&emsp;-&emsp;whoami<br>function&emsp;-&emsp;returns a description of the creator of the website, the awesome <b><i>Lochlann O Neill</i></b><br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
+  pwd: "command&emsp;-&emsp;pwd<br>function&emsp;-&emsp;print name of current/working directory<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
+  ls:"command&emsp;-&emsp;ls<br>function&emsp;-&emsp;list website contents<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
+  // cd:"command&emsp;-&emsp;cd<br>function&emsp;-&emsp;change directory to supplied location<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;String (must be an existing webpage location)<br>return type&emsp;-&emsp;null<br>secret&emsp;-&emsp;try the command <b><i>'cd secret'</i></b>",
+  cd:"command&emsp;-&emsp;cd<br>function&emsp;-&emsp;change directory to supplied location<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;String (must be an existing webpage location)<br>return type&emsp;-&emsp;null",
 };
 MAN = Object.assign({}, MAN_PRIVATE, MAN_PUBLIC);
 
@@ -51,16 +51,15 @@ function executeCommandLine() {
   var validCommand = isValidCommand(command);
   console.log("acceptable: " + validCommand);
   if (validCommand) {
-    var success = (executeCommand(command, removeFirstWord(commandline)))
-    console.log("success: " + success);
-    document.getElementById("terminal-response").innerHTML = success;
+    var response = (executeCommand(command, removeFirstWord(commandline)))
+    console.log("response: " + response);
+    document.getElementById("terminal-response").innerHTML = response;
   } else {
-    // document.getElementById("terminal-response").innerHTML = ("Command '" + command + "' not found. Type <i>'help'</i> if you're stuck.");
+    // document.getElementById("terminal-response").innerHTML = ("Command '" + command + "' not found. Type <b><i>'help'</i></b> if you're stuck.");
     document.getElementById("terminal-response").innerHTML = ("Command '" + command + "' not found. If you are stuck, type <b><i>'help'</i></b>");
   };
 };
 
-// todo maybe something like if (command === 'echo') return executeEcho(argument);
 function executeCommand(command, argument) {
   //secrets
   if (command === FLAG || command === FLAG_PARTIAL) return executeFlagFound(FLAG);
@@ -92,14 +91,14 @@ function executeFlagFound(flag) {
 };
 
 function executeHelp() {
-  return "Try the command '<b><i>bin</i></b>' to get some acceptable commands.<br>Some commands require an argument, such as '<b><i>cd contact</i></b>'.<br>Every argument has a manual. To learn how to use a command, you may check its manual. Try the command '<b><i>man cd</i></b>'.<br>Try to guess some <b>hidden commands</b> or complete the <b>Capture The Flag (CTF)</b> game within my terminal. :)";
+  return "Try the command <b><i>'bin'</i></b> to get some acceptable commands.<br>Some commands require an argument, such as <b><i>'cd contact'</i></b>.<br>Every argument has a manual. To learn how to use a command, you may check its manual. Try the command <b><i>'man cd'</i></b>.<br>Try to guess some <b><i>hidden commands</i></b> or complete the <b><i>Capture The Flag (CTF)</i></b> game within my terminal. :)";
 };
 
 function executeMan(command) {
   if (command in MAN) {
     return MAN[command];
   }
-  return "No manual entry for '<b><i>" + command + "</i></b>'.";
+  return "No manual entry for <b><i>'" + command + "'</i></b>.";
 };
 
 
@@ -108,7 +107,7 @@ function executePrint(argument) {
 };
 
 function executeFlag() {
-  return "Explore the terminal to find the flag.<br>Once you find the flag, type it into the terminal to complete the CTF game.<br><b>WARNING</b> - Pasting the flag into the terminal results in an error";
+  return "Explore the terminal to find the flag.<br>Once you find the flag, type it into the terminal to complete the CTF game.<br><b><i>WARNING</i></b> - Pasting the flag into the terminal results in an error, type it manually";
 };
 
 function executeWhoAmI() {
@@ -121,7 +120,7 @@ function executeCd(location) {
     window.location.href = location + ".html";
     return "200 - OK ... File Relocation: " + location + ".html";
   };
-    return "404 - File not found: '<b><i>" + location + ".html</i></b>'<br>Type <b><i>ls</i></b> to get acceptable files";
+    return "404 - File not found: <b><i>'" + location + ".html'</i></b><br>Type <b><i>ls</i></b> to get acceptable files";
 };
 
 function executeLs() {
@@ -144,7 +143,7 @@ function isValidCommand(command) {
 }
 
 //todo - what if echo has no following argument???
-//return string without first word
+//split commandline input and return argument only
 function removeFirstWord(str) {
   if (str.trim().indexOf(' ') != -1) return str.substr(str.indexOf(" ") + 1);
   return str;
