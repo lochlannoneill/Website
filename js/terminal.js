@@ -9,7 +9,7 @@ FLAG = "flag[" + FLAG_PARTIAL + "]";
 
 //variable to store all the acceptable commands along with those that dont need arguments
 const BIN_PRIVATE = ["lochlann", "mtu", "ctf", "markson", "bruce", "gordon", "daniels"];
-const BIN_PUBLIC = ["help", "bin", "man", "print", "echo", "flag", "whoami", "pwd", "ls", "cd"];
+const BIN_PUBLIC = ["help", "bin", "man", "print", "flag", "whoami", "pwd", "ls", "cd"];
 const BIN = BIN_PRIVATE + BIN_PUBLIC;
 const FILES = ["index", "contact", "secret"];
 
@@ -28,7 +28,7 @@ var MAN_PUBLIC = {
   bin: "command&emsp;-&emsp;bin<br>function&emsp;-&emsp;returns a list of all acceptable commands.<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
   man: "command&emsp;-&emsp;man<br>function&emsp;-&emsp;provides a description of a given command<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;Type String (must be an existing command, type <i>bin</i> to get acceptable commands)<br>return type&emsp;-&emsp;String",
   print: "command&emsp;-&emsp;print<br>function&emsp;-&emsp;allows the user to print their input to the terminal output.<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;String<br>return type&emsp;-&emsp;String",
-  echo: "command&emsp;-&emsp;echo<br>function&emsp;-&emsp;allows the user to echo their input to the terminal output.<br>ARGUMENT REQUIRED&emsp;-&emsp;The user is expected to supply an argument of type String<br>return type&emsp;-&emsp;String",
+  // echo: "command&emsp;-&emsp;echo<br>function&emsp;-&emsp;allows the user to echo their input to the terminal output.<br>ARGUMENT REQUIRED&emsp;-&emsp;The user is expected to supply an argument of type String<br>return type&emsp;-&emsp;String",
   whoami: "command&emsp;-&emsp;whoami<br>function&emsp;-&emsp;returns a description of the creator of the website, the awesome <b><i>Lochlann O Neill</i></b><br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
   pwd: "command&emsp;-&emsp;pwd<br>function&emsp;-&emsp;print name of current/working directory<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
   ls:"command&emsp;-&emsp;ls<br>function&emsp;-&emsp;list website contents<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
@@ -73,8 +73,8 @@ function executeCommand(command, argument) {
   if (command === 'help') return executeHelp();
   if (command === 'bin') return executeBin();
   if (command === 'man') return executeMan(argument);
-  if (command === 'print') return executePrint(argument);
-  if (command === 'echo') return executePrint(argument);
+  if (command === 'print' || command === 'echo') return executePrint(argument);
+  // if (command === 'echo') return executePrint(argument);
   if (command === 'flag' || command === 'ctf') return executeFlag();
   if (command === 'whoami') return executeWhoAmI();
   if (command === 'cd') return executeCd(argument.toLowerCase());
@@ -87,7 +87,7 @@ function executeCommand(command, argument) {
 // }
 
 function executeFlagFound(flag) {
-  return "<b><i>" + flag + "</i></b><br>You found the flag!<br>Good job!!!<br>P.S If you havn't descided yet...<b><i>please hire me</b></i> :)";
+  return "<b><i>" + flag + "</i></b><br>You found the flag!<br>You are now a Master Cybersecurity Analyst<br>P.S If you havn't decided yet . . . <b><i>hire me</b></i> :)";
 };
 
 function executeHelp() {
@@ -100,7 +100,6 @@ function executeMan(command) {
   }
   return "No manual entry for <b><i>'" + command + "'</i></b>.";
 };
-
 
 function executePrint(argument) {
   return argument;
@@ -115,8 +114,8 @@ function executeWhoAmI() {
 };
 
 function executeCd(location) {
+  if (location == 'home') location = 'index';
   if (FILES.includes(location)) {
-    if (location == 'home') location = 'index';
     window.location.href = location + ".html";
     return "200 - OK ... File Relocation: " + location + ".html";
   };
@@ -135,14 +134,14 @@ function executePwd() {
   return "index";
 };
 
-//return boolean if command is valid
+//return boolean if command is/not valid
 function isValidCommand(command) {
   if (BIN.includes(command)) return true;
   if (command === FLAG || command === FLAG_PARTIAL) return true;
   return false;
 }
 
-//todo - what if echo has no following argument???
+//todo - what if print has no following argument???
 //split commandline input and return argument only
 function removeFirstWord(str) {
   if (str.trim().indexOf(' ') != -1) return str.substr(str.indexOf(" ") + 1);
