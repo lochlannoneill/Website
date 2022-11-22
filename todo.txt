@@ -20,6 +20,7 @@ New Additions:
 
 Bugs:
     Critical:
+        Smaller text size on different aspect ratios
 
     High:
         Contact.html mobile styling

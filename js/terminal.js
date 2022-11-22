@@ -83,11 +83,22 @@ function executeCommand(command, argument) {
   return 'Unprecedented Error';
 };
 
-// function getCommandPurpose(command) {
-// }
+//return boolean if command is/not valid
+function isValidCommand(command) {
+  if (BIN.includes(command)) return true;
+  if (command === FLAG || command === FLAG_PARTIAL) return true;
+  return false;
+}
+
+//todo - what if print has no following argument???
+//split commandline input and return argument only
+function removeFirstWord(str) {
+  if (str.trim().indexOf(' ') != -1) return str.substr(str.indexOf(" ") + 1);
+  return str;
+}
 
 function executeFlagFound(flag) {
-  return "<b><i>" + flag + "</i></b><br>You found the flag!<br>You are now a Master Cybersecurity Analyst<br>P.S If you havn't decided yet . . . <b><i>hire me</b></i> :)";
+  return "<b><i>" + flag + "</i></b><br>You found the flag!<br>You are now a Master Cybersecurity Analyst<br>P.S If you haven't decided yet . . . <b><i>hire me</b></i> :)";
 };
 
 function executeHelp() {
@@ -133,20 +144,6 @@ function executeBin() {
 function executePwd() {
   return "index";
 };
-
-//return boolean if command is/not valid
-function isValidCommand(command) {
-  if (BIN.includes(command)) return true;
-  if (command === FLAG || command === FLAG_PARTIAL) return true;
-  return false;
-}
-
-//todo - what if print has no following argument???
-//split commandline input and return argument only
-function removeFirstWord(str) {
-  if (str.trim().indexOf(' ') != -1) return str.substr(str.indexOf(" ") + 1);
-  return str;
-}
 
 //stops the user from applying <br> tags to the command when pressing enter. execute early
 $("#commandline[contenteditable]").keypress(function (evt) {

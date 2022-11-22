@@ -14,7 +14,7 @@ body {
 #drag-container {
     /* border: 8px solid blue; */
   overflow: hidden;
-  height: 30vh;
+  height: 100%;
   -webkit-perspective: 1000px;
   perspective: 1000px;
   -webkit-transform-style: preserve-3d;

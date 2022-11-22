@@ -47,12 +47,12 @@
       <a id="top"></a>
   
       <!--__________________________________________________ background video _________________________________________________ -->
-      <video autoplay loop muted plays-inline class="background-video">
+      <!-- <video autoplay loop muted plays-inline class="background-video">
         <source src="images/background.MP4" type="video/mp4" />
-      </video>
+      </video> -->
 
-      <a class="skip-link" href="#main-content">Skip to main content</a>
-      <a class="skip-link" href="#footer">Skip to footer</a>
+      <!-- <a class="skip-link" href="#main">Skip to main content</a> -->
+      <!-- <a class="skip-link" href="#footer">Skip to footer</a> -->
 
       <!--______________________________________________________ navbar _____________________________________________________ -->
       <nav class="navbar navbar-expand-sm navbar-dark top" id="navbar">
@@ -114,7 +114,7 @@
       </a>
     </header>
 
-    <main id="main-content">
+    <main id="main">
       <!-- ___________________________________________________ large-jumbotron _____________________________________________________ -->
       <div
         class="jumbotron large-jumbotron vertical-center bg-transparent color"
@@ -137,10 +137,10 @@
             </h1>
             <div class="jumbotron-text">
               <p id="terminal-response">
-                Student of <b><i>Software Development</i></b> at Munster
-                Technological University<br />
-                <span class="fa fa-map-marker"></span>
-                Cork, Ireland
+                Student of <b><i><a href="https://www.mtu.ie/courses/mt800/">Software Development (BSc Honours)</a></i></b>
+                 at <b><i><a href="https://www.mtu.ie/">Munster Technological University</a></i></b>
+                <br />
+                <a href="https://g.page/MTUCork?share"><span class="fa fa-map-marker"></span> Cork, Ireland</a>
               </p>
             </div>
             <div class="jumbotron-icons">
@@ -182,16 +182,22 @@
       </div>
   
       <!-- ___________________________________________________ section _____________________________________________________ -->
-      <section class="section-container vertical-center">
-        <div class="container">
-          <div class="about">
-            <h2 class="about">WHO AM I ?</h2>
+      <!-- <section class="section-container vertical-center" id="section-about">
+        <div class="about">
+
+          <video autoplay loop muted>
+            <source src="images/background.MP4" type="video/mp4">
+          </video>
+
+          <div class="title-container">
+            <h2 id="whoami">WHO AM I ?</h2>
           </div>
+
         </div>
-      </section>
+      </section> -->
   
       <!-- ___________________________________________________ jumbotron _____________________________________________________ -->
-      <div
+      <!-- <div
         class="jumbotron bg-transparent color about vertical-center"
         id="home-jumbotron"
       >
@@ -200,19 +206,19 @@
             <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mt-6">
               <p class="text-center">
                 Hi, I'm
-                <span class="name"
-                  ><b><i>Lochlann O Neill</i></b></span
-                >.
+                  <a href="https://linktr.ee/lochlannoneill" id="link-name">Lochlann O Neill</a>
+                .
               </p>
               <p></p>
               <p>
-                I am currently undergoing my final year of a
-                <i>BSc(Honours)</i> in <b>Software Development</b> at
-                <b><i>Munster Technological University.</i></b>
+                I am currently undergoing my final year in 
+                <b><a href="https://www.mtu.ie/courses/mt800/">Software Development BSc(Honours)</a></b>
+                at the <a href="https://g.page/MTUCork?share"><span class="fa fa-map-marker"></span> Cork</a> campus of 
+                <b><a href="https://www.mtu.ie/">Munster Technological University</a></b>.
               </p>
               <p>
-                Once finished with my degree, I hope to continue my journey
-                focusing on either Cybersecurity or Web Development.
+                Once finished with my degree, I hope to continue my journey in Software Development
+                with an graduate position.
               </p>
             </div>
             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
@@ -232,7 +238,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
   
       <!-- ___________________________________________________ carousel _____________________________________________________ -->
       <!-- <section class="section">
@@ -274,7 +280,7 @@
               Lochlann O Neill
             </h5>
             <p class="text-muted">
-              Student of Software Development at Munster Technological
+              Student of Software Development (BSc Honours) at Munster Technological
               University.
             </p>
             <!-- ! <p class="text-muted">View this the source code of this project on GitHub <a href="https://github.com/lochlannoneill/MyWebsite">here</a>.</p>  -->

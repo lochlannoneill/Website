@@ -5,11 +5,11 @@
 /* ______________________________________________________________________________________________________________________ */
 .jumbotron {
   color: var(--color-text);
-  margin: 0;
   padding: 0 auto;
   margin: 0;
   /* width: 90vw; */
   min-height: 100vh;
+  overflow: hidden;
 }
 
 /* .jumbotron .container {

@@ -46,6 +46,10 @@
     animation: squint 4s infinite;
   }  */
 
+  /* #commandline {
+    min-width: 16vh;
+  } */
+
   #commandline:hover {
     cursor: pointer;
     background-color: var(--color-primary-brightest);
@@ -61,8 +65,9 @@
 
   #commandline[contenteditable]:empty::before {
     content: '_';
-    display: inline-block;
+    /* display: inline-block; */
     animation: blink 1s infinite;
+    float: left;
   }
   
   /* #commandline[contenteditable]:empty:focus::before {

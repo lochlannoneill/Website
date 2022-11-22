@@ -88,7 +88,7 @@ body {
       var(--color-secondary-gradiant-low)
     ),
     var(--image-background);
-  backdrop-filter: blur(4px) grayscale(100%);;
+  backdrop-filter: blur(4px) grayscale(60%);;
   background-size: cover;
   background-attachment: fixed;
   background-color: var(--color-primary-brighter);
@@ -101,19 +101,13 @@ body {
   color: var(--color-white);
   padding: 0;
   margin: 0;
-
-  /* justify-content: center;
-  align-items: center; */
 }
 
 .background-video {
   position: absolute;
   right: 0;
-  /* bottom: 0; */
   z-index: -1;
   filter: blur(12px);
-  /* position: relative; */
-  /* background-attachment: fixed; */
 }
 
 @media (min-aspect-ratio: 16/9) {
@@ -157,18 +151,18 @@ hr {
 }
 
 a {
-  color: var(--color-text-muted);
+  color: var(--color-text-bright);
 }
 
 a:hover {
-  /* color: var(--color-secondary); */
+  color: var(--color-secondary-brightest);
   animation: wiggleSmall 2.5s infinite;
   text-decoration: none;
   /* text-shadow: 0 0 50px var(--color-stackoverflow), 0 0 100px var(--color-stackoverflow), 0 0 150px var(--color-stackoverflow), 0 0 200px var(--color-stackoverflow); */
 }
 
 a:active {
-  color: var(--color-secondary-dark);
+  color: var(--color-secondary-dark) !important;
 }
 
 .name {
