@@ -21,15 +21,13 @@ New Additions:
 Bugs:
     Critical:
         Smaller text size on different aspect ratios
+        Home jumbotron text affects size of profile picture
 
     High:
         Contact.html mobile styling
-        Background video resizing
 
     Medium:
-        Why do contact.html left boxes not center properly???
 
     Low:
-        Commandline badge squints if empty
         Vignette at side of video because of filter() css property
 

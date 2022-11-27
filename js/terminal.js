@@ -102,7 +102,7 @@ function executeFlagFound(flag) {
 };
 
 function executeHelp() {
-  return "Try the command <b><i>'bin'</i></b> to get some acceptable commands.<br>Some commands require an argument, such as <b><i>'cd contact'</i></b>.<br>Every argument has a manual. To learn how to use a command, you may check its manual. Try the command <b><i>'man cd'</i></b>.<br>Try to guess some <b><i>hidden commands</i></b> or complete the <b><i>Capture The Flag (CTF)</i></b> game within my terminal. :)";
+  return "Try the command <b><i>'bin'</i></b> to get some acceptable commands.<br>Some commands require an argument, such as <b><i>'cd contact'</i></b>.<br>To learn how to use a command, you may check it's manual. Try the command <b><i>'man cd'</i></b>.<br>Try to guess some <b><i>hidden commands</i></b> or complete the <b><i>Capture The Flag (CTF)</i></b> game within my terminal. :)";
 };
 
 function executeMan(command) {
