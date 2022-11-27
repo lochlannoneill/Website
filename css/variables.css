@@ -33,5 +33,6 @@
   --color-fiverr: rgb(29, 191, 114);
   --color-mail: #ff0000;
   --image-background: url("../images/background.jpg");
-  --image-background2: url("../images/background_LAN.jpg");
+  --image-background_LAN: url("../images/background_LAN.jpg");
+  --image-background_LAN_cropped: url("../images/background_LAN_cropped.png");
 }
