@@ -162,7 +162,11 @@ a:hover {
 }
 
 a:active {
-  color: var(--color-secondary-dark) !important;
+  filter: brightness(65%);
+  /* opacity: 0.4; */
+  transition-duration: 0.0875s;
+  text-shadow: 0 0 50px var(--color-secondary), 0 0 100px var(--color-secondary), 0 0 150px var(--color-secondary), 0 0 200px var(--color-secondary);
+  /* color: var(--color-secondary-dark) !important; */
 }
 
 .name {
@@ -196,10 +200,10 @@ a:active {
   animation: spinIcon 1.5s infinite;
 }
 
-.icon-link:active {
+/* .icon-link:active {
   transition-duration: 0.1s;
   filter: brightness(65%);
-}
+} */
 
 .linkedin:hover {
   /* color: var(--color-linkedin); */
