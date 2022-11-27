@@ -47,6 +47,31 @@
 .container-jumbotron {
   margin: 0 8vw;
   padding: 0;
+  display: flex;
+}
+
+.jumbotron-picture {
+  /* width: 100%; */
+  /* height: auto; */
+  margin: 0 2vw;
+  overflow: hidden;
+  border-radius: 15%;
+  animation: 0.875s ease 0s normal forwards 1 fadeInSlow;
+}
+
+.jumbotron-picture:hover {
+  /* animation: wiggleSmall 5s infinite; */
+  box-shadow: 0 0 32px var(--color-primary-dark);
+}
+
+.jumbotron-picture img {
+  transition: 0.25s;
+}
+
+.jumbotron-picture img:hover {
+  cursor: pointer;
+  transform: scale(1.0875);
+  filter: brightness(65%);
 }
 
 .jumbotron-info {
@@ -54,7 +79,7 @@
 }
 
 .jumbotron-info h1 {
-  animation: 1.05s ease 0s normal forwards 1 fadeInSlow;
+  animation: 0.875s ease 0s normal forwards 1 fadeInSlow;
   /* font-size: 80%; */
   /* color: green; */
   /* font-size: 2.5vw; */
@@ -64,7 +89,7 @@
 .jumbotron-text {
   color: var(--color-text-muted);
   margin: 0;
-  animation: 1.05s ease 0s normal forwards 1 fadeInSlow;
+  animation: 0.875s ease 0s normal forwards 1 fadeInSlow;
   /* font-size: 1vw; */
 }
 
@@ -74,5 +99,5 @@
 }
 
 .jumbotron-icons {
-  animation: 2s ease 0s normal forwards 1 fadeLeftToRightWait;
+  animation: 1.25s ease 0s normal forwards 1 fadeLeftToRightWait;
 }
