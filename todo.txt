@@ -1,9 +1,10 @@
 New Additions:
     Critical:
         Javascript for contact form submit
+        Side scrolling badges of technologies i know
 
     High:
-        Creat a CV page with downloadable pdf - https://youtu.be/Eb6yFhkzpmI?t=612
+        Creat a CV button with downloadable pdf - https://youtu.be/Eb6yFhkzpmI?t=612
 
     Medium:
         Create a section for most recent social media posts
