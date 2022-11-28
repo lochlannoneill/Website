@@ -26,6 +26,7 @@ Bugs:
     High:
         Contact.html mobile styling
         Smaller homepage aspect ratio affects profile picture styling
+        Homepage smaller res -> display block
 
     Medium:
 
