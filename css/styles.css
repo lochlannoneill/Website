@@ -95,7 +95,7 @@ body {
   background-color: var(--color-primary-brighter);
   min-height: 100vh;
   font-family: Nunito, Arial, sans-serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
   padding: 0;
   margin: 0;
   text-decoration: none;
@@ -179,7 +179,7 @@ a:active {
   text-decoration: none;
   color: var(--color-text-dark-gradiant);
   /* text-shadow: 4px 4px 8px var(--color-primary-darkest); */
-  font-size: 2.25em;
+  font-size: 2em;
   padding: 16px;
   transition: 0.5s;
   /* animation: cycleColor 3s linear infinite; */

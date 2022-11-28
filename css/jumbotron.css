@@ -8,7 +8,7 @@
   padding: 0 auto;
   margin: 0;
   /* width: 90vw; */
-  min-height: 100vh;
+  min-height: 40vh;
   overflow: hidden;
 }
 
@@ -51,12 +51,13 @@
 }
 
 .jumbotron-picture {
-  /* width: 100%; */
-  /* height: auto; */
-  margin: 0 2vw;
+  width: auto;
+  height: 100%;
+  margin: 0 1vw;
   overflow: hidden;
-  border-radius: 15%;
+  border-radius: 50%;
   animation: 0.875s ease 0s normal forwards 1 fadeInSlow;
+  border: 3px solid var(--color-primary);
 }
 
 .jumbotron-picture:hover {
@@ -70,8 +71,8 @@
 
 .jumbotron-picture img:hover {
   cursor: pointer;
-  transform: scale(1.0875);
-  filter: brightness(65%);
+  transform: scale(1.05);
+  filter: brightness(70%);
 }
 
 .jumbotron-info {
