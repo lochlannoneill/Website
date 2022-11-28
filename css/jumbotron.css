@@ -8,6 +8,7 @@
   padding: 0 auto;
   margin: 0;
   /* width: 90vw; */
+  /* width: 100%; */
   min-height: 40vh;
   overflow: hidden;
 }
@@ -45,7 +46,7 @@
 }
 
 .container-jumbotron {
-  margin: 0 16vw;
+  margin: 0 auto;
   padding: 0;
   display: flex;
 }
@@ -67,7 +68,8 @@
 .jumbotron-picture {
   width: auto;
   height: 100%;
-  margin: 0 1vw;
+  margin: 0 1vh;
+  /* overflow: none; */
   overflow: hidden;
   border-radius: 50%;
   animation: 0.875s ease 0s normal forwards 1 fadeInSlow;
