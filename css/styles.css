@@ -84,7 +84,7 @@ body::-webkit-scrollbar-corner {
 body {
   background-image: linear-gradient(
       to bottom,
-      var(--color-primary-dark),
+      var(--color-primary-darkest),
       var(--color-secondary-gradiant-low)
     ),
     var(--image-background_LAN);
