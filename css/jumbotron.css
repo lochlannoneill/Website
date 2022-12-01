@@ -18,7 +18,7 @@
 } */
 
 .jumbotron h1 {
-  text-shadow: 8px 8px 16px var(--color-primary-darkest);
+  text-shadow: 4px 4px 4px var(--color-primary-darkest);
 }
 
 
@@ -68,7 +68,7 @@
 .jumbotron-picture {
   width: auto;
   height: 100%;
-  margin: 0 1vh;
+  margin: 0 2vh;
   /* overflow: none; */
   overflow: hidden;
   border-radius: 50%;

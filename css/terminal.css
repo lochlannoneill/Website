@@ -4,6 +4,8 @@
   #terminal {
     font-family: "Source Code Pro";
     margin: 0;
+    /* text-shadow: 2px 2px var(--color-primary-darkest); */
+    /* text-shadow: 0 0 3px black, 0 0 5px black; */
   }
   
   #terminal-response i {
