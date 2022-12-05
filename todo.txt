@@ -13,6 +13,7 @@ New Additions:
         "Who am I" section has see through text with a video behind it
         
     Low:
+        Make all text links jiggle when hovered
         animation for first-time terminal output
         Maybe make an entire folder directory?
         remove sideways scrollbar (loads for 1 sec when open contact.html)
@@ -22,7 +23,7 @@ New Additions:
 Bugs:
     Critical:
         Smaller text size on different aspect ratios
-        Home jumbotron text affects size of profile picture
+        Home jumbotron text affects size of profile picture -> might be something to do with vertical-center overflow
 
     High:
         When the terminal imput get to a certain length -> remove profile picture
