@@ -1,3 +1,7 @@
+section {
+    color: var(--color-text-bright);
+}
+
 .section-container {
     margin: 0;
     /* margin-top: 20vh; */
@@ -12,7 +16,7 @@
     padding: 0;
     min-height: 8vh;
     background-color: var(--color-primary);
-    color: var(--color-text-bright);
+    /* color: var(--color-text-bright); */
     align-items: center;
     text-align: center;
 }
@@ -62,7 +66,7 @@
     justify-content: center;
     /* background: var(--image-background2); */
     background: black;
-    color: var(--color-text-bright);
+    /* color: var(--color-text-bright); */
     /* font-size: 128px;
     font-weight: 900; */
     mix-blend-mode: multiply;
