@@ -102,7 +102,7 @@ function executeFlagFound(flag) {
 };
 
 function executeHelp() {
-  return "Try the command <b><i>'bin'</i></b> to get some acceptable commands.<br>Some commands require an argument, such as <b><i>'cd contact'</i></b>.<br>To learn how to use a command, you may check it's manual. Try the command <b><i>'man cd'</i></b>.<br>Try to guess some <b><i>hidden commands</i></b> or complete the <b><i>Capture The Flag (CTF)</i></b> game within my terminal.";
+  return "Try the command <b><i>'bin'</i></b> to get some acceptable commands.<br>Some commands require an argument, such as <b><i>'cd contact'</i></b>.<br>To learn how to use a command, you may check it's manual. Try the command <b><i>'man cd'</i></b>.<br>Try to guess some <b><i>hidden commands</i></b> or complete the <b><i>Capture The Flag (CTF)</i></b> game by finding the <b><i>'flag'</i></b>.";
 };
 
 function executeMan(command) {
@@ -117,7 +117,7 @@ function executePrint(argument) {
 };
 
 function executeFlag() {
-  return "Explore the terminal to find the flag.<br>Once you find the flag, type it into the terminal to complete the CTF game.<br><b><i>WARNING</i></b> - Pasting the flag into the terminal results in an error, type it manually";
+  return "Explore the terminal to find the flag.<br>Use the commands found in <b><i/>'bin'</i></b> to find it.<br>Once you find the flag, type it into the terminal to complete the CTF game.<br><b><i>WARNING</i></b> - Pasting the flag into the terminal results in an error, type it manually";
 };
 
 function executeWhoAmI() {

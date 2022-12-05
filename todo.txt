@@ -7,6 +7,7 @@ New Additions:
         Creat a CV button with downloadable pdf - https://youtu.be/Eb6yFhkzpmI?t=612
 
     Medium:
+        When the terminal imput get to a certain length -> remove profile picture
         Create a section for most recent social media posts
         Projects.html will be a tabbed page where each tab is change with the slider buttons https://codepen.io/dev_loop/pen/MWKbJmO
         Add a quote list that iterates on index.html
@@ -33,4 +34,5 @@ Bugs:
 
     Low:
         Vignette at side of video because of filter() css property
+        <i> gives bright text color instead of <b>
 
