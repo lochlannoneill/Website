@@ -9,7 +9,7 @@
   margin: 0;
   /* width: 90vw; */
   /* width: 100%; */
-  min-height: 40vh;
+  min-height: 50vh;
   overflow: hidden;
 }
 
@@ -34,6 +34,16 @@
 .vertical-center {
   display: flex;
   align-items: center;
+}
+
+.vertical-center * {
+  width: auto; /* ? did this fix the void space??? */
+  /* margin: auto; */
+  padding: auto;
+}
+
+.horizontal-center {
+  margin: auto;
 }
 
 /* .horizontal-center {
