@@ -121,7 +121,7 @@ function executeFlag() {
 };
 
 function executeWhoAmI() {
-  return "Hello, I'm <b><i>Lochlann O Neill</i></b> :)<br>As a student of Software Development, I'm currently undergoing my final year at MTU.<br>Once finished with my degree, I hope to continue my journey focusing on either Cybersecurity or Web Development.";
+  return "Hello, I'm <b><i>Lochlann O Neill</i></b> :)<br>As a final year student of <b><i/>(BSc Honours) Software Development</i></b>, I'm currently undergoing my final year at <b><i>MTU</i></b>.<br>I hope to continue my journey with a degree in <b><i>(MSc) Software Architecture & Design</i></b>.";
 };
 
 function executeCd(location) {
