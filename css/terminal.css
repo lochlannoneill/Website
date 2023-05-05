@@ -52,6 +52,12 @@
     min-width: 16vh;
   } */
 
+  @media (max-width: 768px) {
+    #commandline {
+      display: none !important;
+    }
+  }
+
   #commandline:hover {
     cursor: pointer;
     background-color: var(--color-primary-brightest);
