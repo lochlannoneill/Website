@@ -88,7 +88,8 @@ body {
     ),
     var(--image-background);
   background-position: right;
-  backdrop-filter: blur(10px) grayscale(60%);;
+  background-size: cover;
+  backdrop-filter: blur(10px) grayscale(60%);
   background-size: cover;
   background-attachment: fixed;
   background-color: var(--color-primary-brighter);
