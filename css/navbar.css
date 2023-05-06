@@ -8,6 +8,7 @@
   width: 100%;
 }
 
+
 #navbar-logo {
   height: 80px;
   margin: 0 24px 0 0;
@@ -21,30 +22,37 @@
 
 .nav-item {
   font-size: 1.7em;
-  margin-right: 16px;
+  margin: 16px 64px !important;
 }
 
 .navbar ul { 
   /* margin: 150px auto 0;  */
   padding: 0; 
   list-style: none; 
-  display: table;
-  width: 600px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 .navbar li { 
-  display: table-cell; 
+  display: inline-block; 
   position: relative; 
-  padding: 15px 0;
+  padding: 0 10px;
+  height: 100%;
+  margin: 0;
 }
 .navbar a {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.15em;
-  display: inline-block;
-  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   position: relative;
+  padding: 0 20px;
 }
 .navbar a:after {    
   background: none repeat scroll 0 0 transparent;
