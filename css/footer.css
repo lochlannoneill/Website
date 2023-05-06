@@ -18,11 +18,11 @@ footer hr {
 }
 
 footer a {
-  color: var(--color-secondary-bright);
+  color: var(--color-text-dark);
   text-decoration: none;
 }
 
 footer a:hover {
-  color: var(--color-secondary);
+  /* color: var(--color-secondary-brightest-gradiant); */
   text-decoration: none;
 }
