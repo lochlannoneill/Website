@@ -130,9 +130,10 @@ form label {
   height: 200px;
 } */
 
+
 .contact-form .inputBox input:hover ~ span,
 .contact-form .inputBox textarea:hover ~ span {
-  color: var(--color-secondary-bright-gradiant);
+  color: var(--color-text-bright);
 }
 
 .contact-form .inputBox input:focus ~ span,

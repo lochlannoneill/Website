@@ -157,6 +157,7 @@ a {
 
 a:hover {
   color: var(--color-secondary-brightest);
+  transition: color 0.125s ease-in-out;
   animation: wiggleSmall 2.5s infinite;
   text-decoration: none;
   /* text-shadow: 0 0 50px var(--color-stackoverflow), 0 0 100px var(--color-stackoverflow), 0 0 150px var(--color-stackoverflow), 0 0 200px var(--color-stackoverflow); */
