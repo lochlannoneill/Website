@@ -133,9 +133,9 @@ body {
   text-align: center;
   background-color: var(--color-primary);
   color: var(--color-text);
-  padding: .5rem;
+  padding: 0.5rem;
   /* hide to above page */
-  translate: 0 -100%; 
+  translate: 0 -100%;
   transition: translate 150ms ease-in-out;
 }
 
@@ -167,7 +167,8 @@ a:active {
   filter: brightness(65%);
   /* opacity: 0.4; */
   transition-duration: 0.0875s;
-  text-shadow: 0 0 50px var(--color-secondary), 0 0 100px var(--color-secondary), 0 0 150px var(--color-secondary), 0 0 200px var(--color-secondary);
+  text-shadow: 0 0 50px var(--color-secondary), 0 0 100px var(--color-secondary),
+    0 0 150px var(--color-secondary), 0 0 200px var(--color-secondary);
   /* color: var(--color-secondary-dark) !important; */
 }
 
@@ -184,7 +185,6 @@ a:active {
   padding: 16px;
   transition: 0.5s;
   /* animation: cycleColor 3s linear infinite; */
-
 }
 
 .icon:hover {
@@ -193,7 +193,10 @@ a:active {
   /* text-shadow: 4px 4px 8px var(--color-primary-darkest); */
   transition-duration: 0.125s;
   animation: 2.5s wiggleBig infinite;
-  text-shadow: 0 0 1000px var(--color-secondary-brightest), 0 0 100px var(--color-secondary-brightest), 0 0 150px var(--color-secondary-brightest), 0 0 200px var(--color-secondary-brightest);
+  text-shadow: 0 0 1000px var(--color-secondary-brightest),
+    0 0 100px var(--color-secondary-brightest),
+    0 0 150px var(--color-secondary-brightest),
+    0 0 200px var(--color-secondary-brightest);
 }
 
 .icon-link:hover {
@@ -209,35 +212,43 @@ a:active {
 
 .linkedin:hover {
   /* color: var(--color-linkedin); */
-  text-shadow: 0 0 50px var(--color-linkedin), 0 0 100px var(--color-linkedin), 0 0 150px var(--color-linkedin), 0 0 200px var(--color-linkedin);
+  text-shadow: 0 0 50px var(--color-linkedin), 0 0 100px var(--color-linkedin),
+    0 0 150px var(--color-linkedin), 0 0 200px var(--color-linkedin);
 }
 
 .github:hover {
   /* color: var(--color-github); */
-  text-shadow: 0 0 50px var(--color-github), 0 0 100px var(--color-github), 0 0 150px var(--color-github), 0 0 200px var(--color-github);
+  text-shadow: 0 0 50px var(--color-github), 0 0 100px var(--color-github),
+    0 0 150px var(--color-github), 0 0 200px var(--color-github);
 }
 
 .stackoverflow:hover {
   /* color: var(--color-stackoverflow); */
-  text-shadow: 0 0 50px var(--color-stackoverflow), 0 0 100px var(--color-stackoverflow), 0 0 150px var(--color-stackoverflow), 0 0 200px var(--color-stackoverflow);
+  text-shadow: 0 0 50px var(--color-stackoverflow),
+    0 0 100px var(--color-stackoverflow), 0 0 150px var(--color-stackoverflow),
+    0 0 200px var(--color-stackoverflow);
 }
 
 .twitter:hover {
   /* color: var(--color-twitter); */
-  text-shadow: 0 0 50px var(--color-twitter), 0 0 100px var(--color-twitter), 0 0 150px var(--color-twitter), 0 0 200px var(--color-twitter);
+  text-shadow: 0 0 50px var(--color-twitter), 0 0 100px var(--color-twitter),
+    0 0 150px var(--color-twitter), 0 0 200px var(--color-twitter);
 }
 
 .youtube:hover {
   /* color: var(--color-youtube); */
-  text-shadow: 0 0 50px var(--color-youtube), 0 0 100px var(--color-youtube), 0 0 150px var(--color-youtube), 0 0 200px var(--color-youtube);
+  text-shadow: 0 0 50px var(--color-youtube), 0 0 100px var(--color-youtube),
+    0 0 150px var(--color-youtube), 0 0 200px var(--color-youtube);
 }
 
 .codepen:hover {
-  text-shadow: 0 0 50px var(--color-codepen), 0 0 100px var(--color-codepen), 0 0 150px var(--color-codepen), 0 0 200px var(--color-codepen);
+  text-shadow: 0 0 50px var(--color-codepen), 0 0 100px var(--color-codepen),
+    0 0 150px var(--color-codepen), 0 0 200px var(--color-codepen);
 }
 
 .fiverr:hover {
-  text-shadow: 0 0 50px var(--color-fiverr), 0 0 100px var(--color-fiverr), 0 0 150px var(--color-fiverr), 0 0 200px var(--color-fiverr);
+  text-shadow: 0 0 50px var(--color-fiverr), 0 0 100px var(--color-fiverr),
+    0 0 150px var(--color-fiverr), 0 0 200px var(--color-fiverr);
 }
 
 /* ______________________________________________________________________________________________________________________ */
@@ -250,8 +261,7 @@ a:active {
 }
 
 #main-join {
-  background-image: 
-    linear-gradient(
+  background-image: linear-gradient(
       to bottom,
       var(--color-primary-dark),
       var(--color-secondary-gradiant)

@@ -12,7 +12,7 @@ body {
 
 /* ! this extends beyong the top/bottom borders for some reason */
 #drag-container {
-    /* border: 8px solid blue; */
+  /* border: 8px solid blue; */
   overflow: hidden;
   height: 100%;
   -webkit-perspective: 1000px;
@@ -38,8 +38,8 @@ body {
 #drag-container img,
 #drag-container video {
   animation: 1.25s ease 0s normal forwards 1 fadeInSlow;
-    filter: brightness(100%);
-    /* transition: 1s; */
+  filter: brightness(100%);
+  /* transition: 1s; */
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   position: absolute;
@@ -56,20 +56,23 @@ body {
     linear-gradient(transparent, transparent, var(--color-primary-dark-gradiant-lower)); */
 }
 
-
 #drag-container img:hover,
 #drag-container video:hover {
-    filter: brightness(120%);
-    cursor: pointer;
-    -webkit-box-shadow: 0 0 15px var(--color-primary-dark-gradiant);
-    box-shadow: 0 0 15px var(--color-primary-dark-gradiant);
-    -webkit-box-reflect: below 10px
-    linear-gradient(transparent, transparent, var(--color-primary-dark-gradiant-low));
+  filter: brightness(120%);
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 15px var(--color-primary-dark-gradiant);
+  box-shadow: 0 0 15px var(--color-primary-dark-gradiant);
+  -webkit-box-reflect: below 10px
+    linear-gradient(
+      transparent,
+      transparent,
+      var(--color-primary-dark-gradiant-low)
+    );
 }
 
 #drag-container img:active,
 #drag-container video:active {
-    filter: brightness(80%);
+  filter: brightness(80%);
 }
 
 #drag-container p {
