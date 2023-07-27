@@ -11,24 +11,15 @@ section {
   min-height: 16vh;
 }
 
-.section-technologies {
-  margin: 0;
-  padding: 0;
-  min-height: 8vh;
-  background-color: var(--color-primary);
-  /* color: var(--color-text-bright); */
-  align-items: center;
-  text-align: center;
-}
-
-.section-technologies h2 {
-  margin: 0;
-  font-weight: 800;
-  font-size: 40px;
-}
-
-.section-technologies p {
-  margin: 0;
+/* media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .section-container {
+    padding: 8vw;
+  }
+  .section-container p {
+    text-align: left;
+    font-size: 2.25vh;
+  }
 }
 
 .section-container:nth-child(odd) {
@@ -37,43 +28,4 @@ section {
 
 .section-container p {
   color: var(--color-text);
-}
-
-.section h2 {
-  text-align: center;
-}
-
-.about {
-  font-size: 1.5em;
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.about video {
-  width: 50%;
-  height: 50%;
-}
-
-.about .title-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* background: var(--image-background2); */
-  background: black;
-  /* color: var(--color-text-bright); */
-  /* font-size: 128px;
-    font-weight: 900; */
-  mix-blend-mode: multiply;
-}
-
-.title-container h2 {
-  font-size: 128px;
-  font-weight: 900;
-  /* color: var(--color-text-bright); */
 }
