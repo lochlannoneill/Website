@@ -129,13 +129,13 @@
   margin: 0;
   animation: 0.875s ease 0s normal forwards 1 fadeInSlow;
   /* font-size: 1em; */
-  font-size: 2.25vh;
+  font-size: 2.5vh;
 }
 
 /* media query for smaller screens */
 @media only screen and (max-width: 768px) {
   .jumbotron-text {
-    font-size: 3vh;
+    font-size: 2.25vh;
   }
 }
 
