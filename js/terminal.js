@@ -50,6 +50,8 @@ function executeCommandLine() {
   //verify if the command is valid and execute using supplied argument
   var validCommand = isValidCommand(command);
   console.log("acceptable: " + validCommand);
+  document.getElementById("terminal-response").classList.add("command-entered")
+
   if (validCommand) {
     var response = (executeCommand(command, removeFirstWord(commandline)))
     console.log("response: " + response);

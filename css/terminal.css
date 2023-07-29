@@ -18,6 +18,10 @@
   color: white;
 }
 
+#terminal-response.command-entered {
+  text-align: left;
+}
+
 #link-name {
   color: var(--color-secondary-brightest-gradiant);
   font-weight: bold;
