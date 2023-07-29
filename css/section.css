@@ -5,7 +5,7 @@ section {
 .section-container {
   margin: 0;
   /* margin-top: 20vh; */
-  padding: 2vh 16vw;
+  padding: 4vh 16vw;
   background-color: var(--color-primary-brighter);
   text-align: center;
   min-height: 16vh;
