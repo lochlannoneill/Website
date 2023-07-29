@@ -22,12 +22,18 @@
     /* height: 200px; */
     /* width: 100%; */
     width: 360px;
-    /* margin: auto; */
+    margin: 16px auto;
     border: 0;
     background: none;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 0px 24px var(--color-primary);
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 280px;
+    }
 }
 
 .card .poster {
@@ -73,6 +79,12 @@
     transition: 0.5s;
 }
 
+@media only screen and (max-width: 768px) {
+    .card .details {
+        bottom: -56px;
+    }
+}
+
 /* media query for smaller screens
 @media only screen and (max-width: 1300px) {
     .card .details {
@@ -97,12 +109,24 @@
     max-width: 48px;
 }
 
+@media only screen and (max-width: 768px) {
+    .card .details .logo {
+        max-width: 36px;
+    }
+}
+
 .card .details h3 {
     /* display: inline-block; */
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 8px;
     text-shadow: 2px 2px 2px var(--color-primary);
+}
+
+@media only screen and (max-width: 768px) {
+    .card .details h3 {
+        font-size: 1em;
+    }
 }
 
 .card .details .tags {
@@ -113,13 +137,14 @@
     font-size: 0.8rem;
     padding: 2px 5px;
     color: var(--text-color);
-    background: var(--color-primary-brighter-gradiant);
+    background: var(--color-primary-brightest-gradiant);
     border-radius: 4px;
 }
 
 .card .details .tags span:nth-child(odd) {
-    background: var(--color-primary-brightest-gradiant);
+    background: var(--color-primary-brighter-gradiant);
 }
+
 
 .card .info p {
     opacity: 0;
@@ -128,4 +153,10 @@
 
 .card:hover .info p {
     opacity: 100;
+}
+
+@media only screen and (max-width: 768px) {
+    .card .info p {
+        font-size: 0.8em;
+    }
 }
