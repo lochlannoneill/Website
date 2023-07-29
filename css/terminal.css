@@ -18,8 +18,12 @@
   color: white;
 }
 
-#terminal-response.command-entered {
+#terminal-response.acceptable-command {
   text-align: left;
+}
+
+#terminal-response.unacceptable-command {
+  text-align: center;
 }
 
 #link-name {

@@ -50,15 +50,19 @@ function executeCommandLine() {
   //verify if the command is valid and execute using supplied argument
   var validCommand = isValidCommand(command);
   console.log("acceptable: " + validCommand);
-  document.getElementById("terminal-response").classList.add("command-entered")
+  document.getElementById("terminal-response").classList.add("accecptable-command")
 
   if (validCommand) {
     var response = (executeCommand(command, removeFirstWord(commandline)))
     console.log("response: " + response);
     document.getElementById("terminal-response").innerHTML = response;
+    document.getElementById("terminal-response").classList.remove("unacceptable-command")
+    document.getElementById("terminal-response").classList.add("acceptable-command")
   } else {
     // document.getElementById("terminal-response").innerHTML = ("Command '" + command + "' not found. Type <b><i>'help'</i></b> if you're stuck.");
     document.getElementById("terminal-response").innerHTML = ("Command '" + command + "' not found. If you are stuck, type <b><i>'help'</i></b>");
+    document.getElementById("terminal-response").classList.remove("acceptable-command")
+    document.getElementById("terminal-response").classList.add("unacceptable-command")
   };
 };
 
