@@ -29,3 +29,24 @@ section {
 .section-container p {
   color: var(--color-text);
 }
+
+.section-container button {
+  background: var(--color-primary-gradiant);
+  color: var(--color-text);
+  border: none;
+  padding: 4px 16px;
+  cursor: pointer;
+}
+
+.section-container button:hover {
+  transition: 0.5s;
+  background: var(--color-primary-dark-gradiant);
+  color: white;
+  animation: 3s wiggleSmall infinite;
+}
+
+.section-container button:active {
+  background: var(--color-secondary);
+  color: white;
+  border: none;
+}
