@@ -11,7 +11,7 @@
 @import "cornerlink.css";
 
 ::selection {
-  background: var(--color-secondary); /* WebKit/Blink Browsers */
+  background: var(--color-secondary-brightest-gradiant); /* WebKit/Blink Browsers */
 }
 
 /* ______________________________________________________________________________________________________________________ */
