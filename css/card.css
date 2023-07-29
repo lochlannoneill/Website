@@ -60,12 +60,12 @@
     width: 100%;
     object-fit: cover;
     transition: 0.75s;
-    filter: blur(1px);
+    filter: blur(1.25px);
 }
 
 .card:hover .poster img {
     transform: translateY(-50px);
-    filter: blur(3px);
+    filter: blur(4px);
 }
 
 .card .details {
@@ -141,6 +141,10 @@
     border-radius: 4px;
 }
 
+.card .details .tags #important {
+    background: var(--color-secondary-bright-gradiant);
+}
+
 .card .details .tags span:nth-child(odd) {
     background: var(--color-primary-brighter-gradiant);
 }
@@ -169,7 +173,7 @@
     border: none;
     padding: 2px 8px;
     font-size: 0.8rem;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
 }
 
