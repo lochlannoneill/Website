@@ -32,6 +32,7 @@
 @media only screen and (max-width: 768px) {
     .card {
         width: 280px;
+        margin: 24px auto;
     }
 }
 
@@ -59,7 +60,7 @@
     width: 100%;
     object-fit: cover;
     transition: 0.75s;
-    filter: blur(0.5px);
+    filter: blur(1px);
 }
 
 .card:hover .poster img {
@@ -146,6 +147,7 @@
 
 
 .card .info p {
+    /* font-size: 0.8rem; */
     opacity: 0;
     transition: 0.75s;
 }
