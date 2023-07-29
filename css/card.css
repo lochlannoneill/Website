@@ -71,7 +71,7 @@
     position: absolute;
     text-align: left;
     left: 0;
-    bottom: -64px;
+    bottom: -96px;
     padding: 2vh;
     width: 100%;
     z-index: 2;
@@ -158,4 +158,27 @@
     .card .info p {
         font-size: 0.8em;
     }
+}
+
+.card button {
+    margin-top: 4px;
+    background: var(--color-github);
+    color: var(--color-text);
+    border: none;
+    padding: 2px 8px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.card button:hover {
+    transition: 0.5s;
+    background: var(--color-github-gradiant);
+    color: white;
+    animation: 3s wiggleSmall infinite;
+}
+
+.card button:active {
+    /* background: var(--color-secondary-dark); */
+    border: none;
 }
