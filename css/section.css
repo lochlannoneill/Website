@@ -74,7 +74,7 @@ section {
 
 .btn-box {
   display: flex;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 0.2vh solid var(--color-text-muted);
 }
 
 .btn-box button {
@@ -96,7 +96,7 @@ section {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin: 5% auto;
+  margin: 2.5% auto;
 }
 
 .content-right img {
@@ -104,23 +104,29 @@ section {
 }
 
 .content-left {
-  flex-basis: 50%;
+  flex-basis: 60%;
+  text-align: left;
+}
+
+.content-left * {
+  margin-bottom: 16px;
 }
 
 .content-left p {
-  text-align: left;
   font-size: 1.25em;
 }
 
 .content-right {
-  flex-basis: 50%;
-  text-align: center;
+  flex-basis: 40%;
+  text-align: left;
+  margin-left: 16px;
 }
 
 /* mobiles */
 @media only screen and (max-width: 768px) {
   .content {
     display: block;
+    margin: 5% auto;
   }
 
   .content-right img {
@@ -135,6 +141,7 @@ section {
   .content-right {
     flex-basis: 50%;
     text-align: center;
+    margin: 0;
   }
 }
 
@@ -142,10 +149,18 @@ section {
 @media only screen and (max-width: 1300px) {
   .content {
     display: block;
+    margin: 5% auto;
   }
 
   .content-left {
+    flex-basis: 50%;
     margin-bottom: 16px;
+  }
+
+  .content-right {
+    flex-basis: 50%;
+    text-align: center;
+    margin: 0;
   }
 
 }
