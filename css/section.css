@@ -35,7 +35,7 @@ section {
 
 .section-container button {
   background: var(--color-primary-gradiant);
-  color: var(--color-text);
+  color: white;
   border: none;
   padding: 4px 16px;
   cursor: pointer;
