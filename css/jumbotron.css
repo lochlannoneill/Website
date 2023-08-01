@@ -54,6 +54,12 @@
   border-bottom: none;
 }
 
+@media (max-aspect-ratio: 9/16) {
+  .large-jumbotron {
+    min-height: 30vh;
+  }
+}
+
 .container-jumbotron {
   margin: 0 auto;
   padding: 0;
