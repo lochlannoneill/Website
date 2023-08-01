@@ -17,7 +17,7 @@ function openAbout() {
     btn3.style.color = DARK;
 }
 
-function openCSS() {
+function openLorem() {
     content1.style.transform = "translateX(100%)";
     content2.style.transform = "translateX(0)";
     content3.style.transform = "translateX(100%)";
@@ -26,7 +26,7 @@ function openCSS() {
     btn3.style.color = DARK;
 }
 
-function openJavaScript() {
+function openIpsum() {
     content1.style.transform = "translateX(100%)";
     content2.style.transform = "translateX(100%)";
     content3.style.transform = "translateX(0)";
