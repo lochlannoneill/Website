@@ -18,6 +18,13 @@
   color: white;
 }
 
+#terminal-response a {
+  font-weight: bold;
+  -webkit-text-stroke: 0.5px; /* width and color */
+  text-shadow: 2px 2px 2px var(--color-primary);
+  transition: 0.375s;
+}
+
 #terminal-response.acceptable-command {
   text-align: left;
 }
