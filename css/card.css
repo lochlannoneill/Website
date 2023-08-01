@@ -168,7 +168,7 @@
 
 
 .card .info p {
-    /* font-size: 0.8rem; */
+    font-size: 0.875em;
     opacity: 0;
     transition: 0.75s;
     margin-bottom: 8px;
