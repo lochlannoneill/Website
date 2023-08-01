@@ -38,7 +38,8 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/terminal.js" defer></script>
+    <script type="text/javascript" src="js/terminal.js" defer></script>
+    <script type="text/javascript" src="js/tabbed.js" defer></script>
   </head>
 
   <body>
@@ -216,13 +217,13 @@
       
       <div class="hero">
         <div class="btn-box">
-          <button class="hero-button">About</button>
-          <button class="hero-button">CSS</button>
-          <button class="hero-button">JAVASCRIPT</button>
+          <button id="btn1" onclick="openAbout()" class="hero-button">About</button>
+          <button id="btn2" onclick="openCSS()" class="hero-button">CSS</button>
+          <button id="btn3" onclick="openJavaScript()" class="hero-button">JAVASCRIPT</button>
         </div>
 
         <!-- About -->
-        <div class="content">
+        <div id="content1" class="content">
           <div class="content-left">
             <h1>About</h1>
             <p>
@@ -238,9 +239,12 @@
         </div>
 
         <!-- CSS -->
-        <div class="content">
+        <div id="content2" class="content">
           <div class="content-left">
             <h1>CSS</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptas odio, nisi sit inventore tempore corporis labore repudiandae est, ullam vitae ratione iusto aut facere blanditiis placeat maxime hic accusantium!
+            </p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptas odio, nisi sit inventore tempore corporis labore repudiandae est, ullam vitae ratione iusto aut facere blanditiis placeat maxime hic accusantium!
             </p>
@@ -251,11 +255,14 @@
         </div>
 
         <!-- JavaScript -->
-        <div class="content">
+        <div id="content3" class="content">
           <div class="content-left">
             <h1>JavaScript</h1>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime nesciunt nihil non facilis amet tempora odit officia voluptates natus, perferendis iure magnam vero velit eaque nobis doloremque nulla! Pariatur, sapiente?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus voluptas odio, nisi sit inventore tempore corporis labore repudiandae est, ullam vitae ratione iusto aut facere blanditiis placeat maxime hic accusantium!
             </p>
           </div>
           <div class="content-right">
