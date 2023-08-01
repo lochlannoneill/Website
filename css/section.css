@@ -42,6 +42,7 @@ section {
   font-size: 1.6rem;
   margin-top: 16px;
   font-weight: 600;
+  transition: 0.5s;
 }
 
 .section-container button:hover {
@@ -52,7 +53,7 @@ section {
 }
 
 .section-container button:active {
-  background: var(--color-secondary);
+  background: var(--color-secondary-brightest);
   color: white;
   border: none;
 }
