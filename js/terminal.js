@@ -127,7 +127,7 @@ function executeFlag() {
 };
 
 function executeWhoAmI() {
-  return "Hello, I'm <b><i>Lochlann O Neill</i></b> :)<br>As a final year student of <b><i/>(BSc Honours) Software Development</i></b>, I'm currently undergoing my final year at <b><i>MTU</i></b>.<br>I hope to continue my journey with a degree in <b><i>(MSc) Software Architecture & Design</i></b>.";
+  return "Hello, I'm <b><i>Lochlann O Neill</i></b> !<br>As a <a href='https://www.scholaro.com/gpa-calculator/Ireland'>First-Class Honours</a> graduate of <a href='https://www.mtu.ie/courses/mt800/'>BSc Software Development</a> at <a href='https://www.mtu.ie/'>MTU</a>, I hope to eventually continue my journey with a degree in <b><i>MSc Software Architecture & Design</i></b>.";
 };
 
 function executeCd(location) {
