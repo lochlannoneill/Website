@@ -260,18 +260,18 @@ a:active {
   padding: 80px 80px 240px 80px;
 }
 
-#main-join {
+/* #main-join {
   background-image: linear-gradient(
       to bottom,
       var(--color-primary-dark),
       var(--color-secondary-gradiant)
     ),
     var(--image-background2);
-  /* backdrop-filter: blur(10px); */
+  backdrop-filter: blur(10px);
   background-size: cover;
   background-attachment: fixed;
   background-color: var(--color-primary);
-}
+} */
 
 .container-section {
   margin-top: 8vh;
