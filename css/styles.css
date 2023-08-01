@@ -66,6 +66,7 @@ body::-webkit-scrollbar {
   width: 0.6em;
   display: block;
   overflow: auto;
+  background-color: var(--color-primary-darkest);
 }
 
 body::-webkit-scrollbar-track {
@@ -73,7 +74,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--color-primary-dark-gradiant);
+  background-color: var(--color-primary-brighter);
 }
 
 body::-webkit-scrollbar-corner {
