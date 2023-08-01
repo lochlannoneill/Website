@@ -171,7 +171,8 @@
     /* font-size: 0.8rem; */
     opacity: 0;
     transition: 0.75s;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
+    color: white;
 }
 
 .card:hover .info p {
