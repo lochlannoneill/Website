@@ -1,5 +1,5 @@
-const BRIGHT = "#FFFFFF"
-var DARK = "#999999"
+const BRIGHT = "#FFFFFF";
+var DARK = "#999999";
 
 var content1 = document.getElementById("content1");
 var content2 = document.getElementById("content2");
@@ -9,28 +9,28 @@ var btn2 = document.getElementById("btn2");
 var btn3 = document.getElementById("btn3");
 
 function openAbout() {
-    content1.style.transform = "translateX(0)";
-    content2.style.transform = "translateX(100%)";
-    content3.style.transform = "translateX(100%)";
-    btn1.style.color = BRIGHT;
-    btn2.style.color = DARK;
-    btn3.style.color = DARK;
+  content1.style.transform = "translateX(0)";
+  content2.style.transform = "translateX(100%)";
+  content3.style.transform = "translateX(100%)";
+  btn1.style.color = BRIGHT;
+  btn2.style.color = DARK;
+  btn3.style.color = DARK;
 }
 
 function openLorem() {
-    content1.style.transform = "translateX(100%)";
-    content2.style.transform = "translateX(0)";
-    content3.style.transform = "translateX(100%)";
-    btn1.style.color = DARK;
-    btn2.style.color = BRIGHT;
-    btn3.style.color = DARK;
+  content1.style.transform = "translateX(100%)";
+  content2.style.transform = "translateX(0)";
+  content3.style.transform = "translateX(100%)";
+  btn1.style.color = DARK;
+  btn2.style.color = BRIGHT;
+  btn3.style.color = DARK;
 }
 
 function openIpsum() {
-    content1.style.transform = "translateX(100%)";
-    content2.style.transform = "translateX(100%)";
-    content3.style.transform = "translateX(0)";
-    btn1.style.color = DARK;
-    btn2.style.color = DARK;
-    btn3.style.color = BRIGHT;
+  content1.style.transform = "translateX(100%)";
+  content2.style.transform = "translateX(100%)";
+  content3.style.transform = "translateX(0)";
+  btn1.style.color = DARK;
+  btn2.style.color = DARK;
+  btn3.style.color = BRIGHT;
 }
