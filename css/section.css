@@ -41,7 +41,7 @@ section {
   padding: 16px 24px;
   cursor: pointer;
   font-size: 1.6rem;
-  margin-top: 16px;
+  margin-top: 24px;
   font-weight: 600;
   transition: 0.5s;
   /* position: absolute;
@@ -82,7 +82,7 @@ section {
 
 @media only screen and (max-width: 768px) {
   .hero {
-    min-height: 90vh;
+    height: 80vh;
   }
 }
 
