@@ -79,7 +79,14 @@ form label {
 .contact-form h2 {
   font-weight: 500;
   color: var(--color-text);
-  margin-bottom: 5vh;
+  /* margin-bottom: 5vh; */
+  text-shadow: 2px 2px 8px var(--color-primary-darkest);
+}
+
+.contact-form p {
+  /* font-weight: 500; */
+  color: var(--color-text-muted);
+  margin-bottom: 3vh;
   text-shadow: 2px 2px 8px var(--color-primary-darkest);
 }
 
