@@ -252,3 +252,21 @@ section {
 #btn1 {
   color: var(--color-text-bright);
 }
+
+#content3 {
+  font-size: 0.775em;
+}
+
+#content3 h1 {
+  font-size: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+  #content3 h1 {
+    font-size: 1.575em;
+  }
+/* 
+  #content3 p {
+    font-size: 1em;
+  } */
+}
