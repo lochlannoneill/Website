@@ -186,7 +186,6 @@
 
 .card button {
   /* margin-top: 4px; */
-  background: var(--color-github);
   color: white;
   border: none;
   padding: 2px 8px;
@@ -195,6 +194,18 @@
   cursor: pointer;
   opacity: 0;
   transition: 0.75s;
+}
+
+.card button.github {
+  background: var(--color-github);
+}
+
+.card button.youtube {
+  background: var(--color-youtube);
+}
+
+.card button.pdf {
+  background: var(--color-pdf);
 }
 
 @media only screen and (max-width: 768px) {
@@ -206,11 +217,13 @@
 .card button:active {
   /* background: var(--color-secondary-dark); */
   border: none;
+  filter: brightness(0.3);
 }
 
 .card button:hover {
   transition: 0.5s;
-  background: var(--color-github-gradiant);
+  /* background: var(--color-github-gradiant); */
+  filter: brightness(0.65);
   color: white;
   animation: 3s wiggleSmall infinite;
   opacity: 100;
