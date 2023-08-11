@@ -249,6 +249,14 @@ section {
   transform: translatex(0);
 }
 
+#content1 .content-right {
+  flex-basis: 35%;
+}
+
+#content1 .content-left {
+  flex-basis: 65%;
+}
+
 #btn1 {
   color: var(--color-text-bright);
 }
