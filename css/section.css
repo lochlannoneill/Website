@@ -126,6 +126,7 @@ section {
 }
 
 .content * {
+  width: 100%;
   margin-bottom: 0 16px 16px 16px;
 }
 
@@ -136,6 +137,10 @@ section {
 
 .content-left {
   margin: 0 32px;
+}
+
+.content-left h1 {
+  font-weight: 600;
 }
 
 .content-right img {
