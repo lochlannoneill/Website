@@ -246,6 +246,11 @@ section {
     text-align: center;
     margin: 0 0 16px 0;
   }
+
+  /* This is not working for some reason */
+  /* .content-right img {
+    width: 30%;
+  } */
 }
 
 #contentAbout {
