@@ -112,6 +112,13 @@ section {
   justify-content: space-between;
 }
 
+/* mobiles */
+@media only screen and (max-width: 768px) {
+  .btn-box button {
+    font-size: 16px;
+  }
+}
+
 .content {
   height: 100%;
   width: 100%;
@@ -198,7 +205,7 @@ section {
   }
 
   .content-right img {
-    width: 80%;
+    width: 70%;
   }
 
   .content-left {
@@ -218,10 +225,6 @@ section {
     /* flex-basis: 50%; */
     text-align: center;
     margin: 0 0 16px 0;
-  }
-
-  .content-right img {
-    width: 80%;
   }
 
 }
@@ -249,6 +252,12 @@ section {
   transform: translatex(0);
 }
 
+@media only screen and (max-width: 768px) {
+  #contentAbout p {
+    font-size: 0.875em;
+  }
+}
+
 #contentAbout .content-right {
   flex-basis: 35%;
 }
@@ -266,7 +275,7 @@ section {
 }
 
 #contentExperience {
-  font-size: 0.825em;
+  font-size: 0.875em;
 }
 
 #contentEducation {
@@ -275,16 +284,17 @@ section {
 
 #contentEducation h1,
 #contentExperience h1,
+#contentSkills h1,
 #contentInterests h1 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 @media only screen and (max-width: 768px) {
-  #content3 h1 {
+  #contentInterests h1 {
     font-size: 1.575em;
   }
 /* 
-  #content3 p {
+  #contentInterests p {
     font-size: 1em;
   } */
 }
