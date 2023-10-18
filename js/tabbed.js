@@ -1,36 +1,56 @@
 const BRIGHT = "#FFFFFF";
 var DARK = "#999999";
 
-var content1 = document.getElementById("content1");
-var content2 = document.getElementById("content2");
-var content3 = document.getElementById("content3");
-var btn1 = document.getElementById("btn1");
-var btn2 = document.getElementById("btn2");
-var btn3 = document.getElementById("btn3");
+var contentAbout = document.getElementById("contentAbout");
+var contentExperience = document.getElementById("contentExperience");
+var contentSkills = document.getElementById("contentSkills");
+var contentInterests = document.getElementById("contentInterests");
+
+var btnAbout = document.getElementById("btnAbout");
+var btnExperience = document.getElementById("btnExperience");
+var btnSkills = document.getElementById("btnSkills");
+var btnInterests = document.getElementById("btnInterests");
 
 function openAbout() {
-  content1.style.transform = "translateX(0)";
-  content2.style.transform = "translateX(100%)";
-  content3.style.transform = "translateX(100%)";
-  btn1.style.color = BRIGHT;
-  btn2.style.color = DARK;
-  btn3.style.color = DARK;
+  contentAbout.style.transform = "translateX(0)";
+  contentExperience.style.transform = "translateX(100%)";
+  contentSkills.style.transform = "translateX(100%)";
+  contentInterests.style.transform = "translateX(100%)";
+  btnAbout.style.color = BRIGHT;
+  btnExperience.style.color = DARK;
+  btnSkills.style.color = DARK;
+  btnInterests.style.color = DARK;
 }
 
-function openLorem() {
-  content1.style.transform = "translateX(100%)";
-  content2.style.transform = "translateX(0)";
-  content3.style.transform = "translateX(100%)";
-  btn1.style.color = DARK;
-  btn2.style.color = BRIGHT;
-  btn3.style.color = DARK;
+function openExperience() {
+  contentAbout.style.transform = "translateX(100%)";
+  contentExperience.style.transform = "translateX(0)";
+  contentSkills.style.transform = "translateX(100%)";
+  contentInterests.style.transform = "translateX(100%)";
+  btnAbout.style.color = DARK;
+  btnExperience.style.color = BRIGHT;
+  btnSkills.style.color = DARK;
+  btnInterests.style.color = DARK;
 }
 
-function openIpsum() {
-  content1.style.transform = "translateX(100%)";
-  content2.style.transform = "translateX(100%)";
-  content3.style.transform = "translateX(0)";
-  btn1.style.color = DARK;
-  btn2.style.color = DARK;
-  btn3.style.color = BRIGHT;
+function openSkills() {
+  contentAbout.style.transform = "translateX(100%)";
+  contentExperience.style.transform = "translateX(100%)";
+  contentSkills.style.transform = "translateX(0)";
+  contentInterests.style.transform = "translateX(100%)";
+  btnAbout.style.color = DARK;
+  btnExperience.style.color = DARK;
+  btnSkills.style.color = BRIGHT;
+  btnInterests.style.color = DARK;
+}
+
+function openInterests() {
+  contentAbout.style.transform = "translateX(100%)";
+  contentExperience.style.transform = "translateX(100%)";
+  contentSkills.style.transform = "translateX(100%)";
+  contentInterests.style.transform = "translateX(0)";
+  btnAbout.style.color = DARK;
+  btnExperience.style.color = DARK;
+  btnSkills.style.color = DARK;
+  btnInterests.style.color = BRIGHT;
 }

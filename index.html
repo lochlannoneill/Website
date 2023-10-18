@@ -217,19 +217,22 @@
     <section id="about" class="section-container">
       <div class="hero">
         <div class="btn-box">
-          <button id="btn1" onclick="openAbout()" class="hero-button">
+          <button id="btnAbout" onclick="openAbout()" class="hero-button">
             About
           </button>
-          <button id="btn2" onclick="openLorem()" class="hero-button">
+          <button id="btnExperience" onclick="openExperience()" class="hero-button">
+            Experience
+          </button>
+          <button id="btnSkills" onclick="openSkills()" class="hero-button">
             Skills
           </button>
-          <button id="btn3" onclick="openIpsum()" class="hero-button">
+          <button id="btnInterests" onclick="openInterests()" class="hero-button">
             Interests
           </button>
         </div>
 
         <!-- About -->
-        <div id="content1" class="content">
+        <div id="contentAbout" class="content">
           <div class="content-right">
             <img src="assets/images/profile_picture.png" alt="HTML" />
           </div>
@@ -259,8 +262,39 @@
           </div>
         </div>
 
+        <!-- Experience -->
+        <div id="contentExperience" class="content">
+          <div class="content-left">
+            <h1>Electronic and Software Co-Op</h1>
+            <p>Boston Scientific &nbsp;&nbsp; Jan.2021 - Sep.2021</p>
+            <p><i>Summary: C#, Visual Studio, Excel, Primo, SharePoint, Teams, VNC Viewer 4, Watchdog, Windchill</i></p>
+            <ul>
+              <li>Maintained regular communication with local system owners and external developers of outsourced software to gather sensitive system information.</li>
+              <li>Cleansed and updated data in Primo database by integrating information from factory systems, ensuring itsaccuracy and reliability for multiple project management SharePoints.</li>
+              <li>Conducted meticulous code reviews of ‘in-house’ software, diligently adhering to predefined specifications to identify redundant component ID formats for subsequent refactoring.</li>
+            </ul>
+          </div>
+          <div class="content-left">
+            <h1>PCBA Quality Inspection</h1>
+            <p>Boston Scientific &nbsp;&nbsp; May.2019 - Sep.2019</p>
+            <!-- <p><i>Summary: C#, Visual Studio, Excel, Primo, SharePoint, Teams, VNC Viewer 4, Watchdog, Windchill</i></p> -->
+            <ul>
+              <li>Performed comprehensive quality inspection protocols for printed circuit board assembly (PCBA) line.</li>
+              <li>Adhered to manufacturing instructions to ensure strict compliance, while reporting any identified faults.</li>
+              <li>Consistently achieved daily metrics, encompassing output, efficiency, lead time, and quality standards.</li>
+            </ul>
+          </div>
+          <!-- <div class="content-left">
+            <h1>Cleaner</h1>
+            <p>AFM Facilities Dec.2021 - Apr.2022</p>
+            <ul>
+              <li>Performed thorough cleaning and sanitization of the gym facilities, ensuring strict adherence to COVID-19 safety and hygiene protocols.</li>
+            </ul>
+          </div> -->
+        </div>
+
         <!-- Skills -->
-        <div id="content2" class="content">
+        <div id="contentSkills" class="content">
           <div class="content-left">
             <h1>Skills</h1>
             <ul>
@@ -270,15 +304,6 @@
               <li><b>Languages: </b>English (Fluent), Irish (Intermediate), French (Intermediate), Russian (Beginner)</li>
             </ul>
           </div>
-          <!-- <div class="content-left">
-            <h1>Other</h1>
-            <ul>
-              <li>Spring Boot</li>
-              <li>Kubernets</li>
-              <li>Redis</li>
-              <li>RabbitMq</li>
-            </ul>
-          </div> -->
           <div class="content-left">
             <h1>Favourite Modules</h1>
             <ul>
@@ -294,7 +319,7 @@
         </div>
 
         <!-- Interests -->
-        <div id="content3" class="content">
+        <div id="contentInterests" class="content">
           <div class="content-left">
             <h1>History</h1>
             <p>

@@ -245,27 +245,32 @@ section {
   }
 }
 
-#content1 {
+#contentAbout {
   transform: translatex(0);
 }
 
-#content1 .content-right {
+#contentAbout .content-right {
   flex-basis: 35%;
 }
 
-#content1 .content-left {
+#contentAbout .content-left {
   flex-basis: 65%;
 }
 
-#btn1 {
+#btnAbout {
   color: var(--color-text-bright);
 }
 
-#content3 {
+#contentInterests {
   font-size: 0.775em;
 }
 
-#content3 h1 {
+#contentExperience {
+  font-size: 0.825em;
+}
+
+#contentExperience h1,
+#contentInterests h1 {
   font-size: 2em;
 }
 
