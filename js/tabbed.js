@@ -60,8 +60,8 @@ function openSkills() {
   contentInterests.style.transform = "translateX(100%)";
   btnAbout.style.color = DARK;
   btnExperience.style.color = DARK;
-  btnEducation.style.color = BRIGHT;
-  btnSkills.style.color = DARK;
+  btnEducation.style.color = DARK;
+  btnSkills.style.color = BRIGHT;
   btnInterests.style.color = DARK;
 }
 
