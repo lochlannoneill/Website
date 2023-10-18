@@ -269,6 +269,11 @@ section {
   font-size: 0.825em;
 }
 
+#contentEducation {
+  font-size: 0.9375em;
+}
+
+#contentEducation h1,
 #contentExperience h1,
 #contentInterests h1 {
   font-size: 2em;
