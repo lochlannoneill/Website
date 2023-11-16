@@ -9,7 +9,7 @@
   margin: 0;
   /* width: 90vw; */
   /* width: 100%; */
-  min-height: 45vh;
+  min-height: 50vh;
   overflow: hidden;
 }
 
@@ -127,7 +127,7 @@
   /* font-size: 80%; */
   /* color: green; */
   /* font-size: 2.5em; */
-  font-size: 5vh;
+  font-size: 3em;
 }
 
 .jumbotron-text {
@@ -135,13 +135,13 @@
   margin: 0;
   animation: 0.875s ease 0s normal forwards 1 fadeInSlow;
   /* font-size: 1em; */
-  font-size: 2.5vh;
+  font-size: 1.5em;
 }
 
 /* media query for smaller screens */
 @media only screen and (max-width: 768px) {
   .jumbotron-text {
-    font-size: 2.25vh;
+    font-size: 1.125em;
   }
 }
 
@@ -154,39 +154,50 @@
   animation: 1.25s ease 0s normal forwards 1 fadeLeftToRightWait;
 }
 
+.button-list-downloads {
+  background: block;
+  margin-top: 72px;
+}
+
+@media only screen and (max-width: 768px) {
+  .button-list-downloads {
+    margin-top: 32px;
+  }
+
+  .button-download {
+    padding: 24px;
+    margin-top: 8px;
+    width: 100%;
+  }
+}
+
 /* .section-container button { */
-  #button-download {
-    background: var(--color-primary-gradiant);
-    color: white;
-    border: none;
-    padding: 16px 24px;
-    cursor: pointer;
-    font-size: 1.6rem;
-    margin-top: 48px;
-    font-weight: 600;
-    transition: 0.5s;
-    animation: 2.5s ease 0s normal forwards 1 fadeInSlow;
-    /* position: absolute;
-    bottom: 1px; */
-  }
-  
-  @media only screen and (max-width: 768px) {
-    #button-download {
-      padding: 24px;
-    }
-  }
-  
-  /* .section-container button:hover { */
-  #button-download:hover {
-    transition: 0.5s;
-    background: var(--color-primary-dark-gradiant);
-    color: white;
-    /* animation: 3s wiggleSmall infinite; */
-  }
-  
-  /* .section-container button:active { */
-  #button-download:active {
-    background: var(--color-secondary-brightest);
-    color: white;
-    border: none;
-  }
+.button-download {
+  background: var(--color-primary-gradiant);
+  color: white;
+  border: none;
+  padding: 16px 24px;
+  cursor: pointer;
+  font-size: 1.6rem;
+  /* margin-top: 96px; */
+  font-weight: 600;
+  transition: 0.5s;
+  animation: 3s ease 0s normal forwards 1 fadeInSlow;
+  /* position: absolute;
+  bottom: 1px; */
+}
+
+/* .section-container button:hover { */
+.button-download:hover {
+  transition: 0.5s;
+  background: var(--color-primary-dark-gradiant);
+  color: white;
+  /* animation: 3s wiggleSmall infinite; */
+}
+
+/* .section-container button:active { */
+.button-download:active {
+  background: var(--color-secondary-brightest);
+  color: white;
+  border: none;
+}
