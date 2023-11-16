@@ -33,6 +33,7 @@ Bugs:
         Homepage smaller res -> display block
 
     Medium:
+        Tabbed section hovers dont work after clicking one for the first time
 
     Low:
         Vignette at side of video because of filter() css property
