@@ -9,6 +9,7 @@ New Additions:
         Create a section for most recent social media posts
         
     Low:
+        Accessibility Skips using Tab
 
 
 Bugs:
