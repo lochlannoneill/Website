@@ -1,15 +1,15 @@
 section {
   font-weight: bold;
-  color: var(--color-text-secondary-muted);
+  color: var(--color-text-secondary-bright);
 }
 
 section a {
   font-weight: bold;
-  color: var(--color-secondary-brightest);
+  color: var(--color-text-secondary-muted);
 }
 
 section b {
-  color: var(--color-secondary-brightest);
+  color: var(--color-text-secondary-muted);
 }
 
 .section-container {
@@ -64,8 +64,7 @@ section b {
 }
 
 .btn-box {
-  display: flex;
-  /* border-bottom: 0.2vh solid var(--color-text-secondary-muted); */
+  display: block;
 }
 
 .btn-box button {
@@ -76,7 +75,7 @@ section b {
   cursor: pointer;
   padding: 14px 16px;
   margin-right: 2vw;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
   /* flex-flow: column wrap;
   align-content: flex-start; */
@@ -109,7 +108,7 @@ section b {
 
 .content * {
   width: 100%;
-  margin-bottom: 0 16px 16px 16px;
+  /* margin-bottom: 0 16px 16px 16px; */
 }
 
 .content::after {
@@ -123,7 +122,7 @@ section b {
 
 .content-left h1 {
   font-weight: 600;
-  color: var(--color-text-secondary-bright);
+  color: var(--color-text-secondary-dark);
 }
 
 .content-right img {
@@ -181,7 +180,8 @@ section b {
   }
 
   .content-right img {
-    width: 70%;
+    /* width: 70%; */
+    width: 50vw;
   }
 
   .content-left {
@@ -248,7 +248,7 @@ section b {
 }
 
 #btnAbout {
-  color: var(--color-text-secondary-bright);
+  color: var(--color-text-secondary-dark);
 }
 
 #contentInterests {
