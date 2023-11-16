@@ -4,38 +4,21 @@ New Additions:
         Side scrolling badges of technologies i know
 
     High:
-        Creat a CV button with downloadable pdf - https://youtu.be/Eb6yFhkzpmI?t=612
 
     Medium:
         Create a section for most recent social media posts
-        Projects.html will be a tabbed page where each tab is change with the slider buttons https://codepen.io/dev_loop/pen/MWKbJmO
-        Add a quote list that iterates on index.html
-        "Who am I" section has see through text with a video behind it
         
     Low:
-        Make all text links jiggle when hovered
-        animation for first-time terminal output
-        Maybe make an entire folder directory?
-        remove sideways scrollbar (loads for 1 sec when open contact.html)
-
 
 
 Bugs:
     Critical:
-        Smaller text size on different aspect ratios
-        Home jumbotron text affects size of profile picture -> might be something to do with vertical-center overflow
 
     High:
-        When the terminal imput get to a certain length -> remove profile picture
-        When the terminal imput get to a certain length -> the profile picture needs to be 100% width of container -> maybe container-fluid???
-        Contact.html mobile styling
-        Smaller homepage aspect ratio affects profile picture styling
-        Homepage smaller res -> display block
+        Mobile - White vignette at side of project cards
 
     Medium:
         Tabbed section hovers dont work after clicking one for the first time
 
     Low:
-        Vignette at side of video because of filter() css property
-        <i> gives bright text color instead of <b>
 
