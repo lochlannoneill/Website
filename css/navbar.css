@@ -25,7 +25,6 @@
 }
 
 .navbar ul {
-  /* margin: 150px auto 0;  */
   padding: 0;
   list-style: none;
   display: flex;
@@ -69,8 +68,3 @@
   width: 100%;
   left: 0;
 }
-/* @media screen and (max-height: 300px) {
-  ul {
-    margin-top: 40px;
-  }
-} */

@@ -162,16 +162,13 @@ a:hover {
   transition: color 0.125s ease-in-out;
   animation: wiggleSmall 2.5s infinite;
   text-decoration: none;
-  /* text-shadow: 0 0 50px var(--color-stackoverflow), 0 0 100px var(--color-stackoverflow), 0 0 150px var(--color-stackoverflow), 0 0 200px var(--color-stackoverflow); */
 }
 
 a:active {
   filter: brightness(65%);
-  /* opacity: 0.4; */
   transition-duration: 0.0875s;
   text-shadow: 0 0 50px var(--color-secondary), 0 0 100px var(--color-secondary),
     0 0 150px var(--color-secondary), 0 0 200px var(--color-secondary);
-  /* color: var(--color-secondary-dark) !important; */
 }
 
 .name {
@@ -190,9 +187,7 @@ a:active {
 }
 
 .icon:hover {
-  /* color: var(--color-secondary-brightest-gradiant); */
   color: var(--color-text-primary);
-  /* text-shadow: 4px 4px 8px var(--color-primary-darkest); */
   transition-duration: 0.125s;
   animation: 2.5s wiggleBig infinite;
   text-shadow: 0 0 1000px var(--color-secondary-brightest),
@@ -207,38 +202,28 @@ a:active {
   animation: spinIcon 1.5s infinite;
 }
 
-/* .icon-link:active {
-  transition-duration: 0.1s;
-  filter: brightness(65%);
-} */
-
 .linkedin:hover {
-  /* color: var(--color-linkedin); */
   text-shadow: 0 0 50px var(--color-linkedin), 0 0 100px var(--color-linkedin),
     0 0 150px var(--color-linkedin), 0 0 200px var(--color-linkedin);
 }
 
 .github:hover {
-  /* color: var(--color-github); */
   text-shadow: 0 0 50px var(--color-github), 0 0 100px var(--color-github),
     0 0 150px var(--color-github), 0 0 200px var(--color-github);
 }
 
 .stackoverflow:hover {
-  /* color: var(--color-stackoverflow); */
   text-shadow: 0 0 50px var(--color-stackoverflow),
     0 0 100px var(--color-stackoverflow), 0 0 150px var(--color-stackoverflow),
     0 0 200px var(--color-stackoverflow);
 }
 
 .twitter:hover {
-  /* color: var(--color-twitter); */
   text-shadow: 0 0 50px var(--color-twitter), 0 0 100px var(--color-twitter),
     0 0 150px var(--color-twitter), 0 0 200px var(--color-twitter);
 }
 
 .youtube:hover {
-  /* color: var(--color-youtube); */
   text-shadow: 0 0 50px var(--color-youtube), 0 0 100px var(--color-youtube),
     0 0 150px var(--color-youtube), 0 0 200px var(--color-youtube);
 }
@@ -261,19 +246,6 @@ a:active {
   margin: 0;
   padding: 80px 80px 240px 80px;
 }
-
-/* #main-join {
-  background-image: linear-gradient(
-      to bottom,
-      var(--color-primary-dark),
-      var(--color-secondary-gradiant)
-    ),
-    var(--image-background2);
-  backdrop-filter: blur(10px);
-  background-size: cover;
-  background-attachment: fixed;
-  background-color: var(--color-primary);
-} */
 
 .container-section {
   margin-top: 8vh;

@@ -4,8 +4,6 @@
 #terminal {
   font-family: "Source Code Pro";
   margin: 0;
-  /* text-shadow: 2px 2px var(--color-primary-darkest); */
-  /* text-shadow: 0 0 3px black, 0 0 5px black; */
 }
 
 @media (max-width: 767px) {
@@ -41,7 +39,6 @@
 #link-name:hover {
   transition: 0.375s;
   color: var(--color-secondary-brightest);
-  /* text-shadow: 8px 8px 8px var(--color-primary-darkest); */
   font-weight: bold;
   -webkit-text-stroke: 0.5px var(--color-text); /* width and color */
   text-shadow: 0 0 50px var(--color-secondary), 0 0 100px var(--color-secondary),
@@ -62,22 +59,7 @@
   background-color: var(--color-primary);
   border: none;
   cursor: default;
-  /* height: inherit; */
   animation: squint 3.5s infinite;
-}
-
-/* #commandline[contenteditable]:empty::before ~ .badge {
-    animation: squint 4s infinite;
-  }  */
-
-/* #commandline {
-    min-width: 16vh;
-  } */
-
-@media (max-width: 768px) {
-  #commandline {
-    display: none !important;
-  }
 }
 
 #commandline:hover {
@@ -85,21 +67,21 @@
   background-color: var(--color-primary-brightest);
 }
 
+@media (max-width: 768px) {
+  #commandline {
+    display: none !important;
+  }
+}
+
 #commandline[contenteditable] {
   display: inline-block;
-  /* ! the overflow messes up the styling for some reason */
-  /* max-width: 16ch;
-    overflow: hidden; */
+  /* ! Error - the overflow messes up the styling */
+  /* max-width: 16ch; */
+  /* overflow: hidden; */
   caret-color: transparent;
 }
 
 #commandline[contenteditable]:empty::before {
   content: "_";
-  /* display: inline-block; */
   animation: blink 1s infinite;
-  float: left;
 }
-
-/* #commandline[contenteditable]:empty:focus::before {
-    content: '_';
-  } */

@@ -23,6 +23,5 @@ footer a {
 }
 
 footer a:hover {
-  /* color: var(--color-secondary-brightest-gradiant); */
   text-decoration: none;
 }

@@ -1,18 +1,9 @@
 /* ______________________________________________________________________________________________________________________ */
 /* ____________________________________________________ contact page ____________________________________________________ */
 /* ______________________________________________________________________________________________________________________ */
-
 form label {
   color: var(--color-text-primary-muted);
 }
-
-/* .contact {
-  text-align: center;
-} */
-
-/* .label {
-  color: var(--color-primary);
-} */
 
 .contact-section {
   margin: auto;
@@ -23,51 +14,8 @@ form label {
   color: white;
 }
 
-.contact-box {
-  margin: 4vh;
-  display: flex;
-  animation: 0.5s ease 0s normal forwards 1 fadeLeftToRight;
-}
-
-.contact-box .icon {
-  margin: 0;
-  padding: 0;
-  font-size: 3em;
-}
-
-.contact-box .icon:hover {
-  transform: scale(2);
-}
-
-.contact-link {
-  font-size: 2em;
-  color: var(--color-text-primary-muted) !important;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.contact-link:hover {
-  text-decoration: none;
-  color: var(--color-text) !important;
-  text-shadow: 0 0 50px var(--color-secondary-brightest-gradiant),
-    0 0 100px var(--color-secondary-brightest-gradiant),
-    0 0 150px var(--color-secondary-brightest-gradiant),
-    0 0 200px var(--color-secondary-brightest-gradiant);
-  /* color: var(--color-primary) !important; */
-}
-
-.contact-title {
-  padding: 1vw;
-}
-
-.contact-text {
-  display: block;
-  align-items: center;
-  padding: 1vw;
-}
-
 /* ______________________________________________________________________________________________________________________ */
-/* _______________________________________________ footer - parent=contact.css_______________________________________________ */
+/* ________________________________________________________ form ________________________________________________________ */
 /* ______________________________________________________________________________________________________________________ */
 .contact-form {
   background-color: var(--color-primary-gradiant);
@@ -79,12 +27,10 @@ form label {
 .contact-form h2 {
   font-weight: 500;
   color: var(--color-text-primary);
-  /* margin-bottom: 5vh; */
   text-shadow: 2px 2px 8px var(--color-primary-darkest);
 }
 
 .contact-form p {
-  /* font-weight: 500; */
   color: var(--color-text-primary-muted);
   margin-bottom: 3vh;
   text-shadow: 2px 2px 8px var(--color-primary-darkest);
@@ -103,7 +49,6 @@ form label {
   font-size: 20px;
   margin-bottom: 16px;
   border: none;
-  /* border-bottom: 0.2vh solid var(--color-primary-brightest); */
   border-bottom: 0.2vh solid var(--color-text-primary-muted);
   outline: none;
   resize: none;
@@ -111,11 +56,6 @@ form label {
   color: var(--color-text-primary);
   transition: 0.3s;
 }
-
-/* .contact-form .inputBox input:active,
-.contact-form .inputBox textarea:active {
-  border-bottom: 0.2vh solid var(--color-secondary-brightest-gradiant);
-} */
 
 .contact-form .inputBox input:hover,
 .contact-form .inputBox textarea:hover {
@@ -132,11 +72,6 @@ form label {
   transition: 0.3s;
   color: var(--color-text-primary-muted);
 }
-
-/* .contact-form .inputBox textarea {
-  display: block;
-  height: 200px;
-} */
 
 .contact-form .inputBox input:hover ~ span,
 .contact-form .inputBox textarea:hover ~ span {
