@@ -1,14 +1,15 @@
 section {
-  font-weight: bold;
-  color: var(--color-text-secondary-bright);
+  font-weight: 500;
+  color: var(--color-text-secondary);
 }
 
 section a {
-  font-weight: bold;
+  font-weight: 900;
   color: var(--color-text-secondary-muted);
 }
 
 section b {
+  font-weight: 900;
   color: var(--color-text-secondary-muted);
 }
 
@@ -69,7 +70,7 @@ section b {
 
 .btn-box button {
   background: transparent;
-  color: var(--color-text-secondary-dark-gradiant);
+  color: var(--color-text-secondary-bright-gradiant);
   border: none;
   outline: none;
   cursor: pointer;
@@ -83,7 +84,7 @@ section b {
 }
 
 .btn-box button:hover {
-  color: var(--color-text-secondary-dark);
+  color: var(--color-text-secondary-bright);
 }
 
 /* mobiles */
@@ -252,7 +253,7 @@ section b {
 }
 
 #contentInterests {
-  font-size: 0.775em;
+  font-size: 0.875em;
 }
 
 #contentExperience {
@@ -260,7 +261,7 @@ section b {
 }
 
 #contentEducation {
-  font-size: 0.9375em;
+  font-size: 1em;
 }
 
 #contentEducation h1,
