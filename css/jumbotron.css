@@ -4,7 +4,7 @@
 /* _____________________________________________________ jumbotron ______________________________________________________ */
 /* ______________________________________________________________________________________________________________________ */
 .jumbotron {
-  color: var(--color-text);
+  color: var(--color-text-primary);
   padding: 0 auto;
   margin: 0;
   /* width: 90vw; */
@@ -131,7 +131,7 @@
 }
 
 .jumbotron-text {
-  color: var(--color-text-muted);
+  color: var(--color-text-primary-muted);
   margin: 0;
   animation: 0.875s ease 0s normal forwards 1 fadeInSlow;
   /* font-size: 1em; */

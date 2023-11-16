@@ -3,7 +3,7 @@
 /* ______________________________________________________________________________________________________________________ */
 
 form label {
-  color: var(--color-text-muted);
+  color: var(--color-text-primary-muted);
 }
 
 /* .contact {
@@ -41,7 +41,7 @@ form label {
 
 .contact-link {
   font-size: 2em;
-  color: var(--color-text-muted) !important;
+  color: var(--color-text-primary-muted) !important;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -78,14 +78,14 @@ form label {
 
 .contact-form h2 {
   font-weight: 500;
-  color: var(--color-text);
+  color: var(--color-text-primary);
   /* margin-bottom: 5vh; */
   text-shadow: 2px 2px 8px var(--color-primary-darkest);
 }
 
 .contact-form p {
   /* font-weight: 500; */
-  color: var(--color-text-muted);
+  color: var(--color-text-primary-muted);
   margin-bottom: 3vh;
   text-shadow: 2px 2px 8px var(--color-primary-darkest);
 }
@@ -104,11 +104,11 @@ form label {
   margin-bottom: 16px;
   border: none;
   /* border-bottom: 0.2vh solid var(--color-primary-brightest); */
-  border-bottom: 0.2vh solid var(--color-text-muted);
+  border-bottom: 0.2vh solid var(--color-text-primary-muted);
   outline: none;
   resize: none;
   background-color: transparent;
-  color: var(--color-text);
+  color: var(--color-text-primary);
   transition: 0.3s;
 }
 
@@ -130,7 +130,7 @@ form label {
   margin: 10px 0;
   pointer-events: none;
   transition: 0.3s;
-  color: var(--color-text-muted);
+  color: var(--color-text-primary-muted);
 }
 
 /* .contact-form .inputBox textarea {
@@ -140,7 +140,7 @@ form label {
 
 .contact-form .inputBox input:hover ~ span,
 .contact-form .inputBox textarea:hover ~ span {
-  color: var(--color-text-bright);
+  color: var(--color-text-primary-bright);
 }
 
 .contact-form .inputBox input:focus ~ span,

@@ -128,6 +128,7 @@
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 8px;
+  color: var(--color-text-primary-bright);
   text-shadow: 2px 2px 2px var(--color-primary);
   font-weight: 600;
 }
@@ -145,7 +146,7 @@
 .card .details .tags span {
   font-size: 0.8rem;
   padding: 2px 5px;
-  color: var(--text-color);
+  color: var(--color-text-primary-bright);
   background: var(--color-primary-brightest-gradiant);
   border-radius: 4px;
 }

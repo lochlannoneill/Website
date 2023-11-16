@@ -1,5 +1,5 @@
-const BRIGHT = "#FFFFFF";
-var DARK = "#999999";
+const ACTIVE = "#000000FF";
+const INACTIVE = "#A0A0A0B7";
 
 var contentAbout = document.getElementById("contentAbout");
 var contentEducation = document.getElementById("contentEducation");
@@ -19,11 +19,11 @@ function openAbout() {
   contentExperience.style.transform = "translateX(100%)";
   contentSkills.style.transform = "translateX(100%)";
   contentInterests.style.transform = "translateX(100%)";
-  btnAbout.style.color = BRIGHT;
-  btnEducation.style.color = DARK;
-  btnExperience.style.color = DARK;
-  btnSkills.style.color = DARK;
-  btnInterests.style.color = DARK;
+  btnAbout.style.color = ACTIVE;
+  btnEducation.style.color = INACTIVE;
+  btnExperience.style.color = INACTIVE;
+  btnSkills.style.color = INACTIVE;
+  btnInterests.style.color = INACTIVE;
 }
 
 function openEducation() {
@@ -32,11 +32,11 @@ function openEducation() {
   contentExperience.style.transform = "translateX(100%)";
   contentSkills.style.transform = "translateX(100%)";
   contentInterests.style.transform = "translateX(100%)";
-  btnAbout.style.color = DARK;
-  btnEducation.style.color = BRIGHT;
-  btnExperience.style.color = DARK;
-  btnSkills.style.color = DARK;
-  btnInterests.style.color = DARK;
+  btnAbout.style.color = INACTIVE;
+  btnEducation.style.color = ACTIVE;
+  btnExperience.style.color = INACTIVE;
+  btnSkills.style.color = INACTIVE;
+  btnInterests.style.color = INACTIVE;
 }
 
 function openExperience() {
@@ -45,11 +45,11 @@ function openExperience() {
   contentExperience.style.transform = "translateX(0)";
   contentSkills.style.transform = "translateX(100%)";
   contentInterests.style.transform = "translateX(100%)";
-  btnAbout.style.color = DARK;
-  btnEducation.style.color = DARK;
-  btnExperience.style.color = BRIGHT;
-  btnSkills.style.color = DARK;
-  btnInterests.style.color = DARK;
+  btnAbout.style.color = INACTIVE;
+  btnEducation.style.color = INACTIVE;
+  btnExperience.style.color = ACTIVE;
+  btnSkills.style.color = INACTIVE;
+  btnInterests.style.color = INACTIVE;
 }
 
 function openSkills() {
@@ -58,11 +58,11 @@ function openSkills() {
   contentExperience.style.transform = "translateX(100%)";
   contentSkills.style.transform = "translateX(0)";
   contentInterests.style.transform = "translateX(100%)";
-  btnAbout.style.color = DARK;
-  btnEducation.style.color = DARK;
-  btnExperience.style.color = DARK;
-  btnSkills.style.color = BRIGHT;
-  btnInterests.style.color = DARK;
+  btnAbout.style.color = INACTIVE;
+  btnEducation.style.color = INACTIVE;
+  btnExperience.style.color = INACTIVE;
+  btnSkills.style.color = ACTIVE;
+  btnInterests.style.color = INACTIVE;
 }
 
 function openInterests() {
@@ -71,9 +71,9 @@ function openInterests() {
   contentExperience.style.transform = "translateX(100%)";
   contentSkills.style.transform = "translateX(100%)";
   contentInterests.style.transform = "translateX(0)";
-  btnAbout.style.color = DARK;
-  btnEducation.style.color = DARK;
-  btnExperience.style.color = DARK;
-  btnSkills.style.color = DARK;
-  btnInterests.style.color = BRIGHT;
+  btnAbout.style.color = INACTIVE;
+  btnEducation.style.color = INACTIVE;
+  btnExperience.style.color = INACTIVE;
+  btnSkills.style.color = INACTIVE;
+  btnInterests.style.color = ACTIVE;
 }

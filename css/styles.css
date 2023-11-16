@@ -39,11 +39,11 @@
 }
 
 .text-muted {
-  color: var(--color-text-muted) !important;
+  color: var(--color-text-primary-muted) !important;
 }
 
 .text-dark {
-  color: var(--color-text-dark) !important;
+  color: var(--color-text-primary-dark) !important;
 }
 
 .btn-primary {
@@ -134,7 +134,7 @@ body {
   right: 0;
   text-align: center;
   background-color: var(--color-primary);
-  color: var(--color-text);
+  color: var(--color-text-primary);
   padding: 0.5rem;
   /* hide to above page */
   translate: 0 -100%;
@@ -146,15 +146,15 @@ body {
 } */
 
 h2 {
-  color: var(--color-text);
+  color: var(--color-text-primary);
 }
 
 hr {
-  background-color: var(--color-text-muted);
+  background-color: var(--color-text-primary-muted);
 }
 
 a {
-  color: var(--color-text-bright);
+  color: var(--color-text-primary-bright);
 }
 
 a:hover {
@@ -181,7 +181,7 @@ a:active {
 .icon {
   margin: 0;
   text-decoration: none;
-  color: var(--color-text-dark-gradiant);
+  color: var(--color-text-primary-dark-gradiant);
   /* text-shadow: 4px 4px 8px var(--color-primary-darkest); */
   font-size: 2em;
   padding: 16px;
@@ -191,7 +191,7 @@ a:active {
 
 .icon:hover {
   /* color: var(--color-secondary-brightest-gradiant); */
-  color: var(--color-text);
+  color: var(--color-text-primary);
   /* text-shadow: 4px 4px 8px var(--color-primary-darkest); */
   transition-duration: 0.125s;
   animation: 2.5s wiggleBig infinite;

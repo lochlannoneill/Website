@@ -18,7 +18,7 @@ footer hr {
 }
 
 footer a {
-  color: var(--color-text-dark);
+  color: var(--color-text-primary-dark);
   text-decoration: none;
 }
 
