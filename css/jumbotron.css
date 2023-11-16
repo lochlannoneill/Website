@@ -182,7 +182,7 @@
   /* margin-top: 96px; */
   font-weight: 600;
   transition: 0.5s;
-  animation: 3s ease 0s normal forwards 1 fadeInSlow;
+  animation: 2.5s ease 0s normal forwards 1 fadeInSlow;
   /* position: absolute;
   bottom: 1px; */
 }
