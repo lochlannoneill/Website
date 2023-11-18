@@ -4,9 +4,11 @@ New Additions:
         Side scrolling badges of technologies i know
 
     High:
+        Separate skills tab into its own section
 
     Medium:
         Create a section for most recent social media posts
+        When click tabbed section -> add class to change section height
         
     Low:
         Accessibility Skips using Tab
@@ -22,4 +24,4 @@ Bugs:
         Tabbed section hovers dont work after clicking one for the first time
 
     Low:
-
+        Invisible link in project shocase description
