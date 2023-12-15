@@ -16,7 +16,6 @@ New Additions:
 
 Bugs:
     Critical:
-        Header Javascript - <Enter> key not working anymore. Going to newline. Function at end of JavaScript file not working.
 
     High:
         Mobile - White vignette at side of project cards
