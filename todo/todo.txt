@@ -18,7 +18,6 @@ Bugs:
     Critical:
 
     High:
-        Mobile - White vignette at side of project cards
 
     Medium:
         Tabbed section hovers dont work after clicking one for the first time
