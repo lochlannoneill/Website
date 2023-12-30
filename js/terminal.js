@@ -32,33 +32,24 @@ const BIN = BIN_PRIVATE + BIN_PUBLIC;
 const FILES = ["index", "contact", "secret"];
 
 var MAN_PRIVATE = {
-  lochlann:
-    "command&emsp;-&emsp;lochlann<br>function&emsp;-&emsp;returns a description for the best Software Developer to have ever lived<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
-  mtu: "command&emsp;-&emsp;mtu<br>function&emsp;-&emsp;returns a description on Munster Technological University<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
-  flag: "command&emsp;-&emsp;flag&emsp;-&emsp;String (you cannot paste the flag into the terminal)<br>function&emsp;-&emsp;The user completes the CTF challenge if they enter the correct flag<br>argument&emsp;-&emsp;NOT REQUIRED<br>Be sure to use all the commands in <b><i>'bin'</i></b> to find the flag. You can do it!<br>return type&emsp;-&emsp;String",
-  ctf: "command&emsp;-&emsp;ctf&emsp;-&emsp;String (you cannot paste the flag into the terminal)<br>function&emsp;-&emsp;The user completes the CTF challenge if they enter the correct flag<br>argument&emsp;-&emsp;NOT REQUIRED<br>Be sure to use all the commands in <b><i>'bin'</i></b> to find the flag. You can do it!<br>return type&emsp;-&emsp;String",
-  markson:
-    "command&emsp;-&emsp;markson<br>function&emsp;-&emsp;returns a description for Markson<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
-  bruce:
-    "command&emsp;-&emsp;bruce<br>function&emsp;-&emsp;returns a description for Bruce<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
-  gordon:
-    "command&emsp;-&emsp;gordon<br>function&emsp;-&emsp;returns a description for Gordon<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
-  daniels:
-    "command&emsp;-&emsp;daniels<br>function&emsp;-&emsp;returns a description for Daniels<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
+  lochlann:"command&emsp;-&emsp;lochlann<br>function&emsp;-&emsp;returns a description for the best Software Developer to have ever lived<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
+  mtu:"command&emsp;-&emsp;mtu<br>function&emsp;-&emsp;returns a description on Munster Technological University<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
+  flag:"command&emsp;-&emsp;flag&emsp;-&emsp;String (you cannot paste the flag into the terminal)<br>function&emsp;-&emsp;The user completes the CTF challenge if they enter the correct flag<br>argument&emsp;-&emsp;NOT REQUIRED<br>Be sure to use all the commands in <b><i>'bin'</i></b> to find the flag. You can do it!<br>return type&emsp;-&emsp;String",
+  ctf:"command&emsp;-&emsp;ctf&emsp;-&emsp;String (you cannot paste the flag into the terminal)<br>function&emsp;-&emsp;The user completes the CTF challenge if they enter the correct flag<br>argument&emsp;-&emsp;NOT REQUIRED<br>Be sure to use all the commands in <b><i>'bin'</i></b> to find the flag. You can do it!<br>return type&emsp;-&emsp;String",
+  markson:"command&emsp;-&emsp;markson<br>function&emsp;-&emsp;returns a description for Markson<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
+  bruce:"command&emsp;-&emsp;bruce<br>function&emsp;-&emsp;returns a description for Bruce<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
+  gordon:"command&emsp;-&emsp;gordon<br>function&emsp;-&emsp;returns a description for Gordon<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
+  daniels:"command&emsp;-&emsp;daniels<br>function&emsp;-&emsp;returns a description for Daniels<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
 };
 var MAN_PUBLIC = {
-  help: "command&emsp;-&emsp;help<br>function&emsp;-&emsp;provides the user with information on how to use the terminal<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
-  bin: "command&emsp;-&emsp;bin<br>function&emsp;-&emsp;returns a list of all acceptable commands.<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
-  man: "command&emsp;-&emsp;man<br>function&emsp;-&emsp;provides a description of a given command<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;Type String (must be existing command)<br>return type&emsp;-&emsp;String",
-  print:
-    "command&emsp;-&emsp;print<br>function&emsp;-&emsp;allows the user to print their input to the terminal output.<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;String<br>return type&emsp;-&emsp;String",
-  // echo: "command&emsp;-&emsp;echo<br>function&emsp;-&emsp;allows the user to echo their input to the terminal output.<br>ARGUMENT REQUIRED&emsp;-&emsp;The user is expected to supply an argument of type String<br>return type&emsp;-&emsp;String",
-  whoami:
-    "command&emsp;-&emsp;whoami<br>function&emsp;-&emsp;returns a description of the creator of the website, the awesome <b><i>Lochlann O Neill</i></b><br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
-  pwd: "command&emsp;-&emsp;pwd<br>function&emsp;-&emsp;print name of current/working directory<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
-  ls: "command&emsp;-&emsp;ls<br>function&emsp;-&emsp;list website contents<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
-  // cd:"command&emsp;-&emsp;cd<br>function&emsp;-&emsp;change directory to supplied location<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;String (must be an existing webpage location)<br>return type&emsp;-&emsp;null<br>secret&emsp;-&emsp;try the command <b><i>'cd secret'</i></b>",
-  cd: "command&emsp;-&emsp;cd<br>function&emsp;-&emsp;change directory to supplied location<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;String (must be an existing webpage location)<br>return type&emsp;-&emsp;null",
+  help:"command&emsp;-&emsp;help<br>function&emsp;-&emsp;provides the user with information on how to use the terminal<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
+  bin:"command&emsp;-&emsp;bin<br>function&emsp;-&emsp;returns a list of all acceptable commands.<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
+  man:"command&emsp;-&emsp;man<br>function&emsp;-&emsp;provides a description of a given command<br>argument&emsp;-&emsp;REQUIRED<br>argument type&emsp;-&emsp;String (existing command)<br>return type&emsp;-&emsp;String",
+  print:"command&emsp;-&emsp;print<br>function&emsp;-&emsp;allows the user to print their input to the terminal output.<br>argument&emsp;-&emsp;REQUIRED&emsp;-&emsp;String<br>return type&emsp;-&emsp;String",
+  whoami:"command&emsp;-&emsp;whoami<br>function&emsp;-&emsp;returns a description of the creator of the website, the awesome <b><i>Lochlann O Neill</i></b><br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
+  pwd:"command&emsp;-&emsp;pwd<br>function&emsp;-&emsp;print name of current/working directory<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
+  ls:"command&emsp;-&emsp;ls<br>function&emsp;-&emsp;list website contents<br>argument&emsp;-&emsp;NOT REQUIRED<br>return type&emsp;-&emsp;String",
+  cd:"command&emsp;-&emsp;cd<br>function&emsp;-&emsp;change directory to supplied location<br>argument&emsp;-&emsp;REQUIRED<br>argument type&emsp;-&emsp;String (existing webpage)<br>return type&emsp;-&emsp;null",
 };
 MAN = Object.assign({}, MAN_PRIVATE, MAN_PUBLIC);
 
