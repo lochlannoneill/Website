@@ -7,7 +7,7 @@
   color: var(--color-text-primary);
   padding: 0 auto;
   margin: 0;
-  min-height: 50vh;
+  min-height: 40vh;
   overflow: hidden;
 }
 
@@ -36,10 +36,6 @@
 .horizontal-center {
   margin: auto;
 }
-
-/* .horizontal-center {
-  margin: 0 auto !important;
-} */
 
 .large-jumbotron {
   min-height: 90vh;
@@ -130,17 +126,12 @@
 
 .button-list-downloads {
   background: block;
-  margin-top: 72px;
+  margin-top: 4vh;
 }
 
 @media only screen and (max-width: 768px) {
-  .button-list-downloads {
-    margin-top: 32px;
-  }
-
   .button-download {
     padding: 24px;
-    margin-top: 8px;
     width: 100%;
   }
 }
@@ -165,7 +156,12 @@
 }
 
 .button-download:active {
-  background: var(--color-secondary-brightest);
+  background: var(--color-primary-darkest);
   color: white;
   border: none;
+  outline: none;
+}
+
+.button-download:focus {
+  outline: none;
 }
