@@ -20,6 +20,12 @@ section b {
   min-height: 16vh;
 }
 
+@media screen and (max-width: 768px) {
+  .section-container {
+    padding: 4vh 16vw;
+  }
+}
+
 .section-container:nth-child(odd) {
   background-color: var(--color-background-primary);
 }
@@ -43,9 +49,13 @@ section b {
   margin: 0 32px;
 }
 
+@media screen and (max-width: 1100px) {
+  #about img {
+    margin: 16px 0;
+  }
+
 @media screen and (max-width: 768px) {
   #about img {
     width: 40vw;
-    margin: 16px 0;
   }
 }
