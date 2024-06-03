@@ -74,8 +74,6 @@ section b {
   padding: 14px 16px;
   margin-right: 2vw;
   font-weight: 600;
-  /* flex-flow: column wrap;
-  align-content: flex-start; */
   justify-content: space-between;
 }
 
@@ -141,15 +139,6 @@ section b {
     margin: 0 0 16px 0;
   }
 }
-
-.content-left {
-  /* flex-basis: 60%; */
-  /* text-align: left; */
-}
-
-/* .content-left * {
-  margin-bottom: 16px;
-} */
 
 .content-right {
   /* flex-basis: 40%; */
