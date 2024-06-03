@@ -29,9 +29,6 @@
 @media only screen and (max-width: 768px) {
   .card {
     width: 100%;
-    margin: 0 auto;
-    border-radius: 0;
-    box-shadow: none;
   }
 }
 
@@ -68,14 +65,12 @@
   height: 100%;
   object-fit: cover;
   transition: 0.75s;
-  /* filter: blur(2px); */
   filter: blur(2px) url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><filter id="a"><feComponentTransfer><feFuncA type="linear" slope="10"/></feComponentTransfer></filter>#a'); /* this approach avoids white fading borders */
 }
 
 .card:hover .poster img {
   transition: 1s;
   transform: translateY(-50px);
-  /* filter: blur(6px); */
   filter: blur(6px) url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg"><filter id="a"><feComponentTransfer><feFuncA type="linear" slope="10"/></feComponentTransfer></filter>#a'); /* this approach avoids white fading borders */
 }
 
@@ -92,7 +87,7 @@
 
 @media only screen and (max-width: 768px) {
   .card .details {
-    bottom: -96px;
+    bottom: -96px; /* TODO */
   }
 }
 
@@ -110,17 +105,7 @@
 }
 
 .card .details .logo {
-  max-width: 48px;
-}
-
-@media only screen and (max-width: 768px) {
-  .card .details .title {
-    margin-bottom: 8px;
-  }
-
-  .card .details .logo {
-    max-width: 56px;
-  }
+  max-width: 3em;
 }
 
 .card .details h3 {
@@ -141,12 +126,6 @@
   color: var(--color-text-primary-bright);
   background: var(--color-primary-brightest-gradiant);
   border-radius: 4px;
-}
-
-@media only screen and (max-width: 768px) {
-  .card .details .tags span {
-    margin: 0 2px;
-  }
 }
 
 .card .details .tags #important {
