@@ -1,27 +1,101 @@
 /* ______________________________________________________________________________________________________________________ */
 /* _______________________________________________________ footer _______________________________________________________ */
 /* ______________________________________________________________________________________________________________________ */
-#footer-home {
-  margin-top: 0px;
+.footer {
+  text-align: center;
 }
 
-footer p {
-  font-size: 0.7em;
-}
-
-footer h5 {
-  font-size: 0.85em;
-}
-
-footer hr {
-  background-color: var(--color-primary-brightest);
-}
-
-footer a {
+.footer-container {
+  padding: 4vw;
   color: var(--color-text-primary-dark);
-  text-decoration: none;
+  background-color: var(--color-primary);
 }
 
-footer a:hover {
+.footer-container a {
+  color: var(--color-text-primary-dark);
+}
+
+.footer h2 {
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.footer-information {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-information {
+    display: block;
+  }
+}
+
+.footer-information-child {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-right {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.footer-right li {
+  display: inline;
+  margin: 0 0.5rem;
+}
+
+.footer a {
+color: gray;
+text-decoration: none;
+font-weight: 700;
+}
+
+.footer a:hover {
+  color: darkgrey;
   text-decoration: none;
+  font-weight: 700;
+  transition: 0.25s;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+}
+
+.footer hr {
+  border: none;
+  border-top: 1px solid var(--color-text-primary-dark); /* Adjust color as needed */
+  width: 60%; /* Adjust width as needed */
+  margin: 2rem auto; /* Adjust margin as needed */
+}
+
+.footer-social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2vw;
+  width: 100%;
+}
+
+.footer-icon {
+  height: 32px;
+  width: 32px;
+  color: lightgrey;
+}
+
+.footer-icon.social:hover {
+  animation: spinIcon 1.5s infinite;
+  transition: 0.5s;
+  scale: 1.2;
+  cursor: pointer;
+  color: white;
+}
+
+.footer-bottom {
+  text-align: center;
 }
