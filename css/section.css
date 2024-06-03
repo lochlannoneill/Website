@@ -73,7 +73,6 @@ section b {
   cursor: pointer;
   padding: 14px 16px;
   margin-right: 2vw;
-  font-size: 24px;
   font-weight: 600;
   /* flex-flow: column wrap;
   align-content: flex-start; */
@@ -82,13 +81,6 @@ section b {
 
 .btn-box button:hover {
   color: var(--color-text-secondary-bright);
-}
-
-/* mobiles */
-@media only screen and (max-width: 768px) {
-  .btn-box button {
-    font-size: 16px;
-  }
 }
 
 .content {
@@ -159,10 +151,6 @@ section b {
   margin-bottom: 16px;
 } */
 
-.content-left p {
-  font-size: 1.125em;
-}
-
 .content-right {
   /* flex-basis: 40%; */
   text-align: left;
@@ -182,14 +170,6 @@ section b {
   .content-left {
     /* flex-basis: 50%; */
     margin: 0 0 16px 0;
-  }
-
-  .content-left p {
-    font-size: 0.875em;
-  }
-
-  .content-left li {
-    font-size: 0.875em;
   }
 
   .content-right {
@@ -224,12 +204,6 @@ section b {
   transform: translatex(0);
 }
 
-@media only screen and (max-width: 768px) {
-  #contentAbout p {
-    font-size: 0.875em;
-  }
-}
-
 #contentAbout .content-right {
   flex-basis: 35%;
 }
@@ -240,25 +214,6 @@ section b {
 
 #btnAbout {
   color: var(--color-text-secondary-dark);
-}
-
-#contentInterests {
-  font-size: 0.875em;
-}
-
-#contentExperience {
-  font-size: 0.875em;
-}
-
-#contentEducation {
-  font-size: 1em;
-}
-
-#contentEducation h1,
-#contentExperience h1,
-#contentSkills h1,
-#contentInterests h1 {
-  font-size: 1.5em;
 }
 
 @media only screen and (max-width: 768px) {

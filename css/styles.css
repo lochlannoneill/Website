@@ -141,13 +141,9 @@ body {
   transition: translate 150ms ease-in-out;
 }
 
-/* .skip-link:focus {
+/* .skip-link:focus { 
   translate: 0;
 } */
-
-h2 {
-  color: var(--color-text-primary);
-}
 
 hr {
   background-color: var(--color-text-primary-muted);
