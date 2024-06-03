@@ -1,6 +1,20 @@
 section {
   font-weight: 500;
+  padding: 4vh 12vw;
   color: var(--color-text-secondary);
+  background-color: var(--color-background-secondary);
+  min-height: 16vh;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 4vh 16vw;
+  }
+}
+
+
+section:nth-child(odd) {
+  background-color: var(--color-background-primary);
 }
 
 section h1 {
@@ -15,23 +29,6 @@ section a {
 section b {
   font-weight: 900;
   color: var(--color-text-secondary-muted);
-}
-
-.section-container {
-  margin: 0;
-  padding: 4vh 16vw;
-  background-color: var(--color-background-secondary);
-  min-height: 16vh;
-}
-
-@media screen and (max-width: 768px) {
-  .section-container {
-    padding: 4vh 16vw;
-  }
-}
-
-.section-container:nth-child(odd) {
-  background-color: var(--color-background-primary);
 }
 
 #about {
