@@ -47,6 +47,11 @@ section b {
 @media screen and (max-width: 1100px) {
   #about {
     display: block;
+  }
+  #about .content-left {
+    text-align: center;
+  }
+  #about .social-icons {
     text-align: center;
   }
 }
