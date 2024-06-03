@@ -1,12 +1,9 @@
 /* ______________________________________________________________________________________________________________________ */
 /* _______________________________________________________ footer _______________________________________________________ */
 /* ______________________________________________________________________________________________________________________ */
-.footer {
-  text-align: center;
-}
-
 .footer-container {
-  padding: 4vw;
+  padding: 8vh;
+  text-align: center;
   color: var(--color-text-primary-dark);
   background-color: var(--color-primary);
 }
@@ -39,10 +36,15 @@
   align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .footer-information-child:not(:first-child) {
+    margin-top: 4vh;
+  }
+}
+
 .footer-right {
   list-style: none;
   padding: 0;
-  margin-top: 1rem;
 }
 
 .footer-right li {
