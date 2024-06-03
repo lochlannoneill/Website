@@ -107,11 +107,6 @@ section b {
   margin: 0 32px;
 }
 
-.content-left h1 {
-  font-weight: 600;
-  color: var(--color-text-secondary-dark);
-}
-
 .content-right img {
   border-radius: 50%;
   width: 360px;
