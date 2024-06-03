@@ -125,9 +125,20 @@
 }
 
 .button-list-downloads {
-  background: block;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
   margin-top: 4vh;
 }
+
+@media only screen and (max-width: 768px) {
+  .button-list-downloads {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
 
 @media only screen and (max-width: 768px) {
   .button-download {
