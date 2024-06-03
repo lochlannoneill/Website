@@ -132,19 +132,12 @@
   font-weight: 600;
 }
 
-@media only screen and (max-width: 768px) {
-  .card .details h3 {
-    font-size: 1.6em;
-  }
-}
-
 .card .details .tags {
   margin-bottom: 16px;
 }
 
 .card .details .tags span {
-  font-size: 0.8rem;
-  padding: 2px 5px;
+  padding: 4px 8px;
   color: var(--color-text-primary-bright);
   background: var(--color-primary-brightest-gradiant);
   border-radius: 4px;
@@ -152,8 +145,6 @@
 
 @media only screen and (max-width: 768px) {
   .card .details .tags span {
-    font-size: 1rem;
-    padding: 2px 4px;
     margin: 0 2px;
   }
 }
@@ -167,7 +158,6 @@
 }
 
 .card .info p {
-  font-size: 0.875em;
   opacity: 0;
   transition: 0.75s;
   margin-bottom: 8px;
@@ -178,18 +168,11 @@
   opacity: 100;
 }
 
-@media only screen and (max-width: 768px) {
-  .card .info p {
-    font-size: 1.125em;
-  }
-}
-
 .card button {
   color: white;
   background-color: var(--color-secondary-brightest);
   border: none;
   padding: 2px 8px;
-  font-size: 0.8rem;
   font-weight: 600;
   cursor: pointer;
   opacity: 0;
@@ -206,12 +189,6 @@
 
 .card button.pdf {
   background: var(--color-pdf);
-}
-
-@media only screen and (max-width: 768px) {
-  .card button {
-    font-size: 1em;
-  }
 }
 
 .card button:active {
