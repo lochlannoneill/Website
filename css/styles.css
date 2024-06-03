@@ -153,7 +153,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-secondary-brightest);
+  opacity: 0.75;
   transition: color 0.125s ease-in-out;
   animation: wiggleSmall 2.5s infinite;
   text-decoration: none;
@@ -179,8 +179,8 @@ a:active {
 }
 
 .icon:hover {
-  color: var(--color-text-primary);
-  transition-duration: 0.125s;
+  opacity: 0.75;
+  transition-duration: 0.25s;
   animation: 2.5s wiggleBig infinite;
   text-shadow: 0 0 1000px var(--color-secondary-brightest),
     0 0 100px var(--color-secondary-brightest),
@@ -194,7 +194,8 @@ a:active {
   animation: spinIcon 1.5s infinite;
 }
 
-.linkedin {
+.linkedin,
+.linkedin:hover {
   color: var(--color-linkedin);
 }
 
@@ -203,7 +204,8 @@ a:active {
     0 0 150px var(--color-linkedin), 0 0 200px var(--color-linkedin);
 }
 
-.github {
+.github,
+.github:hover {
   color: var(--color-github);
 }
 
@@ -212,7 +214,8 @@ a:active {
     0 0 150px var(--color-github), 0 0 200px var(--color-github);
 }
 
-.youtube {
+.youtube,
+.youtube:hover {
   color: var(--color-youtube);
 }
 
