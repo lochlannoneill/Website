@@ -171,14 +171,11 @@ a:active {
 }
 
 .icon {
+  color: var(--color-secondary-brightest);
   margin: 0;
   text-decoration: none;
-  color: var(--color-text-primary-dark-gradiant);
-  text-shadow: 2px 2px 2px var(--color-primary-darkest);
   font-size: 2em;
-  padding: 16px;
-  transition: 0.5s;
-  /* animation: cycleColor 3s linear infinite; */
+  padding: 8px;
 }
 
 .icon:hover {
@@ -197,9 +194,17 @@ a:active {
   animation: spinIcon 1.5s infinite;
 }
 
+.linkedin {
+  color: var(--color-linkedin);
+}
+
 .linkedin:hover {
   text-shadow: 0 0 50px var(--color-linkedin), 0 0 100px var(--color-linkedin),
     0 0 150px var(--color-linkedin), 0 0 200px var(--color-linkedin);
+}
+
+.github {
+  color: var(--color-github);
 }
 
 .github:hover {
@@ -207,30 +212,13 @@ a:active {
     0 0 150px var(--color-github), 0 0 200px var(--color-github);
 }
 
-.stackoverflow:hover {
-  text-shadow: 0 0 50px var(--color-stackoverflow),
-    0 0 100px var(--color-stackoverflow), 0 0 150px var(--color-stackoverflow),
-    0 0 200px var(--color-stackoverflow);
-}
-
-.twitter:hover {
-  text-shadow: 0 0 50px var(--color-twitter), 0 0 100px var(--color-twitter),
-    0 0 150px var(--color-twitter), 0 0 200px var(--color-twitter);
+.youtube {
+  color: var(--color-youtube);
 }
 
 .youtube:hover {
   text-shadow: 0 0 50px var(--color-youtube), 0 0 100px var(--color-youtube),
     0 0 150px var(--color-youtube), 0 0 200px var(--color-youtube);
-}
-
-.codepen:hover {
-  text-shadow: 0 0 50px var(--color-codepen), 0 0 100px var(--color-codepen),
-    0 0 150px var(--color-codepen), 0 0 200px var(--color-codepen);
-}
-
-.fiverr:hover {
-  text-shadow: 0 0 50px var(--color-fiverr), 0 0 100px var(--color-fiverr),
-    0 0 150px var(--color-fiverr), 0 0 200px var(--color-fiverr);
 }
 
 /* ______________________________________________________________________________________________________________________ */
