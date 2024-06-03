@@ -3,6 +3,10 @@ section {
   color: var(--color-text-secondary);
 }
 
+section h1 {
+  text-align: center;
+}
+
 section a {
   font-weight: 900;
   color: var(--color-text-secondary-muted);
@@ -36,6 +40,10 @@ section b {
   align-items: center;
 }
 
+#about h1 {
+  text-align: left;
+}
+
 @media screen and (max-width: 1100px) {
   #about {
     display: block;
@@ -53,6 +61,7 @@ section b {
   #about img {
     margin: 16px 0;
   }
+}
 
 @media screen and (max-width: 768px) {
   #about img {
