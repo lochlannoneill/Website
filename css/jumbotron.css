@@ -34,7 +34,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .jumbotron-large-text {
+  .removable {
     display: none;
   }
 }
