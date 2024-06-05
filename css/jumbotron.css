@@ -18,7 +18,7 @@
   min-height: 74vh; /* 100 - (navbar=10vh) + (jumbotron top/bottom padding = 16vh) */
 }
 
-@media (max-aspect-ratio: 768px) {
+@media only screen and (max-width: 768px) {
   .large-jumbotron {
     display: flex;
     flex-direction: column;
@@ -27,12 +27,11 @@
   }
 }
 
-@media (max-aspect-ratio: 768px) {
+@media only screen and (max-width: 768px) {
   .jumbotron-large-text {
     display: none;
   }
 }
-
 .jumbotron-info h1 {
   font-size: 3em;
 }
@@ -63,7 +62,6 @@
     gap: 8px;
   }
 }
-
 
 @media only screen and (max-width: 768px) {
   .button-download {
