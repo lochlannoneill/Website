@@ -123,11 +123,11 @@ function removeFirstWord(str) {
 }
 
 function executeFlagFound(flag) {
-  return ("<b><i>" + flag + "</i></b><br>You found the flag!<br>You are now a Master Cybersecurity Analyst<br>P.S If you haven't decided yet . . . <b><i>hire me</b></i> :)");
+  return ("<b><i>" + flag + "</i></b><br>You found the flag!<br>You are now a Master Cybersecurity Analyst!");
 }
 
 function executeHelp() {
-  return "Try the command <b><i>'bin'</i></b> to find some acceptable commands.<br>Some commands require an argument <b><i>'cd contact'</i></b>.<br>Check a command's manual to learn how to use it <b><i>'man cd'</i></b><br>Complete the <b><i>Capture The Flag (CTF)</i></b> game by finding the <b><i>'flag'</i></b>.";
+  return "Try the command <b><i>'bin'</i></b> to find some acceptable commands.<br>Check a command's manual to learn how to use it <b><i>'man cd'</i></b><br>Complete the <b><i>Capture The Flag (CTF)</i></b> game by finding the <b><i>'flag'</i></b>.";
 }
 
 function executeMan(command) {
@@ -146,7 +146,7 @@ function executeFlag() {
 }
 
 function executeWhoAmI() {
-  return "Hello, I'm <b><i>Lochlann O Neill</i></b> !<br>As a <a href='https://www.scholaro.com/gpa-calculator/Ireland'>First-Class Honours</a> graduate of <a href='https://www.mtu.ie/courses/mt800/'>BSc (Hons) Software Development</a> at <a href='https://www.mtu.ie/'>MTU</a>, I hope to eventually continue my journey with a degree in <b><i>MSc Software Architecture & Design</i></b>.";
+  return "Hello, I'm Lochlann O Neill!<br>I'm a recent graduate of <a href='https://www.mtu.ie/courses/mt800/'>Software Development</a> at <a href='https://www.mtu.ie/'>MTU</a>.";
 }
 
 function executeCd(location) {
