@@ -38,6 +38,7 @@
 
 .jumbotron-text {
   color: var(--color-text-primary-muted);
+  padding: 0 24vw;
   margin: 0;
   animation: 0.875s ease 0s normal forwards 1 fadeInSlow;
   font-size: 1.5em;

@@ -1,15 +1,10 @@
 /* ______________________________________________________________________________________________________________________ */
 /* _____________________________________________________ terminal ______________________________________________________ */
 /* ______________________________________________________________________________________________________________________ */
-#terminal {
+#terminal,
+#terminal-response {
   font-family: "Source Code Pro";
   margin: 0;
-}
-
-@media (max-width: 767px) {
-  #terminal {
-    font-size: 2.25em;
-  }
 }
 
 #terminal-response i {
@@ -18,9 +13,7 @@
 
 #terminal-response a {
   font-weight: bold;
-  -webkit-text-stroke: 0.5px; /* width and color */
   text-shadow: 2px 2px 2px var(--color-primary);
-  transition: 0.375s;
 }
 
 #terminal-response.acceptable-command {
@@ -56,10 +49,14 @@
 }
 
 .badge {
-  background-color: var(--color-primary);
+  padding: 0.125em 0.25em;
   border: none;
   cursor: default;
   animation: squint 3.5s infinite;
+}
+
+.badge:focus {
+  outline: none;
 }
 
 #commandline:hover {
@@ -69,7 +66,7 @@
 
 @media (max-width: 768px) {
   #commandline {
-    display: none !important;
+    display: none;
   }
 }
 
