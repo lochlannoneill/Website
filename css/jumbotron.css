@@ -10,6 +10,12 @@
   overflow: hidden;
 }
 
+@media only screen and (max-width: 768px) {
+  .jumbotron {
+    padding: 4vh 2vh;
+  }
+}
+
 .jumbotron h1 {
   text-shadow: 4px 4px 4px var(--color-primary-darkest);
 }
@@ -32,8 +38,13 @@
     display: none;
   }
 }
+
+.jumbotron-info {
+  text-align: center;
+}
+
 .jumbotron-info h1 {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .jumbotron-text {
