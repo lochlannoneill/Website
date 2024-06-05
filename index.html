@@ -10,12 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lochlann O Neill</title>
     <link rel="icon" href="assets/images/profile_picture.png" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
-    />
+    /> -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -101,42 +101,37 @@
     <main id="main">
       <!-- ___________________________________________________ jumbotron _____________________________________________________ -->
       <!-- NOTE - add 'large-jumbotron' to classlist to increase size of jumbotron -->
-      <div
-        class="jumbotron bg-transparent"
-        id="home-jumbotron"
-      >
-        <div class="jumbotron-container">
-          <div class="jumbotron-info" style="text-align: center">
-            <h1 id="terminal" class="display-5">
-              C:<span class="d-none d-lg-inline">\Graduates</span>\<a
-                href="https://linktr.ee/lochlannoneill"
-                id="link-name"
-                >Lochlann</a
-              >><span
-                id="commandline"
-                class="badge"
-                contenteditable="true"
-                autofocus
-              ></span>
-            </h1>
-            <div class="jumbotron-text">
-              <p id="terminal-response">
-              </p>
-            </div>
-            <div class="button-list-downloads">
-              <!-- Resume Download -->
-              <a href="assets/lochlann_oneill_resume.pdf" download
-              ><button id="button-cover" class = "button-download" type="button">
-                <span id="icon" class="fa fa-download"></span> Resume
-              </button></a
-              >
-              <!-- Cover Letter Download -->
-              <a href="assets/lochlann_oneill_cover.pdf" download
-              ><button id="button-resume" class = "button-download" type="button">
-                <span id="icon" class="fa fa-download"></span> Cover Letter
-              </button></a
-              >
-            </div>
+      <div id="home-jumbotron" class="jumbotron">
+        <div class="jumbotron-info" style="text-align: center">
+          <h1 id="terminal">
+            C:<span class="jumbotron-large-text">\Graduates</span>\<a
+              href="https://linktr.ee/lochlannoneill"
+              id="link-name"
+              >Lochlann</a
+            >><span
+              id="commandline"
+              class="badge"
+              contenteditable="true"
+              autofocus
+            ></span>
+          </h1>
+          <div class="jumbotron-text">
+            <p id="terminal-response">
+            </p>
+          </div>
+          <div class="button-list-downloads">
+            <!-- Resume Download -->
+            <a href="assets/lochlann_oneill_resume.pdf" download
+            ><button id="button-cover" class = "button-download" type="button">
+              <span id="icon" class="fa fa-download"></span> Resume
+            </button></a
+            >
+            <!-- Cover Letter Download -->
+            <a href="assets/lochlann_oneill_cover.pdf" download
+            ><button id="button-resume" class = "button-download" type="button">
+              <span id="icon" class="fa fa-download"></span> Cover Letter
+            </button></a
+            >
           </div>
         </div>
       </div>
