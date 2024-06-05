@@ -64,11 +64,12 @@
   background-color: var(--color-primary-brightest);
 }
 
-@media (max-width: 768px) {
+/* ! Error - this isnt working, also a duplicate at .removable */
+/* @media (max-width: 768px) {
   #commandline {
-    display: none;
+    display: none; 
   }
-}
+} */
 
 #commandline[contenteditable] {
   display: inline-block;
