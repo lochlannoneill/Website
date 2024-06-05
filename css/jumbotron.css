@@ -15,7 +15,7 @@
 }
 
 .large-jumbotron {
-  min-height: 90vh;
+  min-height: 74vh; /* 100 - (navbar=10vh) + (jumbotron top/bottom padding = 16vh) */
 }
 
 @media (max-aspect-ratio: 768px) {
