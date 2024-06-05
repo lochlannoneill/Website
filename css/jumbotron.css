@@ -18,7 +18,7 @@
   min-height: 90vh;
 }
 
-@media (max-aspect-ratio: 768) {
+@media (max-aspect-ratio: 768px) {
   .jumbotron-large-text {
     display: none;
   }
