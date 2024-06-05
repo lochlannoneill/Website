@@ -36,7 +36,6 @@ section .content img {
   width: 240px;
 }
 
-
 @media screen and (max-width: 768px) {
   section .content img {
     width: 40vw;

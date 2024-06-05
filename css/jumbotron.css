@@ -5,15 +5,9 @@
 /* ______________________________________________________________________________________________________________________ */
 .jumbotron {
   color: var(--color-text-primary);
-  padding: 8vh 4vh;
+  padding: 4vh 2vh;
   margin: 0;
   overflow: hidden;
-}
-
-@media only screen and (max-width: 768px) {
-  .jumbotron {
-    padding: 4vh 2vh;
-  }
 }
 
 .jumbotron h1 {
