@@ -15,51 +15,45 @@ section h1 {
 }
 
 section a {
-  font-weight: 900;
+  font-weight: 600;
   color: var(--color-text-secondary-muted);
 }
 
 section b {
-  font-weight: 900;
+  font-weight: 600;
   color: var(--color-text-secondary-muted);
 }
 
-#about {
+section .content {
   display:flex;
   flex-direction: row;
   align-items: center;
+  gap: 2vw;
 }
 
-#about h1 {
-  text-align: left;
+section .content img {
+  border-radius: 50%;
+  width: 240px;
 }
 
 @media screen and (max-width: 1100px) {
-  #about {
+  section .content {
     display: block;
   }
-  #about .content-left {
+  section .content-left {
     text-align: center;
   }
-  #about .social-icons {
+  section .content .social-icons {
     text-align: center;
-  }
-}
-
-#about img {
-  border-radius: 50%;
-  width: 280px;
-  margin: 0 32px;
-}
-
-@media screen and (max-width: 1100px) {
-  #about img {
-    margin-bottom: 16px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #about img {
+  section img {
     width: 40vw;
   }
+}
+
+#about h1 {
+  text-align: left;
 }
