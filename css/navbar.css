@@ -2,56 +2,40 @@
 /* _______________________________________________________ navbar _______________________________________________________ */
 /* ______________________________________________________________________________________________________________________ */
 .navbar {
-  font-size: 0.8em;
   height: 10vh;
   animation: 1s ease 0s normal forwards 1 fadeInFast;
   width: 100%;
 }
 
-#navbar-logo {
-  height: 80px;
-  margin: 0 24px 0 0;
+.navbar-items {
   padding: 0;
-  opacity: 40%;
-}
-
-#navbarSupportedContent {
   margin: 0;
-}
-
-.nav-item {
-  font-size: 1.7em;
-  margin: 16px 64px !important;
-}
-
-.navbar ul {
-  padding: 0;
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 100%;
+  height: inherit;
 }
+
+@media only screen and (max-width: 768px) {
+  .navbar-items {
+    justify-content: space-between;
+    padding: 0 4vw;
+  }
+}
+
 .navbar li {
-  display: inline-block;
-  position: relative;
-  padding: 0 10px;
-  height: 100%;
-  margin: 0;
+  padding: 0 4vw;
 }
+
 .navbar a {
-  color: #fff;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.15em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100%;
   position: relative;
-  padding: 0 20px;
 }
+
 .navbar a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
