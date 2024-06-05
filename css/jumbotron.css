@@ -5,7 +5,7 @@
 /* ______________________________________________________________________________________________________________________ */
 .jumbotron {
   color: var(--color-text-primary);
-  padding: 8vh 4vh;
+  padding: 4vh 2vh;
   margin: 0;
   overflow: hidden;
 }
@@ -28,12 +28,17 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .jumbotron-large-text {
+  .removable {
     display: none;
   }
 }
+
+.jumbotron-info {
+  text-align: center;
+}
+
 .jumbotron-info h1 {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .jumbotron-text {
