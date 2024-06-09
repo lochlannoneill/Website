@@ -154,8 +154,8 @@ a {
 }
 
 a:hover {
-  opacity: 0.75;
-  transition: color 0.125s ease-in-out;
+  opacity: 0.85;
+  transition: 0.125s ease-in-out;
   animation: wiggleSmall 2.5s infinite;
   text-decoration: none;
 }
