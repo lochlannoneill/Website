@@ -102,12 +102,6 @@
   transition: 0.5s;
 }
 
-@media only screen and (max-width: 768px) {
-  .card .details {
-    /* bottom: -96px; */
-  }
-}
-
 .card .details * {
   margin: 0;
 }
