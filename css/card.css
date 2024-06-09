@@ -34,6 +34,21 @@
   }
 }
 
+.card .banner {
+  position: absolute;
+  box-sizing: border-box;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: var(--color-secondary-brightest);
+  padding: 8px 16px;
+  color: white;
+  opacity: 0.85;
+  z-index: 3;
+}
+
 .card .poster {
   position: relative;
   overflow: hidden;
