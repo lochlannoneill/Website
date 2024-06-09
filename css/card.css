@@ -157,6 +157,7 @@
   padding: 8px 16px;
   border-radius: 4px;
   font-weight: 600;
+  letter-spacing: 1px;
   cursor: pointer;
   opacity: 0;
   transition: 0.75s;
