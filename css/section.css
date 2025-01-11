@@ -11,7 +11,53 @@ section:nth-child(odd) {
 }
 
 #about {
-  padding: 4vh 12vw;
+  padding: 4vh 24vw;
+}
+
+@media screen and (max-width: 1100px) {
+  #about {
+    padding: 4vh 16vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #about {
+    padding: 4vh 8vw;
+  }
+}
+
+#about * {
+  text-align: left;
+}
+
+section h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+section h2 {
+  color: #7e6000;
+  margin: 1vh 0 0 0;
+}
+
+section hr {
+  border: 1px solid #7e6000;
+  margin-top: 0;
+}
+
+#about .title {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#about ul {
+  margin: 0;
+}
+
+#projects h2 {
+  text-align: center;
+  margin: 0 0 4vh 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -48,16 +94,37 @@ section .content img {
   width: 240px;
 }
 
+@media screen and (max-width: 1500px) {
+  section .content img {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  section .content img {
+    width: 140px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section .content img {
+    justify-content: center;
+    width: 120px;
+  }
+}
+
 section .content img:hover {
   transform: scale(1.05);
   transition: transform 0.35s;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
 }
 
-section .content-right h1,
+section .content-right h1 {
+  padding: 1vh 0;
+}
 section .content-right p,
 section .content-right .social-icons {
-  padding: 1vh;
+  padding: 0;
   margin: 0;
 }
 
@@ -77,14 +144,4 @@ section .content-right .social-icons {
   section .content .social-icons {
     text-align: center;
   }
-}
-
-@media screen and (max-width: 768px) {
-  section img {
-    width: 40vw;
-  }
-}
-
-#about h1 {
-  text-align: left;
 }
