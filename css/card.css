@@ -21,7 +21,7 @@
   position: relative;
   height: 32vh;
   min-height: 240px;
-  width: 360px;
+  width: 440px;
   border: 0;
   background: none;
   border-radius: 20px;
@@ -32,6 +32,7 @@
 @media only screen and (max-width: 768px) {
   .card {
     width: 100%;
+    height: 40vh;
   }
 }
 
@@ -97,14 +98,22 @@
   flex-direction: column;
   gap: 8px;
   left: 0;
-  bottom: -25%;
+  bottom: -40%;
   padding: 16px;
   z-index: 2;
   transition: 0.5s;
 }
 
-.card .details * {
-  margin: 0;
+@media only screen and (max-width: 768px) {
+  .card .details {
+    bottom: -30%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
 }
 
 .card:hover .details {
