@@ -1,6 +1,6 @@
 section {
   font-weight: 500;
-  padding: 4vh 12vw;
+  padding: 4vh 0;
   color: var(--color-text-secondary);
   background-color: var(--color-background-secondary);
   min-height: 16vh;
@@ -10,9 +10,20 @@ section:nth-child(odd) {
   background-color: var(--color-background-primary);
 }
 
+#about {
+  padding: 4vh 12vw;
+}
+
+@media screen and (max-width: 768px) {
   #about {
+    padding: 4vh 4vw;
+  }
+}
+
 section h1 {
   text-align: center;
+  margin: 0;
+  margin-bottom: 4vh;
 }
 
 section a {
@@ -41,6 +52,13 @@ section .content img:hover {
   transform: scale(1.05);
   transition: transform 0.35s;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+section .content-right h1,
+section .content-right p,
+section .content-right .social-icons {
+  padding: 1vh;
+  margin: 0;
 }
 
 @media screen and (max-width: 768px) {
