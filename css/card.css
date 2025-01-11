@@ -1,4 +1,5 @@
 .cards {
+  padding: 0 8vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -96,7 +97,7 @@
   flex-direction: column;
   gap: 8px;
   left: 0;
-  bottom: -30%;
+  bottom: -25%;
   padding: 16px;
   z-index: 2;
   transition: 0.5s;

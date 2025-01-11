@@ -57,7 +57,7 @@
   color: var(--color-text-primary-muted);
   padding: 0;
   margin: 0;
-  font-size: 1.5em;
+  font-size: 1.25em;
   text-align: left;
 }
 
@@ -68,16 +68,17 @@
 
 .jumbotron .social-icons {
   margin-top: 2vh;
+  text-align: center;
 }
 
-.button-list-downloads {
+/* .button-list-downloads {
   display: flex;
   justify-content: center;
   gap: 8px;
   margin-top: 2vh;
-}
+} */
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
   .button-list-downloads {
     display: flex;
     flex-direction: column;
@@ -90,9 +91,9 @@
     padding: 24px;
     width: 100%;
   }
-}
+} */
 
-.button-download {
+/* .button-download {
   background: var(--color-primary-gradiant);
   color: white;
   border: none;
@@ -102,21 +103,21 @@
   font-size: 1.6rem;
   transition: 0.5s;
   animation: 0.875s ease 0s normal forwards 1 fadeInSlow;
-}
+} */
 
-.button-download:hover {
+/* .button-download:hover {
   transition: 0.5s;
   background: var(--color-primary-dark-gradiant);
   color: white;
-}
+} */
 
-.button-download:active {
+/* .button-download:active {
   background: var(--color-primary-darkest);
   color: white;
   border: none;
   outline: none;
-}
+} */
 
-.button-download:focus {
+/* .button-download:focus {
   outline: none;
-}
+} */
