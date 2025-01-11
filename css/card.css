@@ -180,6 +180,10 @@
   background: var(--color-youtube);
 }
 
+.card button.leetcode {
+  background: var(--color-leetcode);
+}
+
 .card button.pdf {
   background: var(--color-pdf);
 }

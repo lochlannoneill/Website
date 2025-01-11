@@ -215,10 +215,21 @@ a:active {
     0 0 150px var(--color-github), 0 0 200px var(--color-github);
 }
 
+.leetcode,
+.leetcode:hover {
+  color: var(--color-leetcode);
+}
+
+.leetcode:hover {
+  text-shadow: 0 0 50px var(--color-leetcode), 0 0 100px var(--color-leetcode),
+    0 0 150px var(--color-leetcode), 0 0 200px var(--color-leetcode);
+}
+
 .youtube,
 .youtube:hover {
   color: var(--color-youtube);
 }
+
 
 .youtube:hover {
   text-shadow: 0 0 50px var(--color-youtube), 0 0 100px var(--color-youtube),
